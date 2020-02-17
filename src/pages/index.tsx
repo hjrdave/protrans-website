@@ -1,18 +1,18 @@
-import React, {useEffect} from "react"
-import { Link } from "gatsby"
+import React, { useEffect } from "react";
+import { Link } from "gatsby";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import Image from "../components/image";
+import SEO from "../components/seo";
 
 function IndexPage() {
-  const foo = (value) => {
+  const foo = (value: string) => {
     return value;
   }
 
   useEffect(() => {
     console.log(foo('hi'));
-  },[]);
+  }, []);
 
   return (
     <>
