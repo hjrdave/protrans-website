@@ -4,6 +4,7 @@ module.exports = {
     description: `Protrans Website`,
     author: `@gatsbyjs`,
   },
+  pathPrefix: "/protrans-website",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,

@@ -31,15 +31,16 @@
     "uniqid": "^5.2.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.19",
-    "@types/react-dom": "^16.9.5",
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
     "babel-loader": "^8.0.6",
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5",
     "webpack": "^4.41.6",
@@ -60,7 +61,8 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
   },
   "repository": {
     "type": "git",
