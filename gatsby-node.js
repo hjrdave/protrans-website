@@ -8,6 +8,7 @@
 
 const path = require(`path`)
 
+//Instantiates Post Template
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
@@ -45,6 +46,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 }
 
+//Creates absolute path for post featuredImages
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
