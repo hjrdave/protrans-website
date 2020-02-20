@@ -1,3 +1,11 @@
+/*
+  Home Slider
+  
+  Notes: Each object is a slide.  The first object is the default slide.
+  Must register image before use.  The image property takes the name of the 
+  registred image.
+*/
+
 import React from 'react';
 import Slider from '../../components/slider';
 import './_home-slider.scss';
