@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import { Link } from "gatsby";
 import uniqid from 'uniqid';
 import './_navigation.scss';
+// import Search from '../searchContainer.js'
 
 interface Props {
   navItems: {
@@ -28,6 +29,7 @@ function Navigation({ navItems }: Props) {
               )
             })
           }
+          {/* <Search /> */}
         </Nav>
       </Navbar>
     </>

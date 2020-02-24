@@ -4,16 +4,15 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
 
-const path = require(`path`)
+const path = require(`path`);
+const axios = require("axios");
 
-//Instantiates Post Template
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const PostTemplate = path.resolve(`src/templates/post-template.tsx`)
-
+  //Instatiate Post Templates
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -40,16 +39,55 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
-      component: PostTemplate,
+      component: path.resolve(`src/templates/post-template.tsx`),
       context: {}, // additional data can be passed via context
+    })
+  })
+
+
+
+  //Instatiate Site Search
+  const getSearchData = () => {
+    return axios.get("https://bvaughn.github.io/js-search/books.json").then(response => {
+      return response.data
+    })
+  }
+  await getSearchData().then(data => {
+    createPage({
+      path: "/search",
+      component: path.resolve(`./page-data/blog/page-data.json`),
+      context: {
+        // bookData: {
+        //   allBooks: data.books,
+        //   options: {
+        //     indexStrategy: "Prefix match",
+        //     searchSanitizer: "Lower Case",
+        //     TitleIndex: true,
+        //     AuthorIndex: true,
+        //     SearchByTerm: true,
+        //   },
+        //https://bvaughn.github.io/js-search/books.json
+        // },
+        bookData: {
+          allBooks: data.allMarkdownRemark.edges,
+          options: {
+            indexStrategy: "Prefix match",
+            searchSanitizer: "Lower Case",
+            TitleIndex: true,
+            AuthorIndex: true,
+            SearchByTerm: true,
+          }
+        }
+      },
     })
   })
 }
 
+
+
 //Creates absolute path for post featuredImages
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
-
   const typeDefs = `
   type Frontmatter @infer {
     featuredImage: File @fileByAbsolutePath(path: "src/images")
@@ -59,6 +97,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     frontmatter: Frontmatter
   }
   `
-
   createTypes(typeDefs)
 }
+
+
+

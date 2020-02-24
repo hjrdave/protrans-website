@@ -1,7 +1,7 @@
 ---
 path: "/blog/test-post"
 date: "2019-05-04"
-title: "End of the WTO Blog"
+title: "End of the WTO Blog Foo"
 featuredImage: 'slide-2.png'
 ---
 

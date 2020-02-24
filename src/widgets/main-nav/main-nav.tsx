@@ -32,6 +32,10 @@ function MainNav() {
             path: '/contact',
             text: 'Contact'
           },
+          {
+            path: '/search',
+            text: 'Search'
+          },
         ]}
       />
     </>
