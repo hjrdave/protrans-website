@@ -134,7 +134,8 @@ class ClientSearch extends Component {
               </InputGroup>
             </div>
           </form>
-          {/* <div className={'mt-4'}>
+
+          <div className={'mt-4'}>
             <p>Number of items: {queryResults.length}</p>
 
             {queryResults.map(item => {
@@ -143,23 +144,7 @@ class ClientSearch extends Component {
                   <Card.Body>
                     <Card.Title>{item.title}</Card.Title>
                     <Card.Text>
-                      With supporting text below as a natural lead-in to additional content.
-                      </Card.Text>
-                  </Card.Body>
-                </Card>
-              )
-            })}
-          </div> */}
-          <div className={'mt-4'}>
-            <p>Number of items: {queryResults.length}</p>
-
-            {queryResults.map(item => {
-              return (
-                <Card className='mt-2'>
-                  <Card.Body>
-                    <Card.Title>{item.node.frontmatter.title}</Card.Title>
-                    <Card.Text>
-                      {item.node.excerpt}
+                      Lorum Ipsum
                     </Card.Text>
                   </Card.Body>
                 </Card>

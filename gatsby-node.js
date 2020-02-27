@@ -53,23 +53,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   }
   await getSearchData().then(data => {
+    console.log(data);
     createPage({
       path: "/search",
-      component: path.resolve(`./page-data/blog/page-data.json`),
+      component: path.resolve(`src/templates/search-template.tsx`),
       context: {
-        // bookData: {
-        //   allBooks: data.books,
-        //   options: {
-        //     indexStrategy: "Prefix match",
-        //     searchSanitizer: "Lower Case",
-        //     TitleIndex: true,
-        //     AuthorIndex: true,
-        //     SearchByTerm: true,
-        //   },
-        //https://bvaughn.github.io/js-search/books.json
-        // },
         bookData: {
-          allBooks: data.allMarkdownRemark.edges,
+          allBooks: data.books,
           options: {
             indexStrategy: "Prefix match",
             searchSanitizer: "Lower Case",
