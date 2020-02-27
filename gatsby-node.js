@@ -6,7 +6,6 @@
 
 
 const path = require(`path`);
-const axios = require("axios");
 
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
@@ -41,34 +40,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: node.frontmatter.path,
       component: path.resolve(`src/templates/post-template.tsx`),
       context: {}, // additional data can be passed via context
-    })
-  })
-
-
-
-  //Instatiate Site Search
-  const getSearchData = () => {
-    return axios.get("https://bvaughn.github.io/js-search/books.json").then(response => {
-      return response.data
-    })
-  }
-  await getSearchData().then(data => {
-    console.log(data);
-    createPage({
-      path: "/search",
-      component: path.resolve(`src/templates/search-template.tsx`),
-      context: {
-        bookData: {
-          allBooks: data.books,
-          options: {
-            indexStrategy: "Prefix match",
-            searchSanitizer: "Lower Case",
-            TitleIndex: true,
-            AuthorIndex: true,
-            SearchByTerm: true,
-          }
-        }
-      },
     })
   })
 }

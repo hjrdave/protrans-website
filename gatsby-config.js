@@ -53,6 +53,25 @@ module.exports = {
         // a. single directory
         dirs: 'src/images'
       }
+    },
+    {
+      resolve: 'gatsby-plugin-lunr',
+      options: {
+        languages: [{ name: 'en' }],
+        fields: [
+          { name: 'title', store: true, attributes: { boost: 20 } },
+          { name: 'content', store: true, attributes: { boost: 5 } },
+          { name: 'date', store: true }
+        ],
+        resolvers: {
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            content: node => node.rawMarkdownBody,
+            date: node => node.frontmatter.date
+          }
+        },
+        filename: 'search_index.json',
+      }
     }
   ],
 }
