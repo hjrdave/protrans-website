@@ -61,13 +61,15 @@ module.exports = {
         fields: [
           { name: 'title', store: true, attributes: { boost: 20 } },
           { name: 'content', store: true, attributes: { boost: 5 } },
-          { name: 'date', store: true }
+          { name: 'date', store: true },
+          { name: 'path', store: true }
         ],
         resolvers: {
           MarkdownRemark: {
             title: node => node.frontmatter.title,
             content: node => node.rawMarkdownBody,
-            date: node => node.frontmatter.date
+            date: node => node.frontmatter.date,
+            path: node => node.frontmatter.path
           }
         },
         filename: 'search_index.json',
