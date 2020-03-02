@@ -9,7 +9,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -45,35 +44,34 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-
     },
     {
-      resolve: 'gatsby-schema-field-absolute-path',
+      resolve: "gatsby-schema-field-absolute-path",
       options: {
         // a. single directory
-        dirs: 'src/images'
-      }
+        dirs: "src/images",
+      },
     },
     {
-      resolve: 'gatsby-plugin-lunr',
+      resolve: "gatsby-plugin-lunr",
       options: {
-        languages: [{ name: 'en' }],
+        languages: [{ name: "en" }],
         fields: [
-          { name: 'title', store: true, attributes: { boost: 20 } },
-          { name: 'content', store: true, attributes: { boost: 5 } },
-          { name: 'date', store: true },
-          { name: 'path', store: true }
+          { name: "title", store: true, attributes: { boost: 20 } },
+          { name: "content", store: true, attributes: { boost: 5 } },
+          { name: "date", store: true },
+          { name: "path", store: true },
         ],
         resolvers: {
           MarkdownRemark: {
             title: node => node.frontmatter.title,
             content: node => node.rawMarkdownBody,
             date: node => node.frontmatter.date,
-            path: node => node.frontmatter.path
-          }
+            path: node => node.frontmatter.path,
+          },
         },
-        filename: 'search_index.json',
-      }
-    }
+        filename: "search_index.json",
+      },
+    },
   ],
 }

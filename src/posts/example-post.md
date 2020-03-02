@@ -2,13 +2,13 @@
 path: "/blog/test-post"
 date: "2019-05-04"
 title: "End of the WTO Blog Foo"
-featuredImage: 'slide-2.png'
+featuredImage: "slide-2.png"
 ---
 
 The Appellate Body, the highest court in the World Trade Organization (WTO), has lost its ability to make judgment. The Body normally consists of a panel of seven judges but in recent years has dwindled to three. Now, as of December 10th, two of the last three judges’ terms have expired; leaving only one judge on the court. Court rules state that it must have a minimum of three judges in order to judge cases. This leaves many feeling a sense of chaos and feel like global trade is now, as former WTO appellate judge, Peter Van den Bossche put it, “the law of the jungle.” So, why did this happen and what does this really mean for global trade?
 
 ### Why Did This Happen?
- 
+
 The Appellate body, formed along with the WTO in 1995, has been losing members since the George W. Bush Administration and has carried on through both Obama and Trump administrations. Each president has felt the WTO mistreats the United States in how in they conduct business and has refused to nominate nor approve nominations of new judges in protest.
 
 These administrations felt (and feel) that the WTO does not do their part in enforcing trade guidelines for the global trade community, but rather uses the Appellate Body to censure and limit the U.S. Stephen Vaughn, former Chief Counsel to U.S. Trade Representative, Robert Lighthizer, said, “The U.S. was told the [Dispute Settlement Body] would make others live up to their bargain. But if it is there to constrain the U.S. then it is not in our interest.” The Body also fails to counter unfair trade methods by countries like China and others.
@@ -22,7 +22,7 @@ This leaves many feeling like global trade is in chaos. But should it?
 Do you feel chaos in your supply chain? We want to make it efficient!: LEARN MORE
 
 ### Effect on Global Trade
- 
+
 The WTO has its supporters and detractors in the U.S. and worldwide. Some U.S. supporters like U.S. Representative Stephanie Murphy (D-FL) sees the WTO losing control as “really dangerous for American businesses.” She and others feel that without global oversight, the U.S. will return to “strong-arming” protectionist practices, tariff wars, and other trade unrest.
 
 President Trump and U.S. Trade Representative, Robert Lighthizer, feel otherwise. For the past few years, the Trump administration has been focused on a trade policy that limits interference from outside nations and allows the U.S. to make deals as they see fit. They have encouraged other countries to do the same.
@@ -34,4 +34,3 @@ The truth lies somewhere in the middle. Objectively, the United States was found
 The dissolution of the Appellate Body does not mean the WTO relinquishes regulatory power; there are still several lower courts that will hear disputes. It just means that there is a layer of deregulation and trade bodies will not be able to appeal those courts’ decisions. So, the situation can be seen like a win-win. The U.S. will achieve more autonomy while other nations will continue to have a voice.
 
 Are you planning for this change? Talk with us about your logistics needs! LEARN MORE!
-
