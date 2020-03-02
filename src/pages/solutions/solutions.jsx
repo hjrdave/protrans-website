@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import PageContainer from "../components/page-container"
-import PageContent from "../components/page-content"
+import PageContainer from "../../components/page-container"
+import PageContent from "../../components/page-content"
 
 function SolutionsPage() {
   return (

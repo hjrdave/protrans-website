@@ -11,7 +11,7 @@ import Header from "../header"
 import Footer from "../footer"
 import "./_layout.scss"
 
-function Layout({ children }) {
+function Layout({ children, id }) {
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {
   //     site {
@@ -25,7 +25,7 @@ function Layout({ children }) {
   return (
     <>
       <Header siteTitle={"Protrans"} />
-      <main>{children}</main>
+      <main id={id}>{children}</main>
       <Footer />
     </>
   )

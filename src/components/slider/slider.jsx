@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Carousel from "react-bootstrap/Carousel"
-import SlideImage from "../../widgets/home-slider/slides/register"
+import Image from "../../images/register";
 import "./_slider.scss"
 
 function Slider({ slides }) {
@@ -24,7 +24,7 @@ function Slider({ slides }) {
         {slides.map(item => {
           return (
             <Carousel.Item>
-              <SlideImage name={item.image} />
+              <Image name={item.image} />
               <Carousel.Caption className="d-flex align-items-center justify-content-center">
                 <div>
                   <h3>{item.headline}</h3>

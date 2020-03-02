@@ -16,6 +16,9 @@ import Img from "gatsby-image"
 function Image({ name }) {
   const data = useStaticQuery(graphql`
     query {
+
+
+
       logoProtrans: file(relativePath: { eq: "logo-protrans.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
@@ -23,6 +26,34 @@ function Image({ name }) {
           }
         }
       }
+
+      slide1: file(relativePath: { eq: "slide-1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      slide2: file(relativePath: { eq: "slide-2.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      slide3: file(relativePath: { eq: "slide-3.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    
+
+
+
     }
   `)
 

@@ -1,9 +1,11 @@
-import React from "react"
-import PageContainer from "../components/page-container"
-import PageContent from "../components/page-content"
-import HomeSlider from "../widgets/home-slider"
+import React from "react";
+import PageContainer from "../../components/page-container";
+import PageContent from "../../components/page-content";
+import HomeSlider from "../../widgets/home-slider";
+import './_home.scss';
 
-function Home() {
+
+function HomePage() {
   return (
     <>
       <PageContainer title={"Home"}>
@@ -70,4 +72,4 @@ function Home() {
   )
 }
 
-export default Home
+export default HomePage

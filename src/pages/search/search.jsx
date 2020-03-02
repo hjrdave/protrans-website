@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react"
-import PageContainer from "../components/page-container"
-import PageContent from "../components/page-content"
-import SearchForm from "../components/search-form"
-import SearchResults from "../components/search-results"
+import React, { useState, useEffect } from "react";
+import PageContainer from "../../components/page-container";
+import PageContent from "../../components/page-content";
+import SearchForm from "../../components/search-form";
+import SearchResults from "../../components/search-results";
+import './_search.scss';
 
 function SearchPage({ location }) {
   const [results, setResults] = useState([])
@@ -20,7 +21,7 @@ function SearchPage({ location }) {
 
   return (
     <>
-      <PageContainer title={"Search"}>
+      <PageContainer id={'search-page'} title={"Search"}>
         <PageContent>
           <h1>Search Site</h1>
           <SearchForm query={searchQuery} />
