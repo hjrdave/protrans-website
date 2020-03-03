@@ -5,7 +5,7 @@ import SearchForm from "../../components/search-form";
 import SearchResults from "../../components/search-results";
 import './_search.scss';
 
-function SearchPage({ location }) {
+export default function Page({ location }) {
   const [results, setResults] = useState([])
   const searchQuery = new URLSearchParams(location.search).get("keywords") || ""
 
@@ -32,4 +32,3 @@ function SearchPage({ location }) {
   )
 }
 
-export default SearchPage

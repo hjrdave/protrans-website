@@ -1,3 +1,3 @@
-import TechnologyPage from './technology';
+import Page from './technology';
 
-export default TechnologyPage;
+export default Page;

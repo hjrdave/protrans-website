@@ -4,7 +4,7 @@ import PageContainer from "../../components/page-container";
 import PageContent from "../../components/page-content";
 import './_about-us.scss';
 
-function AboutUsPage() {
+export default function AboutUsPage() {
   return (
     <>
       <PageContainer title={"About Us"}>
@@ -17,5 +17,3 @@ function AboutUsPage() {
     </>
   )
 }
-
-export default AboutUsPage

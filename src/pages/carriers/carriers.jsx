@@ -4,7 +4,7 @@ import PageContainer from "../../components/page-container";
 import PageContent from "../../components/page-content";
 import './_carriers.scss';
 
-function CarriersPage() {
+export default function Page() {
   return (
     <>
       <PageContainer title={"Carriers"}>
@@ -17,5 +17,3 @@ function CarriersPage() {
     </>
   )
 }
-
-export default CarriersPage

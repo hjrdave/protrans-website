@@ -1,3 +1,3 @@
-import AboutUsPage from './about-us';
+import Page from './about-us';
 
-export default AboutUsPage;
+export default Page;

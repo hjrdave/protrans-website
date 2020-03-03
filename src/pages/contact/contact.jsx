@@ -4,7 +4,7 @@ import PageContainer from "../../components/page-container";
 import PageContent from "../../components/page-content";
 import './_contact.scss';
 
-function ContactPage() {
+export default function Page() {
   return (
     <>
       <PageContainer title={"Contact"}>
@@ -17,5 +17,3 @@ function ContactPage() {
     </>
   )
 }
-
-export default ContactPage

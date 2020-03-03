@@ -19,7 +19,7 @@ function Navigation({ navItems }) {
               </React.Fragment>
             )
           })}
-          {/* <Search /> */}
+          <div className='pl-2'><Link to={'/search'} style={{ fontSize: '1.5rem', color: 'black' }}><i class="fas fa-search"></i></Link></div>
         </Nav>
       </Navbar>
     </>

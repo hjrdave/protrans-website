@@ -1,14 +1,12 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
 
-import HomePage from "./home"
+import Page from "./home";
 
-function IndexPage() {
+export default function Index() {
   return (
     <>
-      <HomePage />
+      <Page />
     </>
   )
 }
-
-export default IndexPage

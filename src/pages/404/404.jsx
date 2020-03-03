@@ -1,8 +1,9 @@
-import React from "react"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import React from "react";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import './_404.scss';
 
-function NotFoundPage() {
+export default function NotFoundPage() {
   return (
     <>
       <Layout>
@@ -13,5 +14,3 @@ function NotFoundPage() {
     </>
   )
 }
-
-export default NotFoundPage

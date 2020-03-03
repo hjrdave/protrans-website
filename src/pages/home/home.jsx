@@ -5,7 +5,7 @@ import HomeSlider from "../../widgets/home-slider";
 import './_home.scss';
 
 
-function HomePage() {
+export default function Page() {
   return (
     <>
       <PageContainer title={"Home"}>
@@ -71,5 +71,3 @@ function HomePage() {
     </>
   )
 }
-
-export default HomePage

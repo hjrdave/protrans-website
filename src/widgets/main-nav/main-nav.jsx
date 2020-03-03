@@ -12,6 +12,10 @@ function MainNav() {
       <Navigation
         navItems={[
           {
+            path: "/solutions",
+            text: "Solutions",
+          },
+          {
             path: "/technology",
             text: "Technology",
           },
@@ -21,20 +25,12 @@ function MainNav() {
           },
           {
             path: "/blog",
-            text: "Blog",
-          },
-          {
-            path: "/about-us",
-            text: "About Us",
+            text: "Logistics New/Trends",
           },
           {
             path: "/contact",
             text: "Contact",
-          },
-          {
-            path: "/search",
-            text: "Search",
-          },
+          }
         ]}
       />
     </>

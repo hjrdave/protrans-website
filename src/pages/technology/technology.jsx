@@ -4,7 +4,7 @@ import PageContainer from "../../components/page-container";
 import PageContent from "../../components/page-content";
 import './_technology.scss';
 
-function TechnologyPage() {
+export default function Page() {
   return (
     <>
       <PageContainer title={"Technology"}>
@@ -17,5 +17,3 @@ function TechnologyPage() {
     </>
   )
 }
-
-export default TechnologyPage

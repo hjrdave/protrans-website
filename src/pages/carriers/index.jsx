@@ -1,3 +1,3 @@
-import CarriersPage from './carriers';
+import Page from './carriers';
 
-export default CarriersPage;
+export default Page;

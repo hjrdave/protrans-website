@@ -1,3 +1,3 @@
-import HomePage from './home';
+import Page from './home';
 
-export default HomePage;
+export default Page;

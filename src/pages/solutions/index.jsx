@@ -1,3 +1,3 @@
-import SolutionsPage from './solutions';
+import Page from './solutions';
 
-export default SolutionsPage;
+export default Page;

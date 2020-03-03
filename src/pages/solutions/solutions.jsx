@@ -1,9 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
-import PageContainer from "../../components/page-container"
-import PageContent from "../../components/page-content"
+import React from "react";
+import { Link } from "gatsby";
+import PageContainer from "../../components/page-container";
+import PageContent from "../../components/page-content";
+import './_solutions.scss';
 
-function SolutionsPage() {
+export default function Page() {
   return (
     <>
       <PageContainer title={"Solutions"}>
@@ -17,4 +18,3 @@ function SolutionsPage() {
   )
 }
 
-export default SolutionsPage
