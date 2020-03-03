@@ -27,6 +27,14 @@ function Image({ name }) {
         }
       }
 
+      slideShipment: file(relativePath: { eq: "slide-shipment.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
       slide1: file(relativePath: { eq: "slide-1.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {

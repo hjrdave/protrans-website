@@ -19,22 +19,24 @@ function HomeSlider() {
             //slide 1
             {
               image: "slide1",
-              headline: "Slide 1",
-              lede: "Foo Foo Foo",
+              headline: <>Anyone Can Cut Costs<br />…But WE REDUCE SPEND</>,
+              lede: "Find out how we do it!",
+              button: 'Get Started'
             },
 
             //slide 2
             {
-              image: "slide2",
-              headline: "Slide 2",
-              lede: "Foo Foo Foo",
+              image: "slideShipment",
+              headline: "Track Shipments",
+              button: "Track Shipment"
             },
 
             //slide 3
             {
               image: "slide3",
-              headline: "Slide 3",
-              lede: "Foo Foo Foo",
+              headline: "Life of Poor Paul",
+              lede: "Poor Paul Didn't do His Research on Logistics Planning for His Company...",
+              button: 'Read More'
             },
           ]}
         />

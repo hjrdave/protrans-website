@@ -25,11 +25,33 @@ function MainNav() {
           },
           {
             path: "/blog",
-            text: "Logistics New/Trends",
+            text: "Logistics News",
           },
           {
-            path: "/contact",
+            path: "",
             text: "Contact",
+            subMenu: [
+              {
+                path: "/locations",
+                text: "Locations"
+              },
+              {
+                path: "/careers",
+                text: "Careers"
+              },
+              {
+                path: "/customer-support",
+                text: "Customer Support"
+              },
+              {
+                path: "/talk-with-us",
+                text: "Talk with Us"
+              },
+              {
+                path: "/create-shipment",
+                text: "Create Shipment"
+              }
+            ]
           }
         ]}
       />

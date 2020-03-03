@@ -7,7 +7,7 @@ import MainNav from "../../widgets/main-nav"
 function Header({ siteTitle }) {
   return (
     <>
-      <header className="p-4 d-flex justify-content-between align-content-center">
+      <header className="px-4 d-flex justify-content-between align-content-center">
         <div className="header-logo">
           <Link to="/">
             <Image name={"logoProtrans"} />
