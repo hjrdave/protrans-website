@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{lQMC:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),r=a.n(n),l=a("Wbzz"),c=a("scLt"),o=a("WXsw");t.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(c.a,{title:"Carriers"},r.a.createElement(o.a,null,r.a.createElement("h1",null,"Hi from the Carriers page"),r.a.createElement("p",null,"Welcome to page"),r.a.createElement(l.Link,{to:"/"},"Go back to the homepage"))))}}}]);
-//# sourceMappingURL=component---src-pages-carriers-tsx-06745046e1061aa0ddd2.js.map

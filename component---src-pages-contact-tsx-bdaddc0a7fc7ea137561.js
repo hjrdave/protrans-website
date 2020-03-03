@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"0Aie":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),c=a("Wbzz"),o=a("scLt"),r=a("WXsw");t.default=function(){return l.a.createElement(l.a.Fragment,null,l.a.createElement(o.a,{title:"Contact"},l.a.createElement(r.a,null,l.a.createElement("h1",null,"Hi from the Contact page"),l.a.createElement("p",null,"Welcome to page"),l.a.createElement(c.Link,{to:"/"},"Go back to the homepage"))))}}}]);
-//# sourceMappingURL=component---src-pages-contact-tsx-bdaddc0a7fc7ea137561.js.map
