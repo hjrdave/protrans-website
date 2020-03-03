@@ -1,11 +1,10 @@
-import React from "react";
-import { Link } from "gatsby";
-import PageContainer from "../../../../../components/page-container";
-import PageContent from "../../../../../components/page-content";
-import './_romulus-facility.scss';
+import React from "react"
+import { Link } from "gatsby"
+import PageContainer from "../../../../../components/page-container"
+import PageContent from "../../../../../components/page-content"
+import "./_romulus-facility.scss"
 
 export default function Page() {
-
   return (
     <>
       <PageContainer title={"Romulus Facility"}>

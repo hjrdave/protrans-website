@@ -1,3 +1,3 @@
-import Page from './greer-facility';
+import Page from "./greer-facility"
 
-export default Page;
+export default Page

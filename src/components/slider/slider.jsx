@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Carousel from "react-bootstrap/Carousel"
-import Image from "../../images/register";
-import Button from 'react-bootstrap/Button';
+import Image from "../../images/register"
+import Button from "react-bootstrap/Button"
 import "./_slider.scss"
 
 function Slider({ slides }) {
@@ -33,11 +33,13 @@ function Slider({ slides }) {
                 <div>
                   <h1>{item.headline}</h1>
                   <p>{item.lede}</p>
-                  {
-                    (item.button) ?
-                      <div className='text-left pt-4'><Button variant="primary" className={'py-2 px-4'}>{item.button}</Button></div> : null
-                  }
-
+                  {item.button ? (
+                    <div className="text-left pt-4">
+                      <Button variant="primary" className={"py-2 px-4"}>
+                        {item.button}
+                      </Button>
+                    </div>
+                  ) : null}
                 </div>
               </Carousel.Caption>
             </Carousel.Item>

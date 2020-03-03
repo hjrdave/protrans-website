@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import "./_header.scss"
-import Image from "../../images/register";
+import Image from "../../images/register"
 import MainNav from "../../widgets/main-nav"
 
 function Header({ siteTitle }) {

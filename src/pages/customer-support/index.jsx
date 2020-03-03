@@ -1,3 +1,3 @@
-import Page from './customer-support';
+import Page from "./customer-support"
 
-export default Page;
+export default Page

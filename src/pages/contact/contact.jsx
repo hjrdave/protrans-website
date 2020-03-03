@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import PageContainer from "../../components/page-container";
-import PageContent from "../../components/page-content";
-import './_contact.scss';
+import React from "react"
+import { Link } from "gatsby"
+import PageContainer from "../../components/page-container"
+import PageContent from "../../components/page-content"
+import "./_contact.scss"
 
 export default function Page() {
   return (

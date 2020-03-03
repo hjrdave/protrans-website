@@ -1,3 +1,3 @@
-import Page from './create-shipment';
+import Page from "./create-shipment"
 
-export default Page;
+export default Page

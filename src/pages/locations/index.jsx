@@ -1,3 +1,3 @@
-import Page from './locations';
+import Page from "./locations"
 
-export default Page;
+export default Page

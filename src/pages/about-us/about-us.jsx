@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import PageContainer from "../../components/page-container";
-import PageContent from "../../components/page-content";
-import './_about-us.scss';
+import React from "react"
+import { Link } from "gatsby"
+import PageContainer from "../../components/page-container"
+import PageContent from "../../components/page-content"
+import "./_about-us.scss"
 
 export default function AboutUsPage() {
   return (

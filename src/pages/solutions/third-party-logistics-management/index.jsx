@@ -1,3 +1,3 @@
-import Page from './third-party-logistics-management';
+import Page from "./third-party-logistics-management"
 
-export default Page;
+export default Page

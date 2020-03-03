@@ -1,3 +1,3 @@
-import Page from './high-velocity-facilities';
+import Page from "./high-velocity-facilities"
 
-export default Page;
+export default Page

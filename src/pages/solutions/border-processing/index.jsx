@@ -1,3 +1,3 @@
-import Page from './border-processing';
+import Page from "./border-processing"
 
-export default Page;
+export default Page

@@ -1,3 +1,3 @@
-import Page from './freight-management';
+import Page from "./freight-management"
 
-export default Page;
+export default Page

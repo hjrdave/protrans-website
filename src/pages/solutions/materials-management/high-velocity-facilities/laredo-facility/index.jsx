@@ -1,3 +1,3 @@
-import Page from './laredo-facility';
+import Page from "./laredo-facility"
 
-export default Page;
+export default Page

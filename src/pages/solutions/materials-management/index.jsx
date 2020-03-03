@@ -1,3 +1,3 @@
-import Page from './materials-management';
+import Page from "./materials-management"
 
-export default Page;
+export default Page

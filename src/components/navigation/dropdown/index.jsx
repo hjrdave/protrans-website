@@ -1,3 +1,3 @@
-import NavDropdown from './dropdown';
+import NavDropdown from "./dropdown"
 
-export default NavDropdown;
+export default NavDropdown

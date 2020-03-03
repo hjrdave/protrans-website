@@ -1,3 +1,3 @@
-import Page from './slp-facility';
+import Page from "./slp-facility"
 
-export default Page;
+export default Page

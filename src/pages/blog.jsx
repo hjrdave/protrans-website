@@ -1,11 +1,15 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import PostLink from "../components/post-link";
-import PageContainer from "../components/page-container";
-import PageContent from "../components/page-content";
+import React from "react"
+import { Link, graphql } from "gatsby"
+import PostLink from "../components/post-link"
+import PageContainer from "../components/page-container"
+import PageContent from "../components/page-content"
 // import './_blog.scss';
 
-function BlogPage({ data: { allMarkdownRemark: { edges }, }, }) {
+function BlogPage({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) {
   return (
     <>
       <PageContainer title={"Blog"}>
@@ -41,4 +45,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default BlogPage;
+export default BlogPage

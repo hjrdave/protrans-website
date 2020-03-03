@@ -1,3 +1,3 @@
-import Page from './distribution';
+import Page from "./distribution"
 
-export default Page;
+export default Page

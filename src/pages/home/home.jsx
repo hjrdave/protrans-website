@@ -1,9 +1,8 @@
-import React from "react";
-import PageContainer from "../../components/page-container";
-import PageContent from "../../components/page-content";
-import HomeSlider from "../../widgets/home-slider";
-import './_home.scss';
-
+import React from "react"
+import PageContainer from "../../components/page-container"
+import PageContent from "../../components/page-content"
+import HomeSlider from "../../widgets/home-slider"
+import "./_home.scss"
 
 export default function Page() {
   return (

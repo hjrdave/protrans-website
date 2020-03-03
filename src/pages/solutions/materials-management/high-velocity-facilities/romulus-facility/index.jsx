@@ -1,3 +1,3 @@
-import Page from './romulus-facility';
+import Page from "./romulus-facility"
 
-export default Page;
+export default Page

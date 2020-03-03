@@ -33,26 +33,26 @@ function MainNav() {
             subMenu: [
               {
                 path: "/locations",
-                text: "Locations"
+                text: "Locations",
               },
               {
                 path: "/careers",
-                text: "Careers"
+                text: "Careers",
               },
               {
                 path: "/customer-support",
-                text: "Customer Support"
+                text: "Customer Support",
               },
               {
                 path: "/talk-with-us",
-                text: "Talk with Us"
+                text: "Talk with Us",
               },
               {
                 path: "/create-shipment",
-                text: "Create Shipment"
-              }
-            ]
-          }
+                text: "Create Shipment",
+              },
+            ],
+          },
         ]}
       />
     </>

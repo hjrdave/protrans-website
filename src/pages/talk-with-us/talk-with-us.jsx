@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import PageContainer from "../../components/page-container";
-import PageContent from "../../components/page-content";
-import './_talk-with-us.scss';
+import React from "react"
+import { Link } from "gatsby"
+import PageContainer from "../../components/page-container"
+import PageContent from "../../components/page-content"
+import "./_talk-with-us.scss"
 
 export default function Page() {
   return (
@@ -17,4 +17,3 @@ export default function Page() {
     </>
   )
 }
-

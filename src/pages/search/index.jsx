@@ -1,3 +1,3 @@
-import Page from './search';
+import Page from "./search"
 
-export default Page;
+export default Page

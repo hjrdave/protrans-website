@@ -1,3 +1,3 @@
-import Page from './careers';
+import Page from "./careers"
 
-export default Page;
+export default Page
