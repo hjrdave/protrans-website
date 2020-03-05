@@ -9,10 +9,11 @@ function BlogPage({
   data: {
     allMarkdownRemark: { edges },
   },
+  location
 }) {
   return (
     <>
-      <PageContainer title={"Blog"}>
+      <PageContainer title={"Blog"} activePath={location}>
         <PageContent>
           <h1>Blog</h1>
           <h3 className="pt-4">Recent Posts</h3>

@@ -22,6 +22,7 @@ function SearchResults({ query }) {
               navigate(`/search?keywords=${encodeURIComponent(e.target.value)}`)
             }
             value={query}
+            autoFocus={true}
           />
         </InputGroup>
       </Form>

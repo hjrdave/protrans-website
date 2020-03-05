@@ -7,27 +7,47 @@
     height: 100%;
     display: d-flex;
     align-items: center;
-    .navigation-hover{
-     // border: 1px solid red;
+    
+    .nav-link{
       height: 100%;
       display: flex;
-      align-items: center;
+      //border: 1px solid red;
       border-bottom: 3px solid rgba(0,0,0,0);
+      font-weight: $font-weight-bold + 100;
+      margin: 0px 5px 0px 5px;
+      font-size: $font-size-base + .1;
+      
+      
+    }
+    .nav-search-icon{
+      height: 100%;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.5);
       &:hover{
-        border-color: #A80532
+        color: #00000099!important;
       }
-      .nav-link{
+    }
+    .nav-item{
+      &:hover{
+        //border-color: #00000099;
+        color: #00000099!important;
+      }
+      &[aria-current="page"]{
+        border-color: #A80532;
+        color: #A80532!important;
+      }
+      .dropdown-toggle{
         display: flex;
-        //: 1px solid red;
-        font-weight: $font-weight-bold + 100;
-        margin: 0px 5px 0px 5px;
-        font-size: $font-size-base + .1;
-        &:hover{
-          color: #A80532;
+        align-items: center;
+        &::after{
+          margin-left: .4rem;
         }
       }
     }
-    
+    .nav-active-state{
+      border-color: #A80532;
+      color: #A80532!important;
+    }
     .dropdown-menu{
       //left: -200px;
       min-width: 12rem;
@@ -42,6 +62,36 @@
             color: inherit;
           }
         }
+      }
+    }
+    .nav-search-box{
+      .input-group-prepend{
+        i{
+          color: rgba(0, 0, 0, 0.5);
+        }
+        .input-group-text{
+          border-radius: 25px 0px 0px 25px;
+          background-color: white;
+         
+        }
+      }
+      .form-control{
+        border-left: none;
+        border-radius: 0px 25px 25px 0px;
+        &:focus{
+          outline: none !important;
+          box-shadow: none;
+          border-color: #ced4da;
+        }
+        &:active{
+          outline: none !important;
+          box-shadow: none;
+          border-color: #ced4da;
+        }
+
+      }
+      a{
+        color: black;
       }
     }
   }

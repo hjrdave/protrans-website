@@ -1,10 +1,12 @@
-import React, { Fragment } from "react"
-import Navbar from "react-bootstrap/Navbar"
-import Nav from "react-bootstrap/Nav"
-import { Link } from "gatsby"
-import NavDropdown from "./dropdown"
-import uniqid from "uniqid"
-import "./_navigation.scss"
+import React, { Fragment } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import { Link } from "gatsby";
+import NavItem from './nav-item';
+import NavDropdown from "./dropdown";
+import SearchBox from './search-box';
+import uniqid from "uniqid";
+import "./_navigation.scss";
 
 function Navigation({ navItems }) {
   return (
@@ -13,25 +15,19 @@ function Navigation({ navItems }) {
         <Nav className="mr-auto">
           {navItems?.map(item => {
             return (
-              <>
-                <React.Fragment key={uniqid()}>
-                  <div className="navigation-hover">
-                    {!item.subMenu ? (
-                      <Link to={item.path} className="nav-link">
-                        {item.text}
-                      </Link>
-                    ) : (
-                      <NavDropdown item={item} />
-                    )}
-                  </div>
-                </React.Fragment>
-              </>
+              <React.Fragment key={uniqid()}>
+                {!item.subMenu ? (
+                  <NavItem item={item} />
+                ) : (
+                    <NavDropdown item={item} />
+                  )}
+              </React.Fragment>
             )
           })}
           <div className="pl-2">
-            <Link to={"/search"} style={{ fontSize: "1.5rem", color: "black" }}>
-              <i class="fas fa-search"></i>
-            </Link>
+            {/* <Link to={"/search"} style={{ fontSize: "1.5rem", color: "black" }}> */}
+            <SearchBox />
+            {/* </Link> */}
           </div>
         </Nav>
       </Navbar>

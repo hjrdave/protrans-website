@@ -14,12 +14,13 @@ function NavDropdown({ item }) {
           <Dropdown.Menu className="p-3">
             <ul>
               {item.subMenu.map(subMenuItem => {
+                let key = uniqid();
                 return (
-                  <>
+                  <React.Fragment key={key}>
                     <li className="pt-2">
                       <Link to={subMenuItem.path}>{subMenuItem.text}</Link>
                     </li>
-                  </>
+                  </React.Fragment>
                 )
               })}
             </ul>

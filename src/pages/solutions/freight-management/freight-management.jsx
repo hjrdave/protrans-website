@@ -4,10 +4,10 @@ import PageContainer from "../../../components/page-container"
 import PageContent from "../../../components/page-content"
 import "./_freight-management.scss"
 
-export default function Page() {
+export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Freight Management"}>
+      <PageContainer title={"Freight Management"} location={location}>
         <PageContent>
           <h1>Hi from the Freight Management page</h1>
           <p>Welcome to foo page</p>

@@ -4,10 +4,10 @@ import PageContainer from "../../../components/page-container"
 import PageContent from "../../../components/page-content"
 import "./_distribution.scss"
 
-export default function Page() {
+export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Distribution"}>
+      <PageContainer title={"Distribution"} location={location}>
         <PageContent>
           <h1>Hi from the Distribution page</h1>
           <p>Welcome to foo page</p>

@@ -4,34 +4,20 @@
   .carousel-inner{
     height: calc(100vh - 100px);
     .carousel-item{
-      height: 100%;
       .carousel-caption{
-       // border: 1px solid red;
-        height: 100%;
         div{
-         // border: 1px solid red;
           h1{
-            //border: 1px solid red;
             font-size: $font-size-base + 3rem;
             text-align: left;
           }
           p{
-            //border: 1px solid red;
             max-width: 700px;
             font-size: $font-size-base + .35rem;
             text-align: left;
           }
         }
-        
-        
-      }
-      
-      .gatsby-image-wrapper{
-        height: 100%;
-       
       }
     }
-    
   }
   .carousel-control-prev{
     display:none;

@@ -4,14 +4,14 @@ import Img from "gatsby-image"
 import PageContainer from "../components/page-container"
 import PageContent from "../components/page-content"
 
-function PostTemplate({ data }) {
+function PostTemplate({ data, location }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   const { title, date, featuredImage } = frontmatter
 
   return (
     <>
-      <PageContainer title={title}>
+      <PageContainer title={title} location={location}>
         <PageContent>
           <Img fluid={featuredImage.childImageSharp.fluid} />
           <h1 className="pt-4">{title}</h1>

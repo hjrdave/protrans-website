@@ -4,10 +4,10 @@ import PageContainer from "../../../components/page-container"
 import PageContent from "../../../components/page-content"
 import "./_border-processing.scss"
 
-export default function Page() {
+export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Border Processing Page"}>
+      <PageContainer title={"Border Processing Page"} location={location}>
         <PageContent>
           <h1>Hi from the Border Processing Page page</h1>
           <p>Welcome to foo page</p>

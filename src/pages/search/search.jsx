@@ -21,7 +21,7 @@ export default function Page({ location }) {
 
   return (
     <>
-      <PageContainer id={"search-page"} title={"Search"}>
+      <PageContainer id={"search-page"} title={"Search"} activePath={location}>
         <PageContent>
           <h1>Search Site</h1>
           <SearchForm query={searchQuery} />
