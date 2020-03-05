@@ -1,8 +1,10 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import PostLink from "../components/post-link"
-import PageContainer from "../components/page-container"
-import PageContent from "../components/page-content"
+import React, { Fragment } from "react";
+import { Link, graphql } from "gatsby";
+import PostLink from "../components/post-link";
+import PageContainer from "../components/page-container";
+import CardDeck from 'react-bootstrap/CardDeck';
+import uniqid from 'uniqid';
+import PageContent from "../components/page-content";
 // import './_blog.scss';
 
 function BlogPage({
@@ -17,11 +19,17 @@ function BlogPage({
         <PageContent>
           <h1>Blog</h1>
           <h3 className="pt-4">Recent Posts</h3>
-          {edges
-            .filter(edge => !!edge.node.frontmatter.date)
-            .map(edge => {
-              return <PostLink key={edge.node.id} post={edge.node} />
-            })}
+          <div className='row'>
+            {edges
+              .filter(edge => !!edge.node.frontmatter.date)
+              .map(edge => {
+                return (
+                  <Fragment key={uniqid()}>
+                    <PostLink key={edge.node.id} post={edge.node} />
+                  </Fragment>
+                )
+              })}
+          </div>
         </PageContent>
       </PageContainer>
     </>
@@ -39,6 +47,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

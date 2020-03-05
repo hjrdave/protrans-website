@@ -4,10 +4,10 @@ import PageContainer from "../../../../../components/page-container"
 import PageContent from "../../../../../components/page-content"
 import "./_romulus-facility.scss"
 
-export default function Page() {
+export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Romulus Facility"}>
+      <PageContainer title={"Romulus Facility"} activePath={location}>
         <PageContent>
           <h1>Hi from the Romulus Facility page</h1>
           <p>Welcome to foo page</p>

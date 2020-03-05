@@ -1,0 +1,16 @@
+
+
+.post-link-container{
+  a{
+    color: black;
+    &:hover{
+      text-decoration: none;
+      color: black;
+    }
+    .post-link{
+      .gatsby-image-wrapper{
+        height: 175px;
+      }
+    }
+  }
+}

@@ -4,10 +4,10 @@ import PageContainer from "../../../../../components/page-container"
 import PageContent from "../../../../../components/page-content"
 import "./_slp-facility.scss"
 
-function Page() {
+function Page({ location }) {
   return (
     <>
-      <PageContainer title={"SLP Facility"}>
+      <PageContainer title={"SLP Facility"} activePath={location}>
         <PageContent>
           <h1>Hi from the SLP Facility page</h1>
           <p>Welcome to foo page</p>

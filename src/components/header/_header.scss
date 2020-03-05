@@ -1,7 +1,18 @@
 @import '../variables';
 
+.header-top{
+  background-color:#2E2D2D;
+  color: white;
+  a{
+    color: white;
+    
+    &:hover{
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
 header{
-  
   background-color: white;
   height: 100px;
   box-shadow: $shadow-2;

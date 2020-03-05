@@ -8,24 +8,22 @@ import uniqid from "uniqid"
 function NavDropdown({ item }) {
   return (
     <>
-      <Dropdown>
-        <Dropdown as={NavItem}>
-          <Dropdown.Toggle as={NavLink}>{item.text}</Dropdown.Toggle>
-          <Dropdown.Menu className="p-3">
-            <ul>
-              {item.subMenu.map(subMenuItem => {
-                let key = uniqid();
-                return (
-                  <React.Fragment key={key}>
-                    <li className="pt-2">
-                      <Link to={subMenuItem.path}>{subMenuItem.text}</Link>
-                    </li>
-                  </React.Fragment>
-                )
-              })}
-            </ul>
-          </Dropdown.Menu>
-        </Dropdown>
+      <Dropdown as={NavItem} >
+        <Dropdown.Toggle as={NavLink}>{item.text}</Dropdown.Toggle>
+        <Dropdown.Menu className="p-3" >
+          <ul>
+            {item.subMenu.map(subMenuItem => {
+              let key = uniqid();
+              return (
+                <React.Fragment key={key}>
+                  <li className="pt-2">
+                    <Link to={subMenuItem.path}>{subMenuItem.text}</Link>
+                  </li>
+                </React.Fragment>
+              )
+            })}
+          </ul>
+        </Dropdown.Menu>
       </Dropdown>
     </>
   )

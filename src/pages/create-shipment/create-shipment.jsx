@@ -4,10 +4,10 @@ import PageContainer from "../../components/page-container"
 import PageContent from "../../components/page-content"
 import "./_create-shipment.scss"
 
-export default function Page() {
+export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Create Shipment"}>
+      <PageContainer title={"Create Shipment"} activePath={location}>
         <PageContent>
           <h1>Hi from the Create Shipment page</h1>
           <p>Welcome to page</p>

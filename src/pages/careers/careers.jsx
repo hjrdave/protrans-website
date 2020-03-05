@@ -4,10 +4,10 @@ import PageContainer from "../../components/page-container"
 import PageContent from "../../components/page-content"
 import "./_careers.scss"
 
-export default function CareersPage() {
+export default function CareersPage({ location }) {
   return (
     <>
-      <PageContainer title={"Careers"}>
+      <PageContainer title={"Careers"} activePath={location}>
         <PageContent>
           <h1>Hi from the Careers page</h1>
           <p>Welcome to page</p>

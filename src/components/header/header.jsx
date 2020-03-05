@@ -10,6 +10,16 @@ function Header({ siteTitle }) {
   }, []);
   return (
     <>
+      <div class='header-top d-flex justify-content-end p-1 pr-4'>
+        <p className='mb-0'>
+          <small>
+            <a href='/' target='_blank' className='px-1'>Apps</a>  |
+            <a href='/' target='_blank' className='px-1'>Business Intel</a>  |
+            <a href='/' target='_blank' className='px-1'>Optimiz</a> |
+            <a href='/' target='_blank' className='px-1'>Track Shipment</a>
+          </small>
+        </p>
+      </div>
       <header className="px-4 d-flex justify-content-between align-content-center">
         <div className="header-logo pl-4 pt-1">
           <Link to="/">

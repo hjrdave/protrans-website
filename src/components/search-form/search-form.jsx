@@ -1,16 +1,24 @@
-import React from "react"
-import { navigate } from "gatsby"
-import Form from "react-bootstrap/Form"
-import InputGroup from "react-bootstrap/InputGroup"
-import FormControl from "react-bootstrap/FormControl"
+import React from "react";
+import { navigate } from "gatsby";
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
+import FormControl from "react-bootstrap/FormControl";
+import './_search-form.scss';
 
 function SearchResults({ query }) {
+
+  const handleOnKeyPress = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+    }
+  }
+
   return (
     <>
-      <Form role="search" method="GET">
+      <Form role="search" className='search-form'>
         <InputGroup className="mb-3">
           <InputGroup.Prepend>
-            <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
+            <InputGroup.Text id="basic-addon1"><i className="fas fa-search"></i></InputGroup.Text>
           </InputGroup.Prepend>
           <FormControl
             id="search-input"
@@ -23,6 +31,7 @@ function SearchResults({ query }) {
             }
             value={query}
             autoFocus={true}
+            onKeyPress={(event) => { handleOnKeyPress(event) }}
           />
         </InputGroup>
       </Form>
