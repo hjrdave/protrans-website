@@ -6,6 +6,7 @@
   "author": "Protrans Marketing <sandersd@protrans.com>",
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "disqus-react": "^1.0.7",
     "gatsby": "^2.19.7",
     "gatsby-background-image": "^0.10.0",
     "gatsby-image": "^2.2.41",
