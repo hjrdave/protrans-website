@@ -1,21 +1,30 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import PageContainer from "../components/page-container"
-import PageContent from "../components/page-content"
+import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
+import PageContainer from "../components/page-container";
+import PageContent from "../components/page-content";
+import ShareButton from '../components/share-button';
 
 function PostTemplate({ data, location }) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
-  const { title, date, featuredImage } = frontmatter
+  const { markdownRemark, site } = data; // data.markdownRemark holds your post data
+  const { frontmatter, html } = markdownRemark;
+  const { siteMetadata } = site;
+  const { title, date, featuredImage, category, path } = frontmatter;
 
   return (
     <>
       <PageContainer title={title} location={location}>
         <PageContent>
           <Img fluid={featuredImage.childImageSharp.fluid} />
-          <h1 className="pt-4">{title}</h1>
+          <p className='pt-4'>Category: {category}</p>
           <p>{date}</p>
+          <h1 className="pt-4">{title}</h1>
+          <ShareButton
+            url={`${siteMetadata.domain}/${path}`}
+            title={title}
+            size={32}
+          />
+
           <div
             className="blog-post-content pt-4"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -29,12 +38,18 @@ function PostTemplate({ data, location }) {
 //graphQL query
 export const pageQuery = graphql`
   query($path: String!) {
+    site {
+      siteMetadata {
+        domain: siteUrl
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        category
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 600) {

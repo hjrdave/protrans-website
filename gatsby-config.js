@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Protrans Website`,
+    siteUrl: `https://hjrdave.github.io/protrans-website`,
     author: `@gatsbyjs`,
   },
   pathPrefix: `/protrans-website`,
