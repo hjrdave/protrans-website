@@ -1,26 +1,50 @@
 @import '../variables';
 
+
+
 .header-top{
   background-color:#2E2D2D;
   color: white;
   a{
     color: white;
+    opacity: .8;
     
     &:hover{
       color: white;
+      opacity: 1;
       text-decoration: none;
     }
   }
 }
+.sticky-outer-wrapper{
+  
+  .sticky-inner-wrapper{
+    height: 100px;
+    z-index: 1000;
+    box-shadow: $shadow-2;
+  }
+}
 header{
   background-color: white;
-  height: 100px;
-  box-shadow: $shadow-2;
+  height: 100%;
   .header-logo{
     width: 250px;
     height: auto;
     img{
       margin-top: 10px;
+    }
+  }
+}
+
+.header-sticky{
+  .sticky-inner-wrapper{
+    height: 65px;
+    .header-logo{
+      width: 200px;
+      img{
+        margin-top: 0px;
+        
+      }
     }
   }
 }
