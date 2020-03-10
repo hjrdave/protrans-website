@@ -4,7 +4,8 @@ import Img from "gatsby-image";
 import PageContainer from "../components/page-container";
 import PageContent from "../components/page-content";
 import ShareButton from '../components/share-button';
-import { DiscussionEmbed } from 'disqus-react'
+import { DiscussionEmbed } from 'disqus-react';
+import './_post-template.scss';
 
 function PostTemplate({ data, location }) {
   const { markdownRemark, site } = data; // data.markdownRemark holds your post data
@@ -17,8 +18,12 @@ function PostTemplate({ data, location }) {
   return (
     <>
       <PageContainer title={title} location={location}>
-        <PageContent type='post'>
+        <div className='featured-image'>
           <Img fluid={featuredImage.childImageSharp.fluid} />
+        </div>
+
+        <PageContent type='post'>
+
           <p className='pt-4'>Category: {category}</p>
           <p>{date}</p>
           <h1 className="pt-4">{title}</h1>
