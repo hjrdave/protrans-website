@@ -3,6 +3,7 @@
   background-color: black;
   .carousel-item{
     height: 100%;
+    z-index: 0!important;
     .carousel-caption{
       height: 100%;
       h1{

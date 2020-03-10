@@ -1,7 +1,9 @@
-import React from "react"
-import PageContainer from "../components/page-container"
-import PageContent from "../components/page-content"
-import HomeSlider from "../widgets/home-slider"
+import React from "react";
+import PageContainer from "../components/page-container";
+import PageContent from "../components/page-content";
+import HomeSlider from "../widgets/home-slider";
+import Card from 'react-bootstrap/Card';
+import './_index.scss';
 
 export default function Page() {
   return (
@@ -9,6 +11,26 @@ export default function Page() {
       <PageContainer title={"Home"}>
         <HomeSlider />
         <PageContent>
+          <div className='homepage-floating-card'>
+            <Card body>
+              <div className='row d-flex justify-content-center '>
+                <div className='col-10 p-4 d-flex justify-content-between'>
+                  <div className='text-center'>
+                    <i className="fas fa-truck-loading"></i>
+                    <p className='pt-2'>Foo Trucking</p>
+                  </div>
+                  <div className='text-center'>
+                    <i className="fas fa-box-check"></i>
+                    <p className='pt-2'>Foo Shipping</p>
+                  </div>
+                  <div className='text-center'>
+                    <i className="fas fa-phone-laptop"></i>
+                    <p className='pt-2'>Foo Technology</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
           <h1 className="pt-4">Home Page</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et

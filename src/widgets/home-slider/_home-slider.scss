@@ -1,28 +1,36 @@
 @import '../../components//variables';
 
 #home-slider{
-  .carousel-inner{
-    height: calc(100vh - 100px);
-    .carousel-item{
-      .carousel-caption{
-        div{
-          h1{
-            font-size: $font-size-base + 3rem;
-            text-align: left;
-          }
-          p{
-            max-width: 700px;
-            font-size: $font-size-base + .35rem;
-            text-align: left;
+  z-index: 0;
+  .carousel{
+    .carousel-indicators{
+      display: flex;
+      padding-bottom: 125px;
+    }
+    .carousel-inner{
+      height: calc(100vh - 100px);
+      .carousel-item{
+        .carousel-caption{
+          div{
+            h1{
+              font-size: $font-size-base + 3rem;
+              text-align: left;
+            }
+            p{
+              max-width: 700px;
+              font-size: $font-size-base + .35rem;
+              text-align: left;
+            }
           }
         }
       }
     }
+    .carousel-control-prev{
+      display:none;
+    }
+    .carousel-control-next{
+      display:none;
+    }
   }
-  .carousel-control-prev{
-    display:none;
-  }
-  .carousel-control-next{
-    display:none;
-  }
+
 }
