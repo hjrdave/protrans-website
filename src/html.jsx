@@ -14,6 +14,7 @@ export default function HTML(props) {
         <script
           src="https://kit.fontawesome.com/820d5bed2b.js"
           crossOrigin="anonymous"
+          SameSite="None"
         ></script>
         {props.headComponents}
       </head>

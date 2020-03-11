@@ -1,8 +1,9 @@
-import React, { useState } from "react"
-import Carousel from "react-bootstrap/Carousel"
-import Image from "../../images/register"
-import Button from "react-bootstrap/Button"
-import "./_slider.scss"
+import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import Image from "../../images/register";
+import Button from "react-bootstrap/Button";
+import "./_slider.scss";
+import uniqid from 'uniqid';
 
 function Slider({ slides }) {
   //state
@@ -27,7 +28,7 @@ function Slider({ slides }) {
       >
         {slides.map(item => {
           return (
-            <Carousel.Item>
+            <Carousel.Item key={uniqid()}>
               <Image name={item.image} />
               <Carousel.Caption className="d-flex align-items-center justify-content-start">
                 <div>

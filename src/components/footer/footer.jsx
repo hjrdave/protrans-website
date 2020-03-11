@@ -35,11 +35,11 @@ function Footer() {
               <div className='footer-social-media'>
                 <p className='text-uppercase font-weight-bold text-center'>Social Media</p>
                 <div className='footer-social-media-icons d-flex'>
-                  <a href='/' target='_blank'><i class="fab fa-facebook px-1"></i></a>
-                  <a href='/' target='_blank'><i class="fab fa-twitter px-1"></i></a>
-                  <a href='/' target='_blank'><i class="fab fa-linkedin px-1"></i></a>
-                  <a href='/' target='_blank'><i class="fab fa-youtube px-1"></i></a>
-                  <a href='/' target='_blank'><i class="fab fa-instagram px-1"></i></a>
+                  <a href='/' target='_blank'><i className="fab fa-facebook px-1"></i></a>
+                  <a href='/' target='_blank'><i className="fab fa-twitter px-1"></i></a>
+                  <a href='/' target='_blank'><i className="fab fa-linkedin px-1"></i></a>
+                  <a href='/' target='_blank'><i className="fab fa-youtube px-1"></i></a>
+                  <a href='/' target='_blank'><i className="fab fa-instagram px-1"></i></a>
                 </div>
               </div>
 

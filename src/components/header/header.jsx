@@ -11,7 +11,7 @@ function Header({ siteTitle }) {
   }, []);
   return (
     <>
-      <div class='header-top d-flex justify-content-end p-1 pr-4'>
+      <div className='header-top d-flex justify-content-end p-1 pr-4'>
         <p className='mb-0 py-1'>
           <small>
             <a href='/' target='_blank' className='px-1'>Apps</a>  |

@@ -25,9 +25,7 @@ function Navigation({ navItems }) {
             )
           })}
           <div className="pl-2">
-            {/* <Link to={"/search"} style={{ fontSize: "1.5rem", color: "black" }}> */}
             <SearchBox />
-            {/* </Link> */}
           </div>
         </Nav>
       </Navbar>
