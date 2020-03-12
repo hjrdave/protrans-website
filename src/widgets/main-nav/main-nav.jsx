@@ -24,7 +24,7 @@ function MainNav() {
             text: "Carriers",
           },
           {
-            path: "/blog",
+            path: "/logistics-news",
             text: "Logistics News",
           },
           {

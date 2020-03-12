@@ -50,16 +50,29 @@
     }
     .dropdown-menu{
       //left: -200px;
+      box-shadow: $shadow-4;
       min-width: 12rem;
       ul{
         list-style: none;
         padding: 0px;
-        li{
+        margin: 0px;
+        .dropdown-item{
+          padding: 0px;
           a{
-            font-size: $font-size-base - .05;
+            font-size: $font-size-base;
 
             text-decoration: none;
             color: inherit;
+            font-weight: 500;
+            &:hover{
+              opacity: .7;
+            }
+          }
+          &:hover{
+            background-color: white;
+          }
+          &:active{
+            color: black;
           }
         }
       }
