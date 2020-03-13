@@ -7,7 +7,7 @@ function PageContent({ children, type }) {
   const handlePageContentType = (type) => {
     let typeInput = {
       'post': 'col-6',
-      'full': 'col-9'
+      'full': 'col-10'
     }
     if (type) {
       return typeInput[type];

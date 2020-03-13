@@ -1,0 +1,23 @@
+@import '../variables';
+
+.post-card-container{
+  a{
+    color: black;
+    &:hover{
+      text-decoration: none;
+      color: black;
+    }
+    .post-card{
+      box-shadow: $shadow-2;
+      &:hover{
+        box-shadow: $shadow-3;
+      }
+      .gatsby-image-wrapper{
+        border-radius: inherit;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 175px;
+      }
+    }
+  }
+}

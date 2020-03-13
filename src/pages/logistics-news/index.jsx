@@ -1,10 +1,10 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { graphql, Link } from "gatsby";
 import ListGroup from 'react-bootstrap/ListGroup';
-import PostLink from "../../components/post-link";
 import PageContainer from "../../components/page-container";
 import uniqid from 'uniqid';
 import PageContent from "../../components/page-content";
+import PostCard from '../../components/post-card';
 import './_logistics-news.scss';
 
 export default function Page({
@@ -32,7 +32,7 @@ export default function Page({
                     if (catQuery === edge.node.frontmatter.category.toString()) {
                       return (
                         <Fragment key={uniqid()}>
-                          <PostLink key={edge.node.id} post={edge.node} />
+                          <PostCard key={edge.node.id} post={edge.node} />
                         </Fragment>
                       )
                     }
@@ -41,7 +41,7 @@ export default function Page({
                   else if (catQuery === true) {
                     return (
                       <Fragment key={uniqid()}>
-                        <PostLink key={edge.node.id} post={edge.node} />
+                        <PostCard key={edge.node.id} post={edge.node} />
                       </Fragment>
                     )
                   }
