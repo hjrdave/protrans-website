@@ -16,6 +16,7 @@ import Img from "gatsby-image"
 function Image({ name }) {
   const data = useStaticQuery(graphql`
     query {
+      
       logoProtrans: file(relativePath: { eq: "logo-protrans.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {

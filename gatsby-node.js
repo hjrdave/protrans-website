@@ -20,6 +20,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               path
+              title
+              category
             }
           }
         }
@@ -32,12 +34,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-
+  const posts = result.data.allMarkdownRemark.edges;
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
       component: path.resolve(`src/templates/post-template.jsx`),
-      context: {}, // additional data can be passed via context
+      context: {
+        posts: posts
+      }, // additional data can be passed via context
     })
   })
 }

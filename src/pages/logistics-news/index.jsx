@@ -51,9 +51,9 @@ export default function Page({
               <ListGroup as="ul" variant='flush'>
 
                 <ListGroup.Item as="li" className={`pt-1 ${(catQuery === true) ? 'logistics-news-menu-active' : ''}`}>
-                  <Link to={`/logistics-news`}>Recent</Link>
+                  <h5><Link to={`/logistics-news`}>Recent</Link></h5>
                 </ListGroup.Item>
-
+                <h4 className='pl-3'>Categories</h4>
                 <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Lean Management') ? 'logistics-news-menu-active' : ''}`}>
                   <Link to={`/logistics-news?category=Lean%20Management`}>Lean Management<br />&amp; Six Sigma</Link>
                 </ListGroup.Item>
