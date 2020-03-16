@@ -6,22 +6,25 @@ import './_post-card.scss';
 
 export default function PostCard({ post }) {
 
+  const postData = post.frontmatter;
+  const { path, date, title, featuredImage } = postData;
+  const excerpt = post.excerpt;
+
   return (
     <>
       <div className='col-4 post-card-container'>
-        <Link to={post.frontmatter.path}>
+        <Link to={path}>
           <Card className="mt-3 post-card">
-            <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+            <Img fluid={featuredImage.childImageSharp.fluid} />
             <Card.Body>
-              <Card.Title>
-                {post.frontmatter.title}
-              </Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
-                <small>{post.frontmatter.date}</small>
+                <small>{date}</small>
               </Card.Subtitle>
+              <Card.Title>
+                {title}
+              </Card.Title>
               <Card.Text>
-                With supporting text below as a natural lead-in to additional
-                content.
+                {excerpt}
               </Card.Text>
             </Card.Body>
           </Card>

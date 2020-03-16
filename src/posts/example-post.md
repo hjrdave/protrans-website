@@ -3,6 +3,7 @@ path: "/blog/test-post"
 date: "2019-05-04"
 title: "End of the WTO Blog Foo"
 category: "Global Trade"
+tags: ['Foo', 'FooBar']
 featuredImage: "slide-2.png"
 ---
 

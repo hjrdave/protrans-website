@@ -15,7 +15,7 @@ function PostTemplate({ data, location, pageContext }) {
   const { markdownRemark, site } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   const { siteMetadata } = site;
-  const { title, date, featuredImage, category, path } = frontmatter;
+  const { title, date, featuredImage, category, path, tags } = frontmatter;
   const disqusShortname = "protrans";
   const disqusConfig = { identifier: path, title: title }
   useEffect(() => {
@@ -34,6 +34,18 @@ function PostTemplate({ data, location, pageContext }) {
             <div className='col-8 featured-image-content'>
               <p>Category: {category}</p>
               <h1>{title}</h1>
+              <div className='d-flex'>
+                {
+                  tags.map((tag) => {
+                    return (
+                      <Fragment key={uniqid()}>
+                        <span class="badge badge-primary px-2 mx-1">{tag}</span>
+                      </Fragment>
+                    )
+                  })
+                }
+              </div>
+
               <div className='d-flex justify-content-start'>
                 <div>
                   <p><small>Published: {date}</small></p>
@@ -51,13 +63,16 @@ function PostTemplate({ data, location, pageContext }) {
 
         <PageContent type='post'>
           <div className='row d-flex'>
-            <div
-              className="blog-post-content pt-4 pr-4 col-9"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
-            <div className='col-3 post-menu'>
+            <div className='pt-4 pr-4 col-9'>
+              <div
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+              <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+            </div>
+            <div className='col-3 post-menu pl-4'>
 
-              <Sticky enabled={false} top={90}>
+              <Sticky enabled={true} top={90} >
                 <h4>Recent Posts</h4>
                 <ListGroup as="ul" variant='flush'>
                   {
@@ -104,7 +119,9 @@ function PostTemplate({ data, location, pageContext }) {
               </Sticky>
             </div>
           </div>
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+
+
+
         </PageContent>
       </PageContainer>
     </>
@@ -125,6 +142,7 @@ export const pageQuery = graphql`
               date(formatString: "MMMM DD, YYYY")
             path
             title
+            tags
             category
         featuredImage {
               childImageSharp {
