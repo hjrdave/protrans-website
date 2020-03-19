@@ -6,10 +6,11 @@
 import React from "react"
 import Navigation from "../../components/navigation"
 
-function MainNav() {
+function MainNav({ type }) {
   return (
     <>
       <Navigation
+        type={type}
         navItems={[
           {
             path: "/solutions",

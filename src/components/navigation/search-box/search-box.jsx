@@ -4,10 +4,10 @@ import FormControl from 'react-bootstrap/FormControl';
 import { Link, navigate } from 'gatsby';
 import { useTreble, updateStore } from 'treble-gsm';
 
-export default function SearchBox() {
+export default function SearchBox({ type }) {
 
   const [{ activeNavPath }] = useTreble();
-  const [openSearch, setOpenSearch] = useState(false);
+  const [openSearch, setOpenSearch] = useState(true);
 
   const handleOnKeyPress = (event) => {
     if (event.key === "Enter") {
@@ -21,8 +21,9 @@ export default function SearchBox() {
     setOpenSearch(searchState);
   }
 
+
   useEffect(() => {
-    setOpenSearch(false);
+    setOpenSearch((type === 'mobile') ? true : false);
   }, [activeNavPath])
 
   return (

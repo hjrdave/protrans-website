@@ -31,11 +31,12 @@ function Header({ siteTitle }) {
             </div>
             <div className='header-nav pr-4'>
               <MainNav />
+              <p className='mb-0 d-flex align-items-center d-lg-none '><i className="far fa-bars"></i></p>
             </div>
           </header>
         </Sticky>
       </div>
-
+      <MainNav type={'mobile'} />
     </>
   )
 }

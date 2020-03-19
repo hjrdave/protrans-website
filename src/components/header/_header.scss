@@ -1,5 +1,7 @@
 @import '../variables';
-
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/breakpoints';
 
 .mast-head{
   .header-top{
@@ -27,7 +29,24 @@
         margin-top: 10px;
       }
     }
-   
+    
+      .header-nav{
+        @include media-breakpoint-down(md) {
+          font-size: $font-size-base + 1.2rem;
+          p{
+            height: 100%;
+            //border: 1px solid red;
+            i{
+              &:hover{
+                opacity: .7;
+              }
+              cursor: pointer;
+            }
+          }
+        }
+      }
+  
+
     
   }
   .sticky-outer-wrapper{
