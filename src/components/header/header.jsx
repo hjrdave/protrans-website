@@ -4,11 +4,12 @@ import "./_header.scss";
 import Image from "../../images/register";
 import MainNav from "../../widgets/main-nav";
 import Sticky from 'react-stickynode';
+import { updateStore, useTreble } from "treble-gsm";
 
 function Header({ siteTitle }) {
-  useEffect(() => {
-    console.log('Render: header')
-  }, []);
+
+  const [{ }, dispatch] = useTreble();
+
   return (
     <>
       <div className='mast-head'>
@@ -31,7 +32,7 @@ function Header({ siteTitle }) {
             </div>
             <div className='header-nav pr-4'>
               <MainNav />
-              <p className='mb-0 d-flex align-items-center d-lg-none '><i className="far fa-bars"></i></p>
+              <p className='mb-0 d-flex align-items-center d-lg-none '><i onClick={() => updateStore('updateMobileNavState', true, dispatch)} className="far fa-bars"></i></p>
             </div>
           </header>
         </Sticky>

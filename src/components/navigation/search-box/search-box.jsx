@@ -6,13 +6,16 @@ import { useTreble, updateStore } from 'treble-gsm';
 
 export default function SearchBox({ type }) {
 
-  const [{ activeNavPath }] = useTreble();
+  const [{ activeNavPath }, dispatch] = useTreble();
   const [openSearch, setOpenSearch] = useState(true);
 
   const handleOnKeyPress = (event) => {
     if (event.key === "Enter") {
       let value = event.target.value;
       navigate(`/search?keywords=${value}`);
+
+      //closes mobile nav when enter on searchbox
+      updateStore('updateMobileNavState', false, dispatch)
     }
   }
 

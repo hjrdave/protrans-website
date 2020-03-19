@@ -125,13 +125,14 @@
 .navigation-mobile{
   position: fixed!important;
   z-index: 2000;
-  
-  left: 0;
+  transform: translateX(-100%);
   height: 100vh;
   width: 100%;
   background-color: #2E2D2D;
   height: 100vh;
   top: 0;
+  transition: transform .4s;
+  
   .navbar-nav{
     height: 100%;
     width: 100%;
@@ -141,6 +142,7 @@
         opacity: .7;
       }
       i{
+        cursor: pointer;
         font-size: $font-size-base + 2rem;
         color: white;
         opacity: .7;
@@ -236,4 +238,7 @@
       }
     }
   }
+}
+.navigation-mobile-open{
+  transform: translateX(0%);
 }
