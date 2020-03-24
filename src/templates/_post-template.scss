@@ -1,4 +1,7 @@
 @import '../components/variables';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/breakpoints';
 
 .featured-image{
   height: 500px;
@@ -46,6 +49,24 @@ $menu-width: 225px;
       color:inherit;
       &:hover{
         opacity: .7;
+      }
+    }
+  }
+}
+.post-menu-mobile{
+  width: 100%;
+  border-left: none;
+  .card{
+    background-color: #2E2D2D;
+    box-shadow: $shadow-2;
+    color: white;
+    .card-body{
+      
+      .list-group{
+        
+        .list-group-item{
+          background-color: inherit;
+        }
       }
     }
   }
