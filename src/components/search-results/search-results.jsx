@@ -1,7 +1,8 @@
-import React from "react"
-import Card from "react-bootstrap/Card"
-import { Link } from "gatsby"
-import uniqid from "uniqid"
+import React from "react";
+import Card from "react-bootstrap/Card";
+import { Link } from "gatsby";
+import uniqid from "uniqid";
+import './_search-results.scss';
 
 function SearchResults({ results, query }) {
   //handlers
@@ -21,16 +22,19 @@ function SearchResults({ results, query }) {
           <>
             {results.map(({ title, content, date, path }) => (
               <React.Fragment key={uniqid()}>
-                <Card className="mt-3">
-                  <Card.Body>
-                    <Card.Subtitle className="mb-2 text-muted">
-                      {date}
-                    </Card.Subtitle>
-                    <Card.Title>
-                      <Link to={path}>{title}</Link>
-                    </Card.Title>
-                    <Card.Text>{content && truncate(content)}</Card.Text>
-                  </Card.Body>
+
+                <Card className="mt-3 search-results-card">
+                  <Link to={path}>
+                    <Card.Body>
+                      <Card.Subtitle className="mb-2 text-muted">
+                        {date}
+                      </Card.Subtitle>
+                      <Card.Title>
+                        {title}
+                      </Card.Title>
+                      <Card.Text>{content && truncate(content)}</Card.Text>
+                    </Card.Body>
+                  </Link>
                 </Card>
               </React.Fragment>
             ))}
