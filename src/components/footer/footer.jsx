@@ -7,7 +7,7 @@ function Footer() {
     <>
       <footer className="mt-4">
         <div className='d-flex justify-content-center'>
-          <div className='col-8'>
+          <div className='col-12 col-lg-8'>
             <div className='p-4 d-flex justify-content-between footer-content'>
               <div className='d-flex'>
                 <div className='footer-apps-logins mr-4'>
@@ -46,12 +46,12 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className='footer-copyright p-2 px-3 d-flex justify-content-between'>
-          <p className='mb-0 text-uppercase' >
+        <div className='footer-copyright p-2 px-3 d-lg-flex justify-content-lg-between'>
+          <p className='mb-0 text-uppercase text-center' >
             <small>Site Map | Privicy Policy | Terms of Use | Careers</small>
           </p>
-          <p className='mb-0'><small>&copy; 1993 - {new Date().getFullYear()}, ProTrans International Inc. All Rights Reserved.</small></p>
-          <p className='mb-0 text-uppercase' style={{ opacity: '0' }}>
+          <p className='mb-0 text-center'><small>&copy; 1993 - {new Date().getFullYear()}, ProTrans International Inc. All Rights Reserved.</small></p>
+          <p className='mb-0 text-uppercase text-center d-none d-lg-flex' style={{ opacity: '0' }}>
             <small><Link to='/'>Site Map</Link> | <Link to='/'>Privicy Policy</Link> | <Link to='/'>Terms of Use</Link> | <Link to='/'>Careers</Link></small>
           </p>
 

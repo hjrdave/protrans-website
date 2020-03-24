@@ -14,16 +14,16 @@ export default function Page() {
           <div className='homepage-floating-card'>
             <Card body>
               <div className='row d-flex justify-content-center '>
-                <div className='col-10 p-4 d-flex justify-content-between'>
-                  <div className='text-center'>
+                <div className='col-10 p-4 d-md-flex justify-content-md-between'>
+                  <div className='text-center p-4 p-md-0'>
                     <i className="fas fa-truck-loading"></i>
                     <p className='pt-2'>Foo Trucking</p>
                   </div>
-                  <div className='text-center'>
+                  <div className='text-center p-4 p-md-0'>
                     <i className="fas fa-box-check"></i>
                     <p className='pt-2'>Foo Shipping</p>
                   </div>
-                  <div className='text-center'>
+                  <div className='text-center p-4 p-md-0'>
                     <i className="fas fa-phone-laptop"></i>
                     <p className='pt-2'>Foo Technology</p>
                   </div>

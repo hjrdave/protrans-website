@@ -1,10 +1,12 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { graphql, Link } from "gatsby";
-import ListGroup from 'react-bootstrap/ListGroup';
 import PageContainer from "../../components/page-container";
 import uniqid from 'uniqid';
 import PageContent from "../../components/page-content";
 import PostCard from '../../components/post-card';
+import CatNavigation from '../../components/cat-navigation';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Modal from '../../components/modal';
 import './_logistics-news.scss';
 
 export default function Page({
@@ -14,17 +16,59 @@ export default function Page({
   location
 }) {
 
+  const [catMobileMenuState, setCatMobileMenuState] = useState(false);
   const catQuery = new URLSearchParams(location.search).get("category") || true;
 
   return (
     <>
+      {/**Mobile Menu */}
+      <div className='category-menu-mobile-button p-3 d-lg-none' onClick={() => setCatMobileMenuState(true)}>
+        <i className="fas fa-ellipsis-v"></i>
+      </div>
+      <Modal
+        className={'category-menu-mobile'}
+        show={catMobileMenuState}
+        onHide={() => setCatMobileMenuState(false)}
+        title={'Categories'}
+      >
+        <ListGroup as="ul" variant='flush'>
+
+          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === true) ? 'logistics-news-menu-active' : ''}`}>
+            <Link to={`/logistics-news`} onClick={() => setCatMobileMenuState(false)}>Recent</Link>
+          </ListGroup.Item>
+
+          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Lean Management') ? 'logistics-news-menu-active' : ''}`}>
+            <Link to={`/logistics-news?category=Lean%20Management`} onClick={() => setCatMobileMenuState(false)}>Lean Management<br />&amp; Six Sigma</Link>
+          </ListGroup.Item>
+
+          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Trucking') ? 'logistics-news-menu-active' : ''}`}>
+            <Link to={`/logistics-news?category=Trucking`} onClick={() => setCatMobileMenuState(false)}>Trucking</Link>
+          </ListGroup.Item>
+
+          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Logistics Technology') ? 'logistics-news-menu-active' : ''}`}>
+            <Link to={`/logistics-news?category=Logistics%20Technology`} onClick={() => setCatMobileMenuState(false)}>Logistics Technology</Link>
+          </ListGroup.Item>
+
+          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Regulation') ? 'logistics-news-menu-active' : ''}`}>
+            <Link to={`/logistics-news?category=Regulation`} onClick={() => setCatMobileMenuState(false)}>Regulation</Link>
+          </ListGroup.Item>
+
+          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Sustainability') ? 'logistics-news-menu-active' : ''}`}>
+            <Link to={`/logistics-news?category=Sustainability`} onClick={() => setCatMobileMenuState(false)}>Sustainability</Link>
+          </ListGroup.Item>
+
+        </ListGroup>
+      </Modal>
+
       <PageContainer title={"Logistics News"} activePath={location} className={'logistics-news'}>
         <PageContent type={'full'}>
           <h1>Logistic News and Trends</h1>
           <h3 className="pt-4">{(catQuery === true) ? 'Recent Posts' : `Category: ${catQuery}`}</h3>
-          <div className='d-flex justify-content-between'>
 
-            <div className='row pr-4'>
+
+          <div className='d-lg-flex justify-content-lg-between'>
+
+            <div className='row pr-0 pr-lg-4'>
               {edges
                 .filter(edge => !!edge.node.frontmatter.date)
                 .map(edge => {
@@ -47,13 +91,9 @@ export default function Page({
                   }
                 })}
             </div>
-            <div className='logistics-news-menu'>
+            <div className='logistics-news-menu d-none d-lg-flex'>
               <ListGroup as="ul" variant='flush'>
-
-
                 <h4 className='pl-3'>Categories</h4>
-
-
                 <ListGroup.Item as="li" className={`pt-1 ${(catQuery === true) ? 'logistics-news-menu-active' : ''}`}>
                   <Link to={`/logistics-news`}>Recent</Link>
                 </ListGroup.Item>
@@ -80,6 +120,7 @@ export default function Page({
 
               </ListGroup>
             </div>
+
           </div>
         </PageContent>
       </PageContainer>

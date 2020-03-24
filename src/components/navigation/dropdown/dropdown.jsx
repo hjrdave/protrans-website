@@ -53,7 +53,7 @@ function NavDropdown({ item, type }) {
       {
         (type === 'mobile') ?
           <div className='dropdown-mobile'>
-            <Accordion defaultActiveKey="0" as={NavItem}>
+            <Accordion defaultActiveKey="1" as={NavItem}>
               <Accordion.Toggle as={NavLink} eventKey="0">
                 <i className="fas fa-caret-down pr-3"></i> {item.text}
               </Accordion.Toggle>

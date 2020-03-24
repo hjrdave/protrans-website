@@ -1,16 +1,25 @@
 @import '../components/variables';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/breakpoints';
 
 .homepage-floating-card{
   margin-top: -150px;
   .card{
     box-shadow: $shadow-3;
     height: 200px;
+    @include media-breakpoint-down(md) {
+      height: auto;
+    }
     div{
       div{
         div{
           i{
             font-size: 5rem;
             color: #A80633;
+            @include media-breakpoint-down(md) {
+              font-size: 7rem;
+            }
           }
           p{
             font-size: $font-size-base + .3rem;

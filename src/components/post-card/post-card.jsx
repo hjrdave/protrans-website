@@ -12,7 +12,7 @@ export default function PostCard({ post }) {
 
   return (
     <>
-      <div className='col-4 post-card-container'>
+      <div className='col-12 col-lg-4 post-card-container'>
         <Link to={path}>
           <Card className="mt-3 post-card">
             <Img fluid={featuredImage.childImageSharp.fluid} />

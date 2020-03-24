@@ -30,12 +30,12 @@ function Slider({ slides }) {
           return (
             <Carousel.Item key={uniqid()}>
               <Image name={item.image} />
-              <Carousel.Caption className="d-flex align-items-center justify-content-start">
+              <Carousel.Caption className="d-flex align-items-center justify-content-center justify-content-lg-start">
                 <div>
                   <h1>{item.headline}</h1>
                   <p>{item.lede}</p>
                   {item.button ? (
-                    <div className="text-left pt-4">
+                    <div className="text-center text-lg-left pt-4">
                       <Button variant="primary" className={"py-2 px-4"}>
                         {item.button}
                       </Button>

@@ -30,21 +30,21 @@ function HomeSlider() {
               button: "Get Started",
             },
 
-            //slide 2
-            {
-              image: "slideShipment",
-              headline: "Track Shipments",
-              button: "Track Shipment",
-            },
+            // //slide 2
+            // {
+            //   image: "slideShipment",
+            //   headline: "Track Shipments",
+            //   button: "Track Shipment",
+            // },
 
-            //slide 3
-            {
-              image: "slide3",
-              headline: "Life of Poor Paul",
-              lede:
-                "Poor Paul Didn't do His Research on Logistics Planning for His Company...",
-              button: "Read More",
-            },
+            // //slide 3
+            // {
+            //   image: "slide3",
+            //   headline: "Life of Poor Paul",
+            //   lede:
+            //     "Poor Paul Didn't do His Research on Logistics Planning for His Company...",
+            //   button: "Read More",
+            // },
           ]}
         />
       </div>

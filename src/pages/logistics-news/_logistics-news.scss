@@ -19,6 +19,21 @@
       }
     }
   }
+ .category-menu-mobile-button{
+   position: fixed;
+   background-color: #2E2D2D;
+   opacity: .7;
+   color: white;
+   font-size: 2rem;
+   border-radius: .5rem 0rem 0rem .5rem ;
+   right: 0;
+   top: 30vh;
+   z-index: 100;
+ }
   .logistics-news-menu-active{
+    
     color: $protrans-red;
   }
+
+  
+ 
