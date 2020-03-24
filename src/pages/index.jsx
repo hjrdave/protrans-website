@@ -8,7 +8,7 @@ import './_index.scss';
 export default function Page() {
   return (
     <>
-      <PageContainer title={"Home"}>
+      <PageContainer title={"Home"} description={'This is the home page.'}>
         <HomeSlider />
         <PageContent>
           <div className='homepage-floating-card'>

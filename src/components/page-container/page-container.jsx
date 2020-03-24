@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import SEO from "../seo";
 import { useTreble, updateStore } from 'treble-gsm';
 
-function PageContainer({ children, title, id, activePath }) {
+function PageContainer({ children, title, id, activePath, description }) {
 
   const [{ }, dispatch] = useTreble();
 
@@ -13,7 +13,7 @@ function PageContainer({ children, title, id, activePath }) {
 
   return (
     <>
-      <SEO title={title} />
+      <SEO title={title} description={description} />
       <div id={id}>
         {children}
       </div>
