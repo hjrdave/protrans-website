@@ -7,7 +7,7 @@ import "./_locations.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Customer Support"} activePath={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Customer Support page</h1>
           <p>Welcome to page</p>

@@ -4,10 +4,10 @@ import PageContainer from "../../components/page-container"
 import PageContent from "../../components/page-content"
 import "./_contact.scss"
 
-export default function Page() {
+export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Contact"}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Contact page</h1>
           <p>Welcome to page</p>

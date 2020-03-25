@@ -9,6 +9,6 @@ const Store = createStore([
     action: 'updateMobileNavState',
     state: { mobileNavState: false }
   }
-], {});
+]);
 
 export default Store;

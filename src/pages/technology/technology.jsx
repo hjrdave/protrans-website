@@ -7,7 +7,7 @@ import "./_technology.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Technology"} activePath={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Technology page</h1>
           <p>Welcome to Foo Lorum Page</p>

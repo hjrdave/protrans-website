@@ -7,7 +7,7 @@ import "./_consolidation.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Consolidation"} location={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Consolidation page</h1>
           <p>Welcome to foo page</p>

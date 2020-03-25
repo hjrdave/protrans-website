@@ -7,7 +7,7 @@ import "./_third-party-logistics-management.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Third Party Logistics Management"} activePath={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the 3PL page</h1>
           <p>Welcome to foo page</p>

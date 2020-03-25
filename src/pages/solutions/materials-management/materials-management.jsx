@@ -7,7 +7,7 @@ import "./_materials-management.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Materials Management"} activePath={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Materials Management page</h1>
           <p>Welcome to foo page</p>

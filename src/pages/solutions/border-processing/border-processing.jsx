@@ -7,7 +7,7 @@ import "./_border-processing.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Border Processing Page"} location={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Border Processing Page page</h1>
           <p>Welcome to foo page</p>

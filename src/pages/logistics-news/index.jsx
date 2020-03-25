@@ -60,7 +60,7 @@ export default function Page({
         </ListGroup>
       </Modal>
 
-      <PageContainer title={"Logistics News"} activePath={location} className={'logistics-news'}>
+      <PageContainer activePath={location} className={'logistics-news'}>
         <PageContent type={'full'}>
           <h1>Logistic News and Trends</h1>
           <h3 className="pt-4">{(catQuery === true) ? 'Recent Posts' : `Category: ${catQuery}`}</h3>

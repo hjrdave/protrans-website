@@ -7,7 +7,7 @@ import "./_greer-facility.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Greer Facility"} activePath={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Greer Facility page</h1>
           <p>Welcome to foo page</p>

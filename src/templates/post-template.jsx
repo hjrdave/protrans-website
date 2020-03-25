@@ -1,12 +1,12 @@
 import React, { useEffect, Fragment } from "react";
 import { graphql, Link } from "gatsby";
 import Sticky from 'react-stickynode';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Card from 'react-bootstrap/Card';
+import { ListGroup, Card } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-background-image';
 import PageContainer from "../components/page-container";
 import PageContent from "../components/page-content";
 import ShareButton from '../components/share-button';
+import SEO from '../components/seo';
 import { DiscussionEmbed } from 'disqus-react';
 import uniqid from 'uniqid';
 import './_post-template.scss';
@@ -14,17 +14,23 @@ import './_post-template.scss';
 function PostTemplate({ data, location, pageContext }) {
   const { posts } = pageContext;
   const { markdownRemark, site } = data; // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark;
+  const { frontmatter, html, excerpt } = markdownRemark;
   const { siteMetadata } = site;
   const { title, date, featuredImage, category, path, tags } = frontmatter;
   const disqusShortname = "protrans";
   const disqusConfig = { identifier: path, title: title }
-  useEffect(() => {
-    console.log(pageContext)
-  }, [pageContext])
+  // useEffect(() => {
+  //   console.log(featuredImage.childImageSharp.fluid.src)
+  // }, [featuredImage])
   return (
     <>
-      <PageContainer title={title} location={location}>
+      <SEO
+        title={title}
+        description={excerpt}
+        path={path}
+        thumbnail={featuredImage.childImageSharp.fluid.src}
+      />
+      <PageContainer activePath={location}>
         <BackgroundImage
           Tag="section"
           fluid={featuredImage.childImageSharp.fluid}
@@ -189,6 +195,7 @@ export const pageQuery = graphql`
         }
     markdownRemark(frontmatter: {path: {eq: $path } }) {
               html
+              excerpt
       frontmatter {
               date(formatString: "MMMM DD, YYYY")
             path

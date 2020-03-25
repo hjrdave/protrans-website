@@ -7,7 +7,7 @@ import "./_solutions.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Solutions"} activePath={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Solutions page</h1>
           <p>Welcome to foo page</p>

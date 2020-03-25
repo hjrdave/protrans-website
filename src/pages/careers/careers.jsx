@@ -7,7 +7,7 @@ import "./_careers.scss"
 export default function CareersPage({ location }) {
   return (
     <>
-      <PageContainer title={"Careers"} activePath={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Careers page</h1>
           <p>Welcome to page</p>

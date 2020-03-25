@@ -7,7 +7,7 @@ import "./_romulus-facility.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Romulus Facility"} activePath={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Romulus Facility page</h1>
           <p>Welcome to foo page</p>

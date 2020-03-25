@@ -7,7 +7,7 @@ import "./_slp-facility.scss"
 function Page({ location }) {
   return (
     <>
-      <PageContainer title={"SLP Facility"} activePath={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the SLP Facility page</h1>
           <p>Welcome to foo page</p>

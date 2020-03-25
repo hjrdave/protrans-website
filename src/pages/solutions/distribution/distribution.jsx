@@ -7,7 +7,7 @@ import "./_distribution.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Distribution"} location={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Distribution page</h1>
           <p>Welcome to foo page</p>

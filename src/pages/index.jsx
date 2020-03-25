@@ -3,12 +3,16 @@ import PageContainer from "../components/page-container";
 import PageContent from "../components/page-content";
 import HomeSlider from "../widgets/home-slider";
 import Card from 'react-bootstrap/Card';
+import SEO from '../components/seo';
 import './_index.scss';
 
-export default function Page() {
+export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Home"} description={'This is the home page.'}>
+      <SEO
+        title={'Home'}
+      />
+      <PageContainer activePath={location}>
         <HomeSlider />
         <PageContent>
           <div className='homepage-floating-card'>

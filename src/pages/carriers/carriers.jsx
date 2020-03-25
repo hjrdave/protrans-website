@@ -7,7 +7,7 @@ import "./_carriers.scss"
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer title={"Carriers"} activePath={location}>
+      <PageContainer activePath={location}>
         <PageContent>
           <h1>Hi from the Carriers page</h1>
           <p>Welcome to page</p>

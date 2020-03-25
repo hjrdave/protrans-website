@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Protrans 3PL`,
-    description: `Protrans Website`,
+    description: `With over 25 years of expertise, ProTrans 3PL is a full-spectrum logistics management enterprise...`,
     siteUrl: `https://hjrdave.github.io/protrans-website`,
-    author: `@gatsbyjs`,
+    author: `@ProTrans3PL`,
+    twitterHandle: `@ProTrans3PL`
   },
-  pathPrefix: `/protrans-website`,
-  assetPrefix: `https://hjrdave.github.io`,
+  pathPrefix: `protrans-website`,
+  assetPrefix: `https://hjrdave.github.io/`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
@@ -20,10 +21,18 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

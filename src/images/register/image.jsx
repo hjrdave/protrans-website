@@ -56,6 +56,15 @@ function Image({ name }) {
           }
         }
       }
+
+      metaImageProtransA: file(relativePath: { eq: "meta-image-protrans-A.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      
     }
   `)
 

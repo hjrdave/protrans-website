@@ -13,7 +13,6 @@ function PageContainer({ children, title, id, activePath, description }) {
 
   return (
     <>
-      <SEO title={title} description={description} />
       <div id={id}>
         {children}
       </div>
