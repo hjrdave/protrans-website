@@ -8,12 +8,15 @@
 import React from "react";
 import Header from "../header";
 import Footer from "../footer";
+import CategoryManager from '../../widgets/category-manager';
 import "./_layout.scss";
 
 function Layout({ children }) {
 
   return (
     <>
+      {/* Add categories to global state on load */}
+      <CategoryManager />
       <Header siteTitle={"Protrans"} />
       <main>{children}</main>
       <Footer />

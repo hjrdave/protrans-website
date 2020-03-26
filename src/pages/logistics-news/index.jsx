@@ -7,6 +7,7 @@ import PostCard from '../../components/post-card';
 import CatNavigation from '../../components/cat-navigation';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Modal from '../../components/modal';
+import { useTreble } from 'treble-gsm';
 import './_logistics-news.scss';
 
 export default function Page({
@@ -18,6 +19,7 @@ export default function Page({
 
   const [catMobileMenuState, setCatMobileMenuState] = useState(false);
   const catQuery = new URLSearchParams(location.search).get("category") || true;
+  const [{ categories }] = useTreble();
 
   return (
     <>
@@ -36,8 +38,18 @@ export default function Page({
           <ListGroup.Item as="li" className={`pt-1 ${(catQuery === true) ? 'logistics-news-menu-active' : ''}`}>
             <Link to={`/logistics-news`} onClick={() => setCatMobileMenuState(false)}>Recent</Link>
           </ListGroup.Item>
-
-          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Lean Management') ? 'logistics-news-menu-active' : ''}`}>
+          {
+            categories.map((item) => {
+              return (
+                <Fragment key={uniqid()}>
+                  <ListGroup.Item as="li" className={`pt-1`}>
+                    <Link to={`/logistics-news?category=${item.slug}`} onClick={() => setCatMobileMenuState(false)}>{item.name}</Link>
+                  </ListGroup.Item>
+                </Fragment>
+              )
+            })
+          }
+          {/* <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Lean Management') ? 'logistics-news-menu-active' : ''}`}>
             <Link to={`/logistics-news?category=Lean%20Management`} onClick={() => setCatMobileMenuState(false)}>Lean Management<br />&amp; Six Sigma</Link>
           </ListGroup.Item>
 
@@ -55,7 +67,7 @@ export default function Page({
 
           <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Sustainability') ? 'logistics-news-menu-active' : ''}`}>
             <Link to={`/logistics-news?category=Sustainability`} onClick={() => setCatMobileMenuState(false)}>Sustainability</Link>
-          </ListGroup.Item>
+          </ListGroup.Item> */}
 
         </ListGroup>
       </Modal>

@@ -6,6 +6,7 @@ import BackgroundImage from 'gatsby-background-image';
 import PageContainer from "../components/page-container";
 import PageContent from "../components/page-content";
 import ShareButton from '../components/share-button';
+import { useTreble } from 'treble-gsm';
 import SEO from '../components/seo';
 import { DiscussionEmbed } from 'disqus-react';
 import uniqid from 'uniqid';
@@ -18,10 +19,9 @@ function PostTemplate({ data, location, pageContext }) {
   const { siteMetadata } = site;
   const { title, date, featuredImage, category, path, tags } = frontmatter;
   const disqusShortname = "protrans";
-  const disqusConfig = { identifier: path, title: title }
-  // useEffect(() => {
-  //   console.log(featuredImage.childImageSharp.fluid.src)
-  // }, [featuredImage])
+  const disqusConfig = { identifier: path, title: title };
+  const [{ categories }] = useTreble();
+
   return (
     <>
       <SEO
@@ -99,27 +99,17 @@ function PostTemplate({ data, location, pageContext }) {
                   </ListGroup>
                   <h4 className='pt-4'>Categories</h4>
                   <ListGroup as="ul" variant='flush'>
-
-                    <ListGroup.Item as="li" className={`pt-1`}>
-                      <Link to={`/logistics-news?category=Lean%20Management`}>Lean Management<br />&amp; Six Sigma</Link>
-                    </ListGroup.Item>
-
-                    <ListGroup.Item as="li" className={`pt-1`}>
-                      <Link to={`/logistics-news?category=Trucking`}>Trucking</Link>
-                    </ListGroup.Item>
-
-                    <ListGroup.Item as="li" className={`pt-1`}>
-                      <Link to={`/logistics-news?category=Logistics%20Technology`}>Logistics Technology</Link>
-                    </ListGroup.Item>
-
-                    <ListGroup.Item as="li" className={`pt-1`}>
-                      <Link to={`/logistics-news?category=Regulation`}>Regulation</Link>
-                    </ListGroup.Item>
-
-                    <ListGroup.Item as="li" className={`pt-1`}>
-                      <Link to={`/logistics-news?category=Sustainability`}>Sustainability</Link>
-                    </ListGroup.Item>
-
+                    {
+                      categories.map((item) => {
+                        return (
+                          <Fragment key={uniqid()}>
+                            <ListGroup.Item as="li" className={`pt-1`}>
+                              <Link to={`/logistics-news?category=${item.slug}`}>{item.name}</Link>
+                            </ListGroup.Item>
+                          </Fragment>
+                        )
+                      })
+                    }
                   </ListGroup>
                 </Card>
               </div>
@@ -151,27 +141,17 @@ function PostTemplate({ data, location, pageContext }) {
                 </ListGroup>
                 <h4 className='pt-4'>Categories</h4>
                 <ListGroup as="ul" variant='flush'>
-
-                  <ListGroup.Item as="li" className={`pt-1`}>
-                    <Link to={`/logistics-news?category=Lean%20Management`}>Lean Management<br />&amp; Six Sigma</Link>
-                  </ListGroup.Item>
-
-                  <ListGroup.Item as="li" className={`pt-1`}>
-                    <Link to={`/logistics-news?category=Trucking`}>Trucking</Link>
-                  </ListGroup.Item>
-
-                  <ListGroup.Item as="li" className={`pt-1`}>
-                    <Link to={`/logistics-news?category=Logistics%20Technology`}>Logistics Technology</Link>
-                  </ListGroup.Item>
-
-                  <ListGroup.Item as="li" className={`pt-1`}>
-                    <Link to={`/logistics-news?category=Regulation`}>Regulation</Link>
-                  </ListGroup.Item>
-
-                  <ListGroup.Item as="li" className={`pt-1`}>
-                    <Link to={`/logistics-news?category=Sustainability`}>Sustainability</Link>
-                  </ListGroup.Item>
-
+                  {
+                    categories.map((item) => {
+                      return (
+                        <Fragment key={uniqid()}>
+                          <ListGroup.Item as="li" className={`pt-1`}>
+                            <Link to={`/logistics-news?category=${item.slug}`}>{item.name}</Link>
+                          </ListGroup.Item>
+                        </Fragment>
+                      )
+                    })
+                  }
                 </ListGroup>
               </Sticky>
             </div>

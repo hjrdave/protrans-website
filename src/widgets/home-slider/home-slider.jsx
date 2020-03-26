@@ -1,9 +1,18 @@
 /*
   Home Slider
   
-  Notes: Each object is a slide.  The first object is the default slide.
+  Each object is a slide.  The first object is the default slide.
   Must register image before use.  The image property takes the name of the 
   registred image.
+
+  API Example:
+  {
+    image: string, //name of registred image
+    headline: string or JSX,
+    lede: string,
+    button: string //button text
+  }
+
 */
 
 import React from "react"
@@ -30,21 +39,22 @@ function HomeSlider() {
               button: "Get Started",
             },
 
-            // //slide 2
-            // {
-            //   image: "slideShipment",
-            //   headline: "Track Shipments",
-            //   button: "Track Shipment",
-            // },
+            //slide 2
+            {
+              image: "slideShipment",
+              headline: "Track Shipments",
+              button: "Track Shipment",
+            },
 
-            // //slide 3
-            // {
-            //   image: "slide3",
-            //   headline: "Life of Poor Paul",
-            //   lede:
-            //     "Poor Paul Didn't do His Research on Logistics Planning for His Company...",
-            //   button: "Read More",
-            // },
+            //slide 3
+            {
+              image: "slide3",
+              headline: "Life of Poor Paul",
+              lede:
+                "Poor Paul Didn't do His Research on Logistics Planning for His Company...",
+              button: "Read More",
+            }
+
           ]}
         />
       </div>

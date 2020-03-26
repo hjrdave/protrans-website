@@ -1,6 +1,19 @@
 /*
   Main Navigation
-  Notes: Each object is a navigation item.  Path is the link and text is the menu item name.
+  Each object is a navigation item.
+
+  API Example:
+  {
+    path: string
+    text: string
+    subMenu: [
+      {
+        path: string,
+        text: string
+      }
+    ]
+  }
+
 */
 
 import React from "react"

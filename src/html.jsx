@@ -1,3 +1,8 @@
+/*
+  html.jsx
+  Provides access to bypass gatsby pipeline and manually set meta and link tags in head.
+*/
+
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -11,11 +16,14 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+
+        {/* Font Awesome kit */}
         <script
           src="https://kit.fontawesome.com/820d5bed2b.js"
           crossOrigin="anonymous"
           SameSite="None"
         ></script>
+
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

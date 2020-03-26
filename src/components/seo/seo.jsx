@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, title, thumbnail, path }) {
   )
 
   const metaDescription = description || site.siteMetadata.description;
-  const metaThumbnail = `${(thumbnail) ? `${site.siteMetadata.siteUrl}${thumbnail}` : `${site.siteMetadata.siteUrl}${thumbnailFallback}`}`;
+  const metaThumbnail = `${(thumbnail) ? thumbnail : thumbnailFallback}`;
   const siteUrl = `${(path) ? `${site.siteMetadata.siteUrl}${path}` : site.siteMetadata.siteUrl}`;
 
   return (
