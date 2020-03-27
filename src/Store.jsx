@@ -24,6 +24,15 @@ const Store = createStore([
   {
     action: 'updateCategories',
     state: { categories: [] }
+  },
+
+  //dark mode
+  {
+    action: 'darkMode',
+    state: { darkMode: true },
+    features: {
+      persist: false
+    }
   }
 ]);
 

@@ -1,16 +1,19 @@
-import React from "react"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import "./_404.scss"
+import React from "react";
+import PageContainer from '../../components/page-container';
+import PageContent from '../../components/page-content';
+import SEO from "../../components/seo";
+import "./_404.scss";
 
-export default function NotFoundPage() {
+export default function Page({ location }) {
   return (
     <>
-      <Layout>
-        <SEO title="404: Not found" />
-        <h1>NOT FOUND</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      </Layout>
+      <SEO title="404: Not found" />
+      <PageContainer activePath={location}>
+        <PageContent>
+          <h1>NOT FOUND</h1>
+          <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        </PageContent>
+      </PageContainer>
     </>
   )
 }

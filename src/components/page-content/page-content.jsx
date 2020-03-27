@@ -1,7 +1,10 @@
+/*
+  page-content.jsx
+  Content container that controls how the content is rendered on mobile, desktop, posts, and fulllpages.
+*/
 import React from "react";
-import './_page-content.scss';
 
-function PageContent({ children, type }) {
+export default function PageContent({ children, type }) {
 
   //handlers
   const handlePageContentType = (type) => {
@@ -27,5 +30,3 @@ function PageContent({ children, type }) {
     </>
   )
 }
-
-export default PageContent

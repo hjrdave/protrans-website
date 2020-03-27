@@ -1,3 +1,8 @@
+/*
+  search-box.jsx
+  Search Input for Navigation comp.
+*/
+
 import React, { useState, useEffect } from 'react';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';

@@ -1,9 +1,8 @@
-@import '../variables';
+@import '../../styles/variables';
 
-$font-opacity: .7;
 
 footer{
-  background-color: #2E2D2D;
+  background-color: $dark-1;
   p{
     color: white;
     opacity: $font-opacity;
@@ -24,7 +23,7 @@ footer{
             opacity: $font-opacity;
             &:hover{
               text-decoration: none;
-              opacity: $font-opacity - .3;
+              opacity: $font-opacity-hover;
             }
           }
         }
@@ -45,7 +44,7 @@ footer{
     color: white;
     opacity: $font-opacity;
     font-size: $font-size-base - .2rem;
-    background-color: darken(#2E2D2D, 20%);
+    background-color: $dark-2;
     a{
       &:hover{
         color: white;

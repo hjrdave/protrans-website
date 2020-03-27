@@ -1,31 +1,33 @@
+@import '../../../styles/variables';
+
 .search-form{
   .input-group-prepend{
     i{
-      color: rgba(0, 0, 0, 0.5);
+      color: rgba(0, 0, 0, $font-opacity);
     }
     .input-group-text{
-      border-radius: 25px 0px 0px 25px;
+      border-radius: $input-border-radius-right;
       background-color: white;
      
     }
   }
   .form-control{
-    padding: 1.25rem 0 1.25rem 0;
+    padding: 1.50rem 0 1.50rem 0;
     border-left: none;
-    border-radius: 0px 25px 25px 0px;
+    border-radius: $input-border-radius-left;
     &:focus{
       outline: none !important;
       box-shadow: none;
-      border-color: #ced4da;
+      border-color: $input-border-color
     }
     &:active{
       outline: none !important;
       box-shadow: none;
-      border-color: #ced4da;
+      border-color: $input-border-color;
     }
 
   }
   a{
-    color: black;
+    color: $black;
   }
 }

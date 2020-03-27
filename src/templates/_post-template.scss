@@ -1,4 +1,4 @@
-@import '../components/variables';
+@import '../styles//variables';
 @import '~bootstrap/scss/_functions';
 @import '~bootstrap/scss/_variables';
 @import '~bootstrap/scss/mixins/breakpoints';
@@ -35,12 +35,12 @@
     font-size: $h3-font-size + .5rem;
   }
 }
-$menu-width: 225px;
+
 .post-menu{
   border-left: 1px solid rgba(0,0,0,.125);
 
-  width: $menu-width;
-  min-width: $menu-width;
+  width: $post-menu-width;
+  min-width: $post-menu-width;
   .list-group-item{
     padding: 10px 0px 10px 0px;
     border: none;
@@ -48,7 +48,7 @@ $menu-width: 225px;
       text-decoration: none;
       color:inherit;
       &:hover{
-        opacity: .7;
+        opacity: $font-opacity-hover;
       }
     }
   }
@@ -57,7 +57,7 @@ $menu-width: 225px;
   width: 100%;
   border-left: none;
   .card{
-    background-color: #2E2D2D;
+    background-color: $dark-1;
     box-shadow: $shadow-2;
     color: white;
     .card-body{

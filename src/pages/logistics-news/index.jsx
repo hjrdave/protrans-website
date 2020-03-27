@@ -4,7 +4,6 @@ import PageContainer from "../../components/page-container";
 import uniqid from 'uniqid';
 import PageContent from "../../components/page-content";
 import PostCard from '../../components/post-card';
-import CatNavigation from '../../components/cat-navigation';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Modal from '../../components/modal';
 import { useTreble } from 'treble-gsm';

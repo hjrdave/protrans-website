@@ -1,8 +1,12 @@
+/*
+  page-container.jsx
+  Container that wraps around content on every page.
+*/
+
 import React, { useEffect } from "react";
-import SEO from "../seo";
 import { useTreble, updateStore } from 'treble-gsm';
 
-function PageContainer({ children, title, id, activePath, description }) {
+export default function PageContainer({ children, id, activePath }) {
 
   const [{ }, dispatch] = useTreble();
 
@@ -19,5 +23,3 @@ function PageContainer({ children, title, id, activePath, description }) {
     </>
   )
 }
-
-export default PageContainer

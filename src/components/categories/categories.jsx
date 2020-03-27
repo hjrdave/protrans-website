@@ -1,6 +1,6 @@
 /*
   categories.
-  Provides a category interface.
+  Takes data from Category Manager Widget and puts in globa state.
 */
 
 import { useEffect } from 'react';

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react"
-import PageContainer from "../../components/page-container"
-import PageContent from "../../components/page-content"
-import SearchForm from "../../components/search-form"
-import SearchResults from "../../components/search-results"
-import "./_search.scss"
+import React, { useState, useEffect } from "react";
+import PageContainer from "../../components/page-container";
+import PageContent from "../../components/page-content";
+import SearchForm from "./search-form";
+import SearchResults from "./search-results";
 
 export default function Page({ location }) {
   const [results, setResults] = useState([])

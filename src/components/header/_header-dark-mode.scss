@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+.dark-mode{
+
+
+.mast-head{
+  .header-top{
+    background-color: $dark-1;
+    color: white;
+    a{
+      color: white;
+      opacity: $font-opacity;
+      
+      &:hover{
+        color: white;
+      }
+    }
+  }
+  
+  header{
+    background-color:$dark-2;    
+  }
+}
+}

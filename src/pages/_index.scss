@@ -1,4 +1,4 @@
-@import '../components/variables';
+@import '../styles/variables';
 @import '~bootstrap/scss/_functions';
 @import '~bootstrap/scss/_variables';
 @import '~bootstrap/scss/mixins/breakpoints';
@@ -16,7 +16,7 @@
         div{
           i{
             font-size: 5rem;
-            color: #A80633;
+            color: $protrans-red;
             @include media-breakpoint-down(md) {
               font-size: 7rem;
             }

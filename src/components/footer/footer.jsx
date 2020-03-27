@@ -1,3 +1,8 @@
+/*
+  footer.jsx
+  Website Footer
+*/
+
 import React from "react";
 import { Link } from 'gatsby';
 import "./_footer.scss"
@@ -54,7 +59,6 @@ function Footer() {
           <p className='mb-0 text-uppercase text-center d-none d-lg-flex' style={{ opacity: '0' }}>
             <small><Link to='/'>Site Map</Link> | <Link to='/'>Privicy Policy</Link> | <Link to='/'>Terms of Use</Link> | <Link to='/'>Careers</Link></small>
           </p>
-
         </div>
       </footer>
     </>

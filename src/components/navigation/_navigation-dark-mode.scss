@@ -1,0 +1,82 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+.dark-mode{
+  .navigation{
+  
+    .navbar-nav{
+    
+      .nav-link{
+        border-bottom: 3px solid $transparent;
+       
+        color: white!important;
+        &:hover{
+          color: $black-hover!important;
+        }
+        &[aria-current="page"]{
+          border-color: $protrans-red;
+          color: $protrans-red!important;
+        }
+        
+      }
+      .nav-search-icon{
+        color: white;
+        &:hover{
+          opacity: $font-opacity-hover
+        }
+      }
+     
+      .nav-active-state{
+        border-color: $protrans-red;
+        color: $protrans-red!important;
+      }
+      .dropdown-menu{
+        ul{
+         
+          .dropdown-item{
+          
+            
+            &:hover{
+              background-color: white;
+            }
+            &:active{
+              color: white;
+            }
+          }
+        }
+      }
+      .nav-search-box{
+        .input-group-prepend{
+          i{
+            opacity: $font-opacity;
+          }
+          .input-group-text{
+          
+            background-color: white;
+           
+          }
+        }
+        .form-control{
+        
+          &:focus{
+           
+            border-color: $input-border-color;
+          }
+          &:active{
+         
+            border-color: $input-border-color;
+          }
+  
+        }
+        a{
+          color: $black;
+        }
+      }
+    }
+    
+  }
+  
+
+}

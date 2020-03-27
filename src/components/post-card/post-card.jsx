@@ -1,4 +1,9 @@
-import React, { useEffect } from "react";
+/*
+  post-card.jsx
+  Post card component for blog landing page.
+*/
+
+import React from "react";
 import { Link } from "gatsby";
 import Card from "react-bootstrap/Card";
 import Img from "gatsby-image";

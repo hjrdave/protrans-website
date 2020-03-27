@@ -1,11 +1,11 @@
-@import '../variables';
+@import '../../styles/variables';
 
 .post-card-container{
   a{
-    color: black;
+    color: $black;
     &:hover{
       text-decoration: none;
-      color: black;
+      color: $black;
     }
     .post-card{
       height: 95%;

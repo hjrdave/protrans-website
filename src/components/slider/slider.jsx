@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import "./_slider.scss";
 import uniqid from 'uniqid';
 
-function Slider({ slides }) {
+export default function Slider({ slides }) {
   //state
   const [index, setIndex] = useState(0)
   const [direction, setDirection] = useState(null)
@@ -51,4 +51,3 @@ function Slider({ slides }) {
   )
 }
 
-export default Slider

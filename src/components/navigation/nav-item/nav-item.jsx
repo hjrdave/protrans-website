@@ -1,4 +1,9 @@
-import React, { useEffect } from "react";
+/*
+  nav-item.jsx
+  Normal navigation nav item.
+*/
+
+import React from "react";
 import { Link } from "gatsby";
 import { useTreble } from 'treble-gsm';
 

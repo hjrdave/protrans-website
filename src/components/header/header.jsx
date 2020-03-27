@@ -1,14 +1,35 @@
+/*
+  header.jsx
+  Site header.  Includes company logo, main navigation, and top masthead navigation
+*/
+
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
-import React, { useEffect } from "react";
 import "./_header.scss";
+import "./_header-dark-mode.scss";
+import { Form } from 'react-bootstrap';
 import Image from "../../images/register";
 import MainNav from "../../widgets/main-nav";
 import Sticky from 'react-stickynode';
 import { updateStore, useTreble } from "treble-gsm";
 
-function Header({ siteTitle }) {
+function Header() {
 
-  const [{ }, dispatch] = useTreble();
+  const [{ darkMode }, dispatch] = useTreble();
+  const [darkModeSwitchState, setDarkModeSwitchState] = useState(0);
+
+  const handleDarkMode = () => {
+    if (darkMode) {
+      updateStore('darkMode', false, dispatch);
+    } else {
+      updateStore('darkMode', true, dispatch);
+    }
+  }
+
+
+  useEffect(() => {
+    setDarkModeSwitchState((darkMode) ? 1 : 0);
+  }, [darkMode]);
 
   return (
     <>
@@ -22,6 +43,15 @@ function Header({ siteTitle }) {
             <a href='/' target='_blank' className='px-1'>Track Shipment</a>
             </small>
           </p>
+          <Form className='dark-mode-toggle py-1 pl-3'>
+            <Form.Check
+              checked={darkModeSwitchState}
+              type="switch"
+              id="dark-mode-switch"
+              label=""
+              onChange={() => handleDarkMode()}
+            />
+          </Form>
         </div>
         <Sticky enabled={true} enableTransforms={true} activeClass={'header-sticky'}>
           <header className="px-4 d-flex justify-content-between align-content-center">

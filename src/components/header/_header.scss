@@ -1,20 +1,25 @@
-@import '../variables';
+@import '../../styles/variables';
 @import '~bootstrap/scss/_functions';
 @import '~bootstrap/scss/_variables';
 @import '~bootstrap/scss/mixins/breakpoints';
 
 .mast-head{
   .header-top{
-    background-color:#2E2D2D;
+    background-color: $dark-1;
     color: white;
     a{
       color: white;
-      opacity: .8;
+      opacity: $font-opacity;
       
       &:hover{
         color: white;
         opacity: 1;
         text-decoration: none;
+      }
+    }
+    .dark-mode-toggle{
+      .custom-control{
+        cursor: pointer!important;
       }
     }
   }
@@ -35,10 +40,9 @@
           font-size: $font-size-base + 1.2rem;
           p{
             height: 100%;
-            //border: 1px solid red;
             i{
               &:hover{
-                opacity: .7;
+                opacity: $font-opacity-hover;
               }
               cursor: pointer;
             }

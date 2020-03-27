@@ -1,3 +1,7 @@
+/*
+  modal.jsx
+  Generic modal component
+*/
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import uniqid from 'uniqid';

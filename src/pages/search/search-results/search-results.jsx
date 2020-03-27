@@ -9,20 +9,19 @@ function SearchResults({ results, query }) {
   const truncate = input => {
     return input.length > 5 ? `${input.substring(0, 255)}...` : input
   }
-
+  const searchResults = results || [];
   return (
     <>
       <section aria-label="Search results for all posts">
-        {!!results.length && query && (
+        {!!searchResults.length && query && (
           <h3 aria-live="assertive">
             Found {results.length} posts on "{query}"
           </h3>
         )}
-        {!!results.length && (
+        {!!searchResults.length && (
           <>
-            {results.map(({ title, content, date, path }) => (
+            {searchResults.map(({ title, content, date, path }) => (
               <React.Fragment key={uniqid()}>
-
                 <Card className="mt-3 search-results-card">
                   <Link to={path}>
                     <Card.Body>
