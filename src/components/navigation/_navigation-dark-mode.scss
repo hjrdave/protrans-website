@@ -12,37 +12,49 @@
         border-bottom: 3px solid $transparent;
        
         color: white!important;
+        opacity: $dm-font-opacity;
         &:hover{
           color: $black-hover!important;
+          
         }
         &[aria-current="page"]{
-          border-color: $protrans-red;
-          color: $protrans-red!important;
+          border-color: $dm-color-3;
+          color: $dm-color-3!important;
+          opacity: 1;
         }
         
       }
       .nav-search-icon{
         color: white;
+        opacity: $dm-font-opacity;
         &:hover{
-          opacity: $font-opacity-hover
+          opacity: $dm-font-opacity-hover
         }
       }
      
       .nav-active-state{
-        border-color: $protrans-red;
-        color: $protrans-red!important;
+        border-color: $dm-color-3;
+        color: $dm-color-3!important;
       }
       .dropdown-menu{
+        background-color: $dm-color-1;
         ul{
          
           .dropdown-item{
           
             
             &:hover{
-              background-color: white;
+              background-color: $dm-color-1;
             }
             &:active{
               color: white;
+            }
+            a{
+              color: white;
+              opacity: $dm-font-opacity;
+              &:hover{
+                opacity: $dm-font-opacity - .3;
+              }
             }
           }
         }
@@ -50,23 +62,30 @@
       .nav-search-box{
         .input-group-prepend{
           i{
-            opacity: $font-opacity;
+            opacity: $dm-font-opacity;
+            color: white;
           }
           .input-group-text{
-          
-            background-color: white;
+            border-color: $dm-input-border-color;
+            background-color: $dm-color-1;
            
           }
         }
         .form-control{
-        
+          background-color: $dm-color-1;
+          color: rgba(255,255,255, $dm-font-opacity);
+          border-color: $dm-input-border-color;
           &:focus{
            
-            border-color: $input-border-color;
+            border-color: $dm-input-border-color;
           }
           &:active{
          
-            border-color: $input-border-color;
+            border-color: $dm-input-border-color;
+          }
+          &::placeholder{
+            color: white;
+            opacity: $dm-font-opacity - .4;
           }
   
         }

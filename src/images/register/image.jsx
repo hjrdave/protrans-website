@@ -25,6 +25,14 @@ function Image({ name }) {
         }
       }
 
+      logoProtransInverse: file(relativePath: { eq: "logo-protrans-inverse.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
       slideShipment: file(relativePath: { eq: "slide-shipment.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {

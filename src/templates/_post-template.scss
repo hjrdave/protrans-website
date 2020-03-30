@@ -1,71 +1,76 @@
-@import '../styles//variables';
+@import '../styles/variables';
 @import '~bootstrap/scss/_functions';
 @import '~bootstrap/scss/_variables';
 @import '~bootstrap/scss/mixins/breakpoints';
 
-.featured-image{
-  height: 500px;
-  .featured-image-container{
-    height: 100%;
-    .featured-image-content{
-        h1{
-          color: white;
-          font-size: $h1-font-size + 1rem;
-          text-shadow: 0px 0px 35px #000000;
-        }
-        
-        p{
-          font-size: $font-size-base + .75rem;
-          color: white;
-          text-shadow: 0px 0px 40px #000000;
-          small{
-            font-size: $font-size-base - .02rem;
-            text-shadow: 0px 0px 40px #000000;
+#post-template{
+  .featured-image{
+    height: 500px;
+    .featured-image-container{
+      height: 100%;
+      .featured-image-content{
+          h1{
+            color: white;
+            font-size: $h1-font-size + 1rem;
+            text-shadow: 0px 0px 35px #000000;
           }
-        }
-    }
-  }
-}
-
-.blog-post-content{
-  p{
-    font-size: $font-size-base + .3rem;
-  }
-  h3{
-    font-size: $h3-font-size + .5rem;
-  }
-}
-
-.post-menu{
-  border-left: 1px solid rgba(0,0,0,.125);
-
-  width: $post-menu-width;
-  min-width: $post-menu-width;
-  .list-group-item{
-    padding: 10px 0px 10px 0px;
-    border: none;
-    a{
-      text-decoration: none;
-      color:inherit;
-      &:hover{
-        opacity: $font-opacity-hover;
+          
+          p{
+            font-size: $font-size-base + .75rem;
+            color: white;
+            text-shadow: 0px 0px 40px #000000;
+            small{
+              font-size: $font-size-base - .02rem;
+              text-shadow: 0px 0px 40px #000000;
+            }
+          }
       }
     }
   }
-}
-.post-menu-mobile{
-  width: 100%;
-  border-left: none;
-  .card{
-    background-color: $dark-1;
-    box-shadow: $shadow-2;
-    color: white;
-    .card-body{
-      
-      .list-group{
+  
+  .blog-post-content{
+    p{
+      font-size: $font-size-base + .3rem;
+    }
+    h3{
+      font-size: $h3-font-size + .5rem;
+    }
+  }
+  
+  .post-menu{
+    border-left: 1px solid rgba(0,0,0,.125);
+  
+    width: $post-menu-width;
+    min-width: $post-menu-width;
+    .list-group-item{
+      padding: 10px 0px 10px 0px;
+      border: none;
+      background-color: rgba(0,0,0, 0)!important;
+      a{
+        text-decoration: none;
+        &:hover{
+          opacity: $font-opacity-hover;
+        }
+      }
+    }
+  }
+  .post-menu-mobile{
+    width: 100%;
+    border-left: none;
+    .card{
+      background-color: $dark-1;
+      box-shadow: $shadow-2;
+      color: white;
+      .card-body{
         
-        .list-group-item{
-          background-color: inherit;
+        .list-group{
+          
+          .list-group-item{
+            background-color: inherit;
+            a{
+              color: white;
+            }
+          }
         }
       }
     }

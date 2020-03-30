@@ -57,7 +57,11 @@ function Header() {
           <header className="px-4 d-flex justify-content-between align-content-center">
             <div className="header-logo pl-4 pt-1">
               <Link to="/">
-                <Image name={"logoProtrans"} />
+                {
+                  (darkMode) ?
+                    <Image name={"logoProtransInverse"} /> :
+                    <Image name={"logoProtrans"} />
+                }
               </Link>
             </div>
             <div className='header-nav pr-4'>

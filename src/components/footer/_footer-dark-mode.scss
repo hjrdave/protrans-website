@@ -1,0 +1,51 @@
+/*
+  Dark mode styles for footer comp
+*/
+@import '../../styles/variables';
+
+.dark-mode{
+  footer{
+    background-color: $dm-color-2;
+    p{
+      color: white;
+      opacity: $dm-font-opacity;
+      a{
+        color: white;
+        opacity: $dm-font-opacity;
+      }
+    }
+    .footer-content{
+      .footer-apps-logins{
+        ul{
+          li{
+            a{
+              color: white;
+              opacity: $dm-font-opacity;
+              &:hover{
+                opacity: $dm-font-opacity-hover;
+              }
+            }
+          }
+        }
+      }
+      
+      .footer-social-media{
+        a{
+          color: white;
+          opacity: $dm-font-opacity;
+        }
+      }
+    }
+    .footer-copyright{
+      color: white;
+      opacity: 1;
+      background-color: $dm-color-1;
+      a{
+        &:hover{
+          color: white;
+          opacity: $dm-font-opacity;
+        }
+      }
+    }
+  }
+}

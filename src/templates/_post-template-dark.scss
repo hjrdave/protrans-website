@@ -1,0 +1,60 @@
+/*
+  Dark mode styles for post template
+*/
+
+@import '../styles//variables';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+.dark-mode{
+  #post-template{
+    .featured-image{
+      .featured-image-container{
+        .featured-image-content{
+            h1{
+              color: white;
+              opacity: 1;
+            }
+            
+            p{
+              color: white;
+              opacity: 1;
+            }
+        }
+      }
+    }
+    
+    
+    
+    .post-menu{
+      border-left: $dm-border-menu;
+      .list-group-item{
+        a{
+          &:hover{
+            opacity: $font-opacity-hover;
+          }
+        }
+      }
+    }
+    .post-menu-mobile{
+      width: 100%;
+      border-left: none;
+      .card{
+        background-color: $dark-1;
+        box-shadow: $shadow-2;
+        color: white;
+        .card-body{
+          
+          .list-group{
+            
+            .list-group-item{
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  }
+  

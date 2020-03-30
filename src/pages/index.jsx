@@ -5,6 +5,7 @@ import HomeSlider from "../widgets/home-slider";
 import Card from 'react-bootstrap/Card';
 import SEO from '../components/seo';
 import './_index.scss';
+import './_index-dark.scss';
 
 export default function Page({ location }) {
   return (

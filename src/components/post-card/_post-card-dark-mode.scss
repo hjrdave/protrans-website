@@ -1,0 +1,21 @@
+/*
+ Dark mode styles for post-card
+*/
+@import '../../styles/variables';
+.dark-mode{
+  .post-card-container{
+    a{
+      color: $black;
+      &:hover{
+        color: $black;
+      }
+      .card{
+        background-color: $dm-color-2;
+        .card-title{
+          color: white;
+          opacity: $dm-font-opacity;
+        }
+      }
+    }
+  }
+}

@@ -9,10 +9,10 @@
     min-width: $menu-width;
     .list-group-item{
       //padding: 0px;
+      background-color: rgba(255, 255, 255, 0);
       border: none;
       a{
         text-decoration: none;
-        color:inherit;
         &:hover{
           opacity: .7;
         }

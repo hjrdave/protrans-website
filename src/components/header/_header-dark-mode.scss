@@ -8,11 +8,11 @@
 
 .mast-head{
   .header-top{
-    background-color: $dark-1;
+    background-color: $dm-color-1;
     color: white;
     a{
       color: white;
-      opacity: $font-opacity;
+      opacity: $dm-font-opacity;
       
       &:hover{
         color: white;
@@ -21,7 +21,17 @@
   }
   
   header{
-    background-color:$dark-2;    
+
+    background-color:$dm-color-2;    
+    .header-logo{
+      opacity: $dm-font-opacity;
+    }
+    .header-nav{
+      i{
+        color: white;
+        opacity: $dm-font-opacity;
+      }
+    }
   }
 }
 }

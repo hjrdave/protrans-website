@@ -21,6 +21,7 @@ $font-opacity-hover: $font-opacity - .1;
 $input-border-radius-left: 0px 3rem 3rem 0rem;
 $input-border-radius-right: 3rem 0rem 0rem 3rem;
 $input-border-color: #ced4da;
+$input-border-color-dark: $dark-2;
 $button-border-radius: 3rem;
 
 //material design box shadows
@@ -42,3 +43,13 @@ $h3-font-size:  $font-size-base * 1.70;
 $h4-font-size:  $font-size-base * 1.35;
 $h5-font-size:  $font-size-base * 1.25;
 $h6-font-size:  $font-size-base;
+
+//dark mode colors
+$dm-color-1: #222831;
+$dm-color-2: #393E46;
+$dm-color-3: #00ADB5;
+$dm-color-4: #00FFF5;
+$dm-input-border-color: $dm-color-1;
+$dm-font-opacity: .7;
+$dm-font-opacity-hover: $dm-font-opacity;
+$dm-border-menu: 1px solid rgba(255,255,255,.125);

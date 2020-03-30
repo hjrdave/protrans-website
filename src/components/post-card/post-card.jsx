@@ -8,6 +8,7 @@ import { Link } from "gatsby";
 import Card from "react-bootstrap/Card";
 import Img from "gatsby-image";
 import './_post-card.scss';
+import './_post-card-dark-mode.scss';
 
 export default function PostCard({ post }) {
 

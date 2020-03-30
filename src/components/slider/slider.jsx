@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Image from "../../images/register";
 import Button from "react-bootstrap/Button";
 import "./_slider.scss";
+import './_slider-dark-mode.scss';
 import uniqid from 'uniqid';
 
 export default function Slider({ slides }) {

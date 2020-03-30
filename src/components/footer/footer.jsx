@@ -5,7 +5,8 @@
 
 import React from "react";
 import { Link } from 'gatsby';
-import "./_footer.scss"
+import "./_footer.scss";
+import './_footer-dark-mode.scss';
 
 function Footer() {
   return (

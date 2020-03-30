@@ -48,25 +48,7 @@ export default function Page({
               )
             })
           }
-          {/* <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Lean Management') ? 'logistics-news-menu-active' : ''}`}>
-            <Link to={`/logistics-news?category=Lean%20Management`} onClick={() => setCatMobileMenuState(false)}>Lean Management<br />&amp; Six Sigma</Link>
-          </ListGroup.Item>
 
-          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Trucking') ? 'logistics-news-menu-active' : ''}`}>
-            <Link to={`/logistics-news?category=Trucking`} onClick={() => setCatMobileMenuState(false)}>Trucking</Link>
-          </ListGroup.Item>
-
-          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Logistics Technology') ? 'logistics-news-menu-active' : ''}`}>
-            <Link to={`/logistics-news?category=Logistics%20Technology`} onClick={() => setCatMobileMenuState(false)}>Logistics Technology</Link>
-          </ListGroup.Item>
-
-          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Regulation') ? 'logistics-news-menu-active' : ''}`}>
-            <Link to={`/logistics-news?category=Regulation`} onClick={() => setCatMobileMenuState(false)}>Regulation</Link>
-          </ListGroup.Item>
-
-          <ListGroup.Item as="li" className={`pt-1 ${(catQuery === 'Sustainability') ? 'logistics-news-menu-active' : ''}`}>
-            <Link to={`/logistics-news?category=Sustainability`} onClick={() => setCatMobileMenuState(false)}>Sustainability</Link>
-          </ListGroup.Item> */}
 
         </ListGroup>
       </Modal>

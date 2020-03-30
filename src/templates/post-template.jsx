@@ -11,6 +11,7 @@ import SEO from '../components/seo';
 import { DiscussionEmbed } from 'disqus-react';
 import uniqid from 'uniqid';
 import './_post-template.scss';
+import './_post-template-dark.scss';
 
 function PostTemplate({ data, location, pageContext }) {
   const { posts } = pageContext;
@@ -30,7 +31,7 @@ function PostTemplate({ data, location, pageContext }) {
         path={path}
         thumbnail={featuredImage.childImageSharp.fluid.src}
       />
-      <PageContainer activePath={location}>
+      <PageContainer activePath={location} id={'post-template'}>
         <BackgroundImage
           Tag="section"
           fluid={featuredImage.childImageSharp.fluid}

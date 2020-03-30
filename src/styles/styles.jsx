@@ -11,6 +11,9 @@ import './_fonts.scss';
 //Custom Global Styles and Bootstrap Overrides
 import './_custom.scss';
 
+//Dark Mode styles
+import './_dark-mode.scss';
+
 
 
 

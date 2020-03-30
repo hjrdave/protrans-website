@@ -1,0 +1,23 @@
+/*
+  dark mode styles for slider comp
+*/
+@import '../../styles//variables';
+
+.carousel-inner{
+  .carousel-item{
+    .carousel-caption{
+      h1{
+        opacity: 1;
+      }
+      p{
+        opacity: 1;
+      }
+      .btn-primary{
+        background-color: $dm-color-3;
+        border-color: $dm-color-3;
+      }
+    }
+    
+  }
+}
+
