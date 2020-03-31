@@ -3,21 +3,24 @@
 */
 @import '../../styles//variables';
 
-.carousel-inner{
-  .carousel-item{
-    .carousel-caption{
-      h1{
-        opacity: 1;
+.dark-mode{
+  .carousel-inner{
+    .carousel-item{
+      .carousel-caption{
+        h1{
+          opacity: 1;
+        }
+        p{
+          opacity: 1;
+        }
+        .btn-primary{
+          background-color: $dm-color-3;
+          border-color: $dm-color-3;
+        }
       }
-      p{
-        opacity: 1;
-      }
-      .btn-primary{
-        background-color: $dm-color-3;
-        border-color: $dm-color-3;
-      }
+      
     }
-    
   }
+  
 }
 

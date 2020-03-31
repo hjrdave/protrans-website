@@ -13,7 +13,7 @@ export const wrapRootElement = ({ element }) => {
       <Treble store={Store}>
 
         {/* when auto is set to true it detects if dark mode is set in OS */}
-        <DarkMode auto={true} />
+        <DarkMode auto={false} />
 
         {/* Add categories to global state on load */}
         <CategoryManager />
