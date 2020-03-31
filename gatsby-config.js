@@ -7,7 +7,7 @@ module.exports = {
     twitterHandle: `@ProTrans3PL`
   },
   pathPrefix: `protrans-website`,
-  assetPrefix: `https://hjrdave.github.io/`,
+  assetPrefix: `https://hjrdave.github.io`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,

@@ -29,7 +29,7 @@ const Store = createStore([
   //dark mode
   {
     action: 'darkMode',
-    state: { darkMode: true },
+    state: { darkMode: false },
     features: {
       persist: false
     }

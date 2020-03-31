@@ -8,6 +8,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Modal from '../../components/modal';
 import { useTreble } from 'treble-gsm';
 import './_logistics-news.scss';
+import './_logistics-news-dark.scss';
 
 export default function Page({
   data: {

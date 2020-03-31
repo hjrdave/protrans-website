@@ -94,8 +94,75 @@
         }
       }
     }
-    
   }
-  
-
+  .navigation-mobile{
+    background-color: $dm-color-2;
+    
+    .navbar-nav{
+      .navigation-mobile-header{
+        h1{
+          color: white;
+          opacity: $dm-font-opacity;
+        }
+        i{
+          color: white;
+          opacity: $dm-font-opacity;
+        }
+      }
+      .nav-search-box{
+        .input-group-prepend{
+          
+          i{
+            color: white;
+            opacity: $dm-font-opacity;
+          }
+          .input-group-text{
+            background-color: $dm-color-1;
+            border: $dm-color-1;
+          }
+        }
+        .form-control{
+          background-color: $dm-color-1;
+          border-color: $dm-color-1;
+          &:focus{
+            border-color: $dm-color-1;
+          }
+          &:active{
+            border-color: $dm-color-1;
+          }
+          color: rgba(255, 255, 255, $dm-font-opacity);
+        }
+      }
+      
+      .navigation-mobile-list-container{
+         
+        
+         
+        
+        .nav-item{
+          
+        }
+        .dropdown-mobile{
+        
+          ul{
+            border-top: 1px solid rgba(255,255,255, $dm-font-opacity );
+          }
+          .nav-item{
+            opacity: 1;
+            .nav-link{
+            }
+            
+            .dropdown-item{
+              a{
+              }
+              &:hover{
+                background-color:$dm-color-2;
+              }
+            }
+          }
+    
+        }
+      }
+    }
+  }
 }

@@ -8,7 +8,7 @@ import React, { useEffect } from "react";
 import MobileMenu from './mobile-menu';
 import { useTreble, updateStore } from 'treble-gsm';
 import "./_navigation.scss";
-import "./_navigation-dark-mode.scss";
+import "./_navigation-dark.scss";
 import DesktopMenu from "./desktop-menu";
 
 export default function Navigation({ navItems, type }) {
