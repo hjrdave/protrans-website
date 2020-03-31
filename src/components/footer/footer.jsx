@@ -11,7 +11,7 @@ import './_footer-dark-mode.scss';
 function Footer() {
   return (
     <>
-      <footer className="mt-4">
+      <footer>
         <div className='d-flex justify-content-center'>
           <div className='col-12 col-lg-8'>
             <div className='p-4 d-flex justify-content-between footer-content'>

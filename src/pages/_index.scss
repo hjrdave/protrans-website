@@ -31,3 +31,26 @@
   }
   
 }
+.homepage-content-row{
+  text-transform: uppercase;
+  padding: 2.5rem 0rem 2.5rem 0rem;
+  // &:nth-child(3n){
+  //   background-color: white;
+  //   box-shadow: $shadow-2;
+  // }
+  h3{
+    //font-size: $h3-font-size
+  }
+  .badge-primary{
+    font-size: $font-size-base + .1rem;
+  }
+  
+  i{
+    font-size: 12rem;
+    color: $protrans-red;
+  }
+}
+.homepage-form-container{
+  background-color: white;
+  box-shadow: $shadow-5
+}

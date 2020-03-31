@@ -3,10 +3,34 @@
 */
 @import './variables';
 .dark-mode{
+
   min-height: 100vh;
   background-color: $dm-color-1;
   h1, h2, h3, h4, h5, h6, p, a{
     color: white;
     opacity: $dm-font-opacity;
+  }
+  .btn-primary{
+    background-color: $dm-color-3;
+    border-color: $dm-color-3;
+    &:hover{
+      background-color: darken($dm-color-3, 10%)!important;
+      border-color: darken($dm-color-3, 10%)!important;
+    }
+    &:active{
+      background-color: $dm-color-3!important;
+      border-color: $dm-color-3!important;
+    }
+    &:focus{
+      background-color: $dm-color-3!important;
+      border-color: $dm-color-3!important;
+    }
+  }
+  .badge-primary{
+    background-color: $dm-color-3;
+  }
+  .text-primary{
+    color: $dm-color-3!important;
+    opacity: 1!important;
   }
 }

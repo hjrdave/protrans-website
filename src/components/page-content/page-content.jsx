@@ -4,13 +4,14 @@
 */
 import React from "react";
 
-export default function PageContent({ children, type }) {
+export default function PageContent({ children, type, className }) {
 
   //handlers
   const handlePageContentType = (type) => {
     let typeInput = {
       'post': 'col-12 col-lg-8',
-      'full': 'col-12 col-lg-10'
+      'full': 'col-12 col-lg-10',
+      'banner': 'col-12'
     }
     if (type) {
       return typeInput[type];
@@ -20,7 +21,7 @@ export default function PageContent({ children, type }) {
 
   return (
     <>
-      <div className={`page-content container-fluid pt-4 ${(type === 'post') ? 'page-content-shadow' : ''}`}>
+      <div className={`page-content container-fluid pt-4 ${className} ${(type === 'post') ? 'page-content-shadow' : ''}`}>
         <div className="row d-flex justify-content-center">
           <div className={`${handlePageContentType(type)}`}>
             <>{children}</>
