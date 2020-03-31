@@ -6,6 +6,8 @@ import HomeSlider from "../widgets/home-slider";
 import Card from 'react-bootstrap/Card';
 import SEO from '../components/seo';
 import HomeForm from '../components/forms/home-form';
+import LineNav from '../components/line-nav';
+import Sticky from 'react-stickynode';
 import './_index.scss';
 import './_index-dark.scss';
 
@@ -17,7 +19,11 @@ export default function Page({ location }) {
       />
       <PageContainer activePath={location}>
         <HomeSlider />
+
         <PageContent>
+          <Sticky top={150}>
+            <LineNav />
+          </Sticky>
           <div className='row d-flex justify-content-center'>
             <div className='homepage-floating-card pb-4 col-12'>
               <Card body>
@@ -40,7 +46,8 @@ export default function Page({ location }) {
               </Card>
             </div>
           </div>
-          <h1 className="pt-4 pb-4 text-center text-uppercase">Who is Protrans?</h1>
+          <h1 className="mt-4 pt-4 pb-3 text-center text-uppercase">Who is Protrans?</h1>
+          <div className='homepage-caret-down text-center pb-4'><i className="fas fa-angle-down"></i></div>
 
           {/**Homepage Content row */}
           <div className='row d-flex justify-content-center pt-4 homepage-content-row'>
