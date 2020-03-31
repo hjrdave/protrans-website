@@ -14,8 +14,7 @@
         color: white!important;
         opacity: $dm-font-opacity;
         &:hover{
-          color: $black-hover!important;
-          
+          opacity: $dm-font-opacity-hover;
         }
         &[aria-current="page"]{
           border-color: $dm-color-3;
@@ -26,10 +25,13 @@
       }
       .nav-search-icon{
         color: white;
-        opacity: $dm-font-opacity;
-        &:hover{
-          opacity: $dm-font-opacity-hover
+        
+        i{
+          &:hover{
+            opacity: $dm-font-opacity-hover;
+          }
         }
+        
       }
      
       .nav-active-state{
@@ -53,7 +55,7 @@
               color: white;
               opacity: $dm-font-opacity;
               &:hover{
-                opacity: $dm-font-opacity - .3;
+                opacity: $dm-font-opacity-hover;
               }
             }
           }

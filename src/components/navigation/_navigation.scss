@@ -40,9 +40,12 @@
     .nav-search-icon{
       height: 100%;
       cursor: pointer;
-      &:hover{
-        opacity: $font-opacity-hover
+      i{
+        &:hover{
+          opacity: $font-opacity-hover
+        }
       }
+      
     }
    
     .nav-active-state{

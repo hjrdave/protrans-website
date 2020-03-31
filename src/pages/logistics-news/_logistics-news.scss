@@ -8,13 +8,13 @@
     width: $menu-width;
     min-width: $menu-width;
     .list-group-item{
-      //padding: 0px;
       background-color: rgba(255, 255, 255, 0);
       border: none;
       a{
         text-decoration: none;
         &:hover{
-          opacity: .7;
+          opacity: $font-opacity;
+          color: $protrans-red;
         }
       }
     }
@@ -29,10 +29,18 @@
    right: 0;
    top: 30vh;
    z-index: 100;
+   cursor: pointer;
  }
   .logistics-news-menu-active{
     
-    color: $protrans-red;
+    
+    a{
+      color: $protrans-red;
+      font-weight: bold;
+      &:hover{
+        color: $protrans-red;
+      }
+    }
   }
 
   
