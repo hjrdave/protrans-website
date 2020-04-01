@@ -1,15 +1,20 @@
 /*
-  Global dark-mode styles
+Dark Mode Styles
+Custom stylesheet for gobal classes and libary overwrites
+only library css should be added to this.  App specific css shouldnt be written in a scene stylesheet and imported into that scene.
 */
 @import './variables';
-.dark-mode{
 
-  min-height: 100vh;
+/*Global Custom Styles*/
+.dark-mode{
   background-color: $dm-color-1;
   h1, h2, h3, h4, h5, h6, p, a{
-    color: white;
-    opacity: $dm-font-opacity;
+    color: $dm-white;
   }
+}
+
+//Overwrite Global Bootstrap Classes
+.dark-mode{
   .btn-primary{
     background-color: $dm-color-3;
     border-color: $dm-color-3;
@@ -30,7 +35,6 @@
     background-color: $dm-color-3;
   }
   .text-primary{
-    color: $dm-color-3!important;
-    opacity: 1!important;
+    color: rgba($dm-color-3, 1)!important;
   }
 }

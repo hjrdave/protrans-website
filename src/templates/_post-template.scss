@@ -38,14 +38,14 @@
   }
   
   .post-menu{
-    border-left: 1px solid rgba(0,0,0,.125);
+    border-left: 1px solid $input-border-color;
   
     width: $post-menu-width;
     min-width: $post-menu-width;
     .list-group-item{
       padding: 10px 0px 10px 0px;
       border: none;
-      background-color: rgba(0,0,0, 0)!important;
+      background-color: $transparent!important;
       a{
         text-decoration: none;
         &:hover{
@@ -67,9 +67,7 @@
           
           .list-group-item{
             background-color: inherit;
-            a{
-              color: white;
-            }
+            
           }
         }
       }

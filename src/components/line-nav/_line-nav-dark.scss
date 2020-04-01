@@ -1,0 +1,17 @@
+@import '../../styles//variables';
+.dark-mode{
+  .line-nav{
+    border-left: 6px solid $dm-color-3;
+    
+    .list-group-flush{
+      .list-group-item{
+        background-color: rgba(0,0,0,0);
+        color: $dm-color-3;
+        .line-nav-dot{
+          background-color: $dm-color-3;
+        }
+      }
+    }
+    
+  }
+}

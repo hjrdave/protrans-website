@@ -29,29 +29,13 @@
     
     .post-menu{
       border-left: $dm-border-menu;
-      .list-group-item{
-        a{
-          &:hover{
-            opacity: $font-opacity-hover;
-          }
-        }
-      }
     }
     .post-menu-mobile{
       width: 100%;
       border-left: none;
       .card{
         background-color: $dm-color-2;
-        color: white;
-        .card-body{
-          
-          .list-group{
-            
-            .list-group-item{
-              
-            }
-          }
-        }
+        color: $dm-white;
       }
     }
   }

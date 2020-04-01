@@ -5,15 +5,10 @@
 .dark-mode{
   .post-card-container{
     a{
-      color: $black;
-      &:hover{
-        color: $black;
-      }
       .card{
         background-color: $dm-color-2;
         .card-title{
-          color: white;
-          opacity: $dm-font-opacity;
+          color: $dm-white;
         }
       }
     }

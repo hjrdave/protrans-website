@@ -71,13 +71,11 @@
             
             a{
               font-size: $font-size-base;
-  
               text-decoration: none;
               color: inherit;
               font-weight: 500;
-              
               &:hover{
-                opacity: $font-opacity;
+                color: $font-opacity;
               }
             }
             &:hover{

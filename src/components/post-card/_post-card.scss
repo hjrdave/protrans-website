@@ -2,11 +2,6 @@
 
 .post-card-container{
   a{
-    color: $black;
-    &:hover{
-      text-decoration: none;
-      color: $black;
-    }
     .post-card{
       height: 95%;
       box-shadow: $shadow-2;
@@ -23,7 +18,7 @@
     .card{
       background-color: white;
       .card-title{
-        color: black;
+        color: $black;
       }
     }
   }

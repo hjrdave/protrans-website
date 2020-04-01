@@ -4,34 +4,23 @@
 @import '~bootstrap/scss/mixins/breakpoints';
 
 .dark-mode{
-
-
-.mast-head{
-  .header-top{
-    background-color: $dm-color-1;
-    color: white;
-    a{
-      color: white;
-      opacity: $dm-font-opacity;
-      
-      &:hover{
-        color: white;
-      }
+  .mast-head{
+    .header-top{
+      background-color: $dm-color-1;
     }
-  }
-  
-  header{
-
-    background-color:$dm-color-2;    
-    .header-logo{
-      opacity: $dm-font-opacity;
-    }
-    .header-nav{
-      i{
-        color: white;
+    header{
+      background-color:$dm-color-2;    
+      .header-logo{
         opacity: $dm-font-opacity;
       }
+      .header-nav{
+        i{
+          color: $dm-white;
+          &:hover{
+            color: $dm-white-hover;
+          }
+        }
+      }
     }
   }
-}
 }

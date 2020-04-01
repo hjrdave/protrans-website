@@ -8,10 +8,11 @@ only library css should be added to this.  App specific css shouldnt be written 
 body{
   background-color: $bk-site-color;
   a{
-    color: black;
-  }
-  hr{
-   
+    color: $black;
+    text-decoration: none!important;
+    &:hover{
+      color: inherit;
+    }
   }
 }
 

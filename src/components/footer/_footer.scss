@@ -4,11 +4,12 @@
 footer{
   background-color: $dark-1;
   p{
-    color: white;
-    opacity: $font-opacity;
-    a{
-      color: white;
-      opacity: $font-opacity;
+    color: $dm-white!important;
+  }
+  a{
+    color: $dm-white!important;
+    &:hover{
+      color: $dm-white-hover!important;
     }
   }
   .footer-content{
@@ -17,40 +18,18 @@ footer{
       ul{
         list-style: none;
         padding-left: 0px;
-        li{
-          a{
-            color: white;
-            opacity: $font-opacity;
-            &:hover{
-              text-decoration: none;
-              opacity: $font-opacity-hover;
-            }
-          }
-        }
       }
     }
     .footer-contact-us{
       @extend .footer-apps-logins;
     }
     .footer-social-media{
-      a{
-        color: white;
-        opacity: $font-opacity;
         font-size: 1.5rem;
       }
     }
   }
   .footer-copyright{
-    color: white;
-    opacity: $font-opacity;
     font-size: $font-size-base - .2rem;
     background-color: $dark-2;
-    a{
-      &:hover{
-        color: white;
-        opacity: $font-opacity;
-        text-decoration: none;
-      }
-    }
+    color: $dm-white;
   }
-}

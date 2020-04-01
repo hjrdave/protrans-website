@@ -6,15 +6,13 @@
 .mast-head{
   .header-top{
     background-color: $dark-1;
-    color: white;
+    p{
+      color: $dm-white;
+    }
     a{
-      color: white;
-      opacity: $font-opacity;
-      
+      color: $dm-white;
       &:hover{
-        color: white;
-        opacity: 1;
-        text-decoration: none;
+        color: $dm-white-hover;
       }
     }
     .dark-mode-toggle{
@@ -41,6 +39,7 @@
           p{
             height: 100%;
             i{
+              color: $black!important;
               &:hover{
                 opacity: $font-opacity-hover;
               }
@@ -68,7 +67,6 @@
         width: 200px;
         img{
           margin-top: 0px;
-          
         }
       }
     }

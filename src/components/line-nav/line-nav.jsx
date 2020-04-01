@@ -1,6 +1,7 @@
 import React from 'react';
 import { ListGroup } from 'react-bootstrap';
 import './_line-nav.scss';
+import './_line-nav-dark.scss';
 
 export default function LineNav() {
   return (

@@ -21,7 +21,7 @@ export default function Page({ location }) {
         <HomeSlider />
 
         <PageContent>
-          <Sticky top={150}>
+          <Sticky>
             <LineNav />
           </Sticky>
           <div className='row d-flex justify-content-center'>
