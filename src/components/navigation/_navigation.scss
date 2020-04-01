@@ -88,8 +88,12 @@
         }
       }
     }
-
+    
     .nav-search-box{
+      overflow: hidden;
+        width: 0px;
+        opacity: 0;
+        transition: width .2s, opacity .2s ease-in .05s;
       .input-group-prepend{
         i{
           opacity: $font-opacity;
@@ -149,6 +153,7 @@
       }
     }
     .nav-search-box{
+      
       .input-group-prepend{
         
         i{
@@ -240,4 +245,13 @@
 }
 .navigation-mobile-open{
   transform: translateX(0%);
+}
+
+
+
+
+//animations
+.nav-search-box-animate{
+  width: 250px!important;
+  opacity: 1!important;
 }

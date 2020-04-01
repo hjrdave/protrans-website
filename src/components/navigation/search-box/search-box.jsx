@@ -13,6 +13,7 @@ export default function SearchBox({ type }) {
 
   const [{ activeNavPath }, dispatch] = useTreble();
   const [openSearch, setOpenSearch] = useState(true);
+  const [searchAnimation, setSearchAnimation] = useState(false);
 
   const handleOnKeyPress = (event) => {
     if (event.key === "Enter") {
@@ -29,22 +30,28 @@ export default function SearchBox({ type }) {
     setOpenSearch(searchState);
   }
 
+  const handleSearchAnimation = () => {
+    setTimeout(() => {
+      setSearchAnimation(true);
+    })
+  }
 
   useEffect(() => {
     setOpenSearch((type === 'mobile') ? true : false);
-  }, [activeNavPath])
+    setSearchAnimation(false);
+  }, [activeNavPath]);
 
   return (
     <>
-      <div className='d-flex'>
+      <div className='d-flex nav-search-container'>
         {
           !(openSearch) ?
             <div className='nav-search-icon'>
-              <i className="fas fa-search" onClick={() => handleOpenSearch()}></i>
+              <i className="fas fa-search" onClick={() => { handleOpenSearch(); handleSearchAnimation(); }}></i>
             </div>
             :
 
-            <InputGroup className='nav-search-box'>
+            <InputGroup className={`nav-search-box ${(searchAnimation) ? 'nav-search-box-animate' : ''}`}>
               <InputGroup.Prepend>
                 <InputGroup.Text><Link to={'/search'}><i className="fas fa-search"></i></Link></InputGroup.Text>
               </InputGroup.Prepend>
