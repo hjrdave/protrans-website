@@ -18,6 +18,7 @@ export default function Page({ location }) {
         title={'Home'}
       />
       <PageContainer activePath={location}>
+
         <HomeSlider />
 
         <PageContent>
@@ -45,13 +46,15 @@ export default function Page({ location }) {
             </div>
           </div>
           <Sticky bottomBoundary=".break-sticky">
-            <LineNav />
+            <div className='d-none d-lg-flex'>
+              <LineNav />
+            </div>
           </Sticky>
           <h1 className="mt-4 pt-4 pb-3 text-center text-uppercase">Who is Protrans?</h1>
           <div className='homepage-caret-down text-center pb-4'><i className="fas fa-angle-down"></i></div>
 
           {/**Homepage Content row */}
-          <div className='row d-flex justify-content-center pt-4 homepage-content-row '>
+          <div id={'section-1'} className='row d-flex justify-content-center pt-4 homepage-content-row '>
             <div className='col-6'>
               <h4 className='mb-3'>Pioneers in North American Consolidation</h4>
               <p className='mb-3 font-weight-bold'><span className='badge badge-primary'>30</span> North American <span className='text-primary'>Locations</span></p>
@@ -66,7 +69,7 @@ export default function Page({ location }) {
 
           <hr />
           {/**Homepage Content row */}
-          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row '>
+          <div id={'section-2'} className='row d-flex flex-row-reverse justify-content-between homepage-content-row '>
             <div className='col-6'>
               <h4 className='mb-3'>Leader In Optimization</h4>
               <p className='mb-3 font-weight-bold'>Reduce Logistics with Full Optimizaiton!  </p>
@@ -79,7 +82,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Homepage Content row */}
-          <div className='row d-flex justify-content-center homepage-content-row'>
+          <div id={'section-3'} className='row d-flex justify-content-center homepage-content-row'>
             <div className='col-6'>
               <h4 className='mb-3'>Strategic Planner and Solution Designer</h4>
               <p className='mb-3 font-weight-bold'>The more that is planned the more that is saved.</p>
@@ -92,7 +95,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Homepage Content row */}
-          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row'>
+          <div id={'section-4'} className='row d-flex flex-row-reverse justify-content-between homepage-content-row'>
             <div className='col-6'>
               <h4 className='mb-3'>Innovator in Logistics Technology</h4>
               <p className='mb-3 font-weight-bold'>Cradle to grave visibility and real time reporting!</p>
@@ -105,7 +108,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Homepage Content row */}
-          <div className='row d-flex justify-content-center homepage-content-row'>
+          <div id={'section-5'} className='row d-flex justify-content-center homepage-content-row'>
             <div className='col-6'>
               <h4 className='mb-3'>Versatile 3PL Manager</h4>
               <p className='mb-3 font-weight-bold'>Large yet nimble as the admin and operation in your supply chain.</p>
@@ -118,7 +121,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Homepage Content row */}
-          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row'>
+          <div id={'section-6'} className='row d-flex flex-row-reverse justify-content-between homepage-content-row'>
             <div className='col-6'>
               <h4 className='mb-3'>High Velocity Warehouser</h4>
               <p className='mb-3 font-weight-bold'>Warehousing and cross-docking fit to your capacity</p>
@@ -132,7 +135,7 @@ export default function Page({ location }) {
           <hr />
 
           {/**Homepage Content row */}
-          <div className='row d-flex justify-content-center homepage-content-row'>
+          <div id={'section-7'} className='row d-flex justify-content-center homepage-content-row'>
             <div className='col-6'>
               <h4 className='mb-3'>Client Focused Builder</h4>
               <p className='mb-3 font-weight-bold'>Strategic descisions are made based on your needs.</p>
@@ -146,7 +149,7 @@ export default function Page({ location }) {
           <hr />
           <div className='break-sticky'></div>
           {/**Homepage Content row */}
-          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row '>
+          <div id={'section-8'} className='row d-flex flex-row-reverse justify-content-between homepage-content-row '>
             <div className='col-6'>
               <h4 className='mb-3'>Sustainable Supply Chain Initiator</h4>
               <p className='mb-3 font-weight-bold'>We help reduce your carbon footprint.</p>
@@ -159,7 +162,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Homepage Content row */}
-          <div className='row d-flex justify-content-center homepage-content-row '>
+          <div id={'section-9'} className='row d-flex justify-content-center homepage-content-row '>
             <div className='col-6'>
               <h4 className='mb-3'>Continuous Improver</h4>
               <p className='mb-3 font-weight-bold'>We don't stop looking for efficiency and savings.</p>
@@ -172,7 +175,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Homepage Content row */}
-          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row '>
+          <div id={'section-10'} className='row d-flex flex-row-reverse justify-content-between homepage-content-row '>
             <div className='col-6'>
               <h4 className='mb-3'>Global Logistics Manager</h4>
               <p className='mb-3 font-weight-bold'>Our processes and savings are available globally.</p>

@@ -28,13 +28,7 @@ function HomeSlider() {
             //slide 1
             {
               image: "slide1",
-              headline: (
-                <>
-                  Anyone Can Cut Costs
-                  <br />
-                  …But WE REDUCE SPEND
-                </>
-              ),
+              headline: "Anyone Can Cut Costs …But WE REDUCE SPEND",
               lede: "Find out how we do it!",
               button: "Get Started",
             },

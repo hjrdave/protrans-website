@@ -8,8 +8,8 @@ import uniqid from 'uniqid';
 
 export default function Slider({ slides }) {
   //state
-  const [index, setIndex] = useState(0)
-  const [direction, setDirection] = useState(null)
+  const [index, setIndex] = useState(0);
+  const [direction, setDirection] = useState(null);
 
   //handlers
   const handleSelect = (selectedIndex, e) => {
@@ -17,13 +17,19 @@ export default function Slider({ slides }) {
     setDirection(e.direction)
   }
 
+  //apply text animations on render
+  // useEffect(() => {
+  //   setTextAnimate(true);
+  //   //console.log('foo slide')
+  // }, []);
+
   return (
     <>
       <Carousel
         activeIndex={index}
         direction={direction}
         onSelect={handleSelect}
-        interval={6000}
+        interval={5000}
         fade={true}
         touch={true}
       >
@@ -33,8 +39,8 @@ export default function Slider({ slides }) {
               <Image name={item.image} />
               <Carousel.Caption className="d-flex align-items-center justify-content-center justify-content-lg-start">
                 <div>
-                  <h1>{item.headline}</h1>
-                  <p>{item.lede}</p>
+                  <h1 className={`slider-heading-1`}>{item.headline}</h1>
+                  <p className='slider-lede'>{item.lede}</p>
                   {item.button ? (
                     <div className="text-center text-lg-left pt-4">
                       <Button variant="primary" className={"py-2 px-4"}>

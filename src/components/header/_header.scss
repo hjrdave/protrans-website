@@ -56,8 +56,12 @@
     
     .sticky-inner-wrapper{
       height: 100px;
+      transition: height .1s;
       z-index: 1000;
       box-shadow: $shadow-2;
+      .header-logo{
+        transition: width .09s;
+      }
     }
   }
   .header-sticky{

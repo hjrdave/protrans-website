@@ -27,6 +27,7 @@
               font-family: 'Playfair Display', serif;
               font-size: $font-size-base + 3rem;
               text-align: left;
+              color: white!important;
               @include media-breakpoint-down(md) {
                 font-size: $font-size-base + 2rem;
                 text-align: center;
@@ -36,6 +37,7 @@
               max-width: 700px;
               font-size: $font-size-base + .35rem;
               text-align: left;
+              color: white!important;
               @include media-breakpoint-down(md) {
                 text-align: center;
               }

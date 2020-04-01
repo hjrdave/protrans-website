@@ -15,9 +15,9 @@
       }
       .header-nav{
         i{
-          color: $dm-white;
+          color: $dm-white!important;
           &:hover{
-            color: $dm-white-hover;
+            color: $dm-white-hover!important;
           }
         }
       }

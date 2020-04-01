@@ -11,6 +11,16 @@
           background-color: $dm-color-3;
         }
       }
+      .line-nav-active{
+        .line-nav-dot{
+          background-color: $dm-color-3!important;
+          
+        }
+        small{
+          color: $dm-color-3!important;
+        }
+  
+      }
     }
     
   }
