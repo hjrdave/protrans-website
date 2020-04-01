@@ -21,9 +21,7 @@ export default function Page({ location }) {
         <HomeSlider />
 
         <PageContent>
-          <Sticky>
-            <LineNav />
-          </Sticky>
+
           <div className='row d-flex justify-content-center'>
             <div className='homepage-floating-card pb-4 col-12'>
               <Card body>
@@ -46,11 +44,14 @@ export default function Page({ location }) {
               </Card>
             </div>
           </div>
+          <Sticky bottomBoundary=".break-sticky">
+            <LineNav />
+          </Sticky>
           <h1 className="mt-4 pt-4 pb-3 text-center text-uppercase">Who is Protrans?</h1>
           <div className='homepage-caret-down text-center pb-4'><i className="fas fa-angle-down"></i></div>
 
           {/**Homepage Content row */}
-          <div className='row d-flex justify-content-center pt-4 homepage-content-row'>
+          <div className='row d-flex justify-content-center pt-4 homepage-content-row '>
             <div className='col-6'>
               <h4 className='mb-3'>Pioneers in North American Consolidation</h4>
               <p className='mb-3 font-weight-bold'><span className='badge badge-primary'>30</span> North American <span className='text-primary'>Locations</span></p>
@@ -65,7 +66,7 @@ export default function Page({ location }) {
 
           <hr />
           {/**Homepage Content row */}
-          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row'>
+          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row '>
             <div className='col-6'>
               <h4 className='mb-3'>Leader In Optimization</h4>
               <p className='mb-3 font-weight-bold'>Reduce Logistics with Full Optimizaiton!  </p>
@@ -129,6 +130,7 @@ export default function Page({ location }) {
             </div>
           </div>
           <hr />
+
           {/**Homepage Content row */}
           <div className='row d-flex justify-content-center homepage-content-row'>
             <div className='col-6'>
@@ -142,8 +144,9 @@ export default function Page({ location }) {
             </div>
           </div>
           <hr />
+          <div className='break-sticky'></div>
           {/**Homepage Content row */}
-          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row'>
+          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row '>
             <div className='col-6'>
               <h4 className='mb-3'>Sustainable Supply Chain Initiator</h4>
               <p className='mb-3 font-weight-bold'>We help reduce your carbon footprint.</p>
@@ -156,7 +159,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Homepage Content row */}
-          <div className='row d-flex justify-content-center homepage-content-row'>
+          <div className='row d-flex justify-content-center homepage-content-row '>
             <div className='col-6'>
               <h4 className='mb-3'>Continuous Improver</h4>
               <p className='mb-3 font-weight-bold'>We don't stop looking for efficiency and savings.</p>
@@ -169,7 +172,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Homepage Content row */}
-          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row'>
+          <div className='row d-flex flex-row-reverse justify-content-between homepage-content-row '>
             <div className='col-6'>
               <h4 className='mb-3'>Global Logistics Manager</h4>
               <p className='mb-3 font-weight-bold'>Our processes and savings are available globally.</p>
