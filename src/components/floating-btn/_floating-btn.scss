@@ -1,0 +1,21 @@
+@import '../../styles//variables';
+.floating-btn{
+  position: fixed;
+  z-index: 100;
+  right: 25px;
+  bottom: 25px;
+  background-color: $protrans-red;
+  height: 110px;
+  width: 110px;
+  cursor: pointer;
+  transition: transform .3s, background-color .3s;
+  box-shadow: $shadow-4;
+  &:hover{
+    transform: scale(1.1);
+    background-color: darken($protrans-red, 10%);
+  }
+  i{
+    color: white;
+    font-size: 3.5rem;
+  }
+}

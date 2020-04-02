@@ -13,6 +13,7 @@ $font-opacity-hover: $font-opacity - .1;
 
 //colors
 $protrans-red: #990000;
+$protrans-red-dark: darken($protrans-red, 10%);
 $black: #000000;
 $black-hover: rgba($black, $font-opacity-hover);
 $dark-1: #2E2D2D;

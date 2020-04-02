@@ -1,14 +1,13 @@
-import React, { useEffect, Fragment } from "react";
+import React, { Fragment } from "react";
 import { graphql, Link } from "gatsby";
 import Sticky from 'react-stickynode';
 import { ListGroup, Card } from 'react-bootstrap';
-import BackgroundImage from 'gatsby-background-image';
 import PageContainer from "../components/page-container";
 import PageContent from "../components/page-content";
-import ShareButton from '../components/share-button';
 import { useTreble } from 'treble-gsm';
 import SEO from '../components/seo';
 import { DiscussionEmbed } from 'disqus-react';
+import PostBanner from '../components/post-banner';
 import uniqid from 'uniqid';
 import './_post-template.scss';
 import './_post-template-dark.scss';
@@ -32,43 +31,15 @@ function PostTemplate({ data, location, pageContext }) {
         thumbnail={featuredImage.childImageSharp.fluid.src}
       />
       <PageContainer activePath={location} id={'post-template'}>
-        <BackgroundImage
-          Tag="section"
-          fluid={featuredImage.childImageSharp.fluid}
-          backgroundColor={`#040e18`}
-          className={'featured-image'}
-        >
-          <div className={'featured-image-container d-flex justify-content-center align-items-center'}>
-            <div className='col-12 px-4 px-lg-0 col-lg-8 featured-image-content'>
-              <p>Category: {category}</p>
-              <h1>{title}</h1>
-              <div className='d-flex'>
-                {
-                  tags.map((tag) => {
-                    return (
-                      <Fragment key={uniqid()}>
-                        <span className="badge badge-primary px-2 mx-1">{tag}</span>
-                      </Fragment>
-                    )
-                  })
-                }
-              </div>
 
-              <div className='d-flex justify-content-start'>
-                <div>
-                  <p><small>Published: {date}</small></p>
-                  <ShareButton
-                    url={`${siteMetadata.domain}/${path}`}
-                    title={title}
-                    size={32}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </BackgroundImage>
-
+        <PostBanner
+          featuredImage={featuredImage.childImageSharp.fluid}
+          category={category}
+          title={title}
+          tags={tags}
+          publishDate={date}
+          shareUrl={`${siteMetadata.domain}/${path}`}
+        />
         <PageContent type='post'>
           <div className='row d-flex'>
             <div className='pt-4 pr-0 pr-md-4 col-12 col-lg-9'>

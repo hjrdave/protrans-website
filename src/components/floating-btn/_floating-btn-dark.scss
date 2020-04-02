@@ -1,0 +1,12 @@
+@import '../../styles//variables';
+.dark-mode{
+  .floating-btn{
+    background-color: $dm-color-3;
+    &:hover{
+      background-color: darken($dm-color-3, 10%);
+    }
+    i{
+      color: $dm-color-1;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+.post-banner{
+  .featured-image{
+    height: 500px;
+    .featured-image-container{
+      height: 100%;
+      .featured-image-content{
+          h1{
+            color: white;
+            font-size: $h1-font-size + 1rem;
+            text-shadow: 0px 0px 35px #000000;
+          }
+          
+          p{
+            font-size: $font-size-base + .75rem;
+            color: white;
+            text-shadow: 0px 0px 40px #000000;
+            small{
+              font-size: $font-size-base - .02rem;
+              text-shadow: 0px 0px 40px #000000;
+            }
+          }
+      }
+    }
+  }
+}

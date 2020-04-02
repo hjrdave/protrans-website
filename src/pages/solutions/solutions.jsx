@@ -1,10 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 import { Form } from 'react-bootstrap';
-import PageContainer from "../../components/page-container"
-import PageContent from "../../components/page-content"
-import "./_solutions.scss"
-import { updateStore, useTreble } from "treble-gsm"
+import PageContainer from "../../components/page-container";
+import PageContent from "../../components/page-content";
+import FloatingBtn from "../../components/floating-btn";
+import "./_solutions.scss";
+import { updateStore, useTreble } from "treble-gsm";
 
 export default function Page({ location }) {
   const [{ darkMode }, dispatch] = useTreble();
@@ -19,12 +20,9 @@ export default function Page({ location }) {
 
   return (
     <>
+      <FloatingBtn icon={<i className="fas fa-user-headset"></i>} />
       <PageContainer activePath={location}>
         <PageContent>
-          <h1>Hi from the Solutions page</h1>
-          <p>{(darkMode) ? 'true' : 'false'}</p>
-          <button onClick={() => handleDarkMode()}>Click</button>
-
         </PageContent>
       </PageContainer>
     </>

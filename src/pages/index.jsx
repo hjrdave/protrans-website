@@ -8,6 +8,7 @@ import SEO from '../components/seo';
 import HomeForm from '../components/forms/home-form';
 import LineNav from '../components/line-nav';
 import Sticky from 'react-stickynode';
+import FloatingBtn from '../components/floating-btn';
 import './_index.scss';
 import './_index-dark.scss';
 
@@ -20,7 +21,7 @@ export default function Page({ location }) {
       <PageContainer activePath={location}>
 
         <HomeSlider />
-
+        <FloatingBtn icon={<i className="fas fa-user-headset"></i>} />
         <PageContent>
 
           <div className='row d-flex justify-content-center'>
