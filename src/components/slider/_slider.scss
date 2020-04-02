@@ -37,6 +37,10 @@
       transform: translateX(0px);
       opacity: 1;
     }
+    .slider-button{
+      height: 100%;
+      opacity: 1
+    }
   }
 }
 
@@ -61,3 +65,13 @@
   transition: transform .3s ease-out .2s, opacity .3s ease-out .2s;
   transition-delay: .8s;
 }
+.slider-button-container{
+  height: 75px;
+  .slider-button{
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    transition: height .5s ease-out .2s, opacity .5s ease-out .2s;
+    transition-delay: 1s;
+  }
+} 

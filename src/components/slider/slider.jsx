@@ -42,10 +42,12 @@ export default function Slider({ slides }) {
                   <h1 className={`slider-heading-1`}>{item.headline}</h1>
                   <p className='slider-lede'>{item.lede}</p>
                   {item.button ? (
-                    <div className="text-center text-lg-left pt-4">
-                      <Button variant="primary" className={"py-2 px-4"}>
-                        {item.button}
-                      </Button>
+                    <div className="slider-button-container text-center text-lg-left pt-4">
+                      <div className='slider-button'>
+                        <Button variant="primary" className={"py-2 px-4"}>
+                          {item.button}
+                        </Button>
+                      </div>
                     </div>
                   ) : null}
                 </div>
