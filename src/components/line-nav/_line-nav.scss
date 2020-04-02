@@ -3,7 +3,7 @@
   position: absolute;
   margin-top: 20vh;
   left: -15vw;
-  border-left: 6px solid lighten($dark-1, 15%);
+  //border-left: 6px dotted lighten($dark-1, 15%)!important;
   
   stroke-linecap: round;
   .list-group-flush{
@@ -12,17 +12,50 @@
       .list-group-item{
         background-color: rgba(0,0,0,0);
         border: none;
+        
         cursor: pointer;
-        .line-nav-dot{
-          height: 20px;
-          width: 20px;
-          background-color: lighten($dark-1, 15%);
-          position: absolute;
-          margin-left: -33px;
-          margin-top: 3px;
-          transition: transform .2s, box-shadow .2s, background-color .2s, color .2s;
-          //box-shadow: $shadow-2;
-        }
+     
+          .line-nav-dot{
+            height: 20px;
+            width: 20px;
+            background-color: lighten($dark-1, 15%);
+            position: absolute;
+            margin-left: -33px;
+            margin-top: 3px;
+            transition: transform .2s, box-shadow .2s, background-color .2s, color .2s;
+            //box-shadow: $shadow-2;
+            &:before{
+              content: ".";
+              position: absolute;
+              //margin-top: 23px;
+              margin-top: 13px;
+              margin-left: 8px;
+            }
+            &:after{
+              content: ".";
+              position: absolute;
+              //margin-top: -23px;
+              margin-top: -26px;
+              margin-left: 8px;
+            }
+          }
+          small{
+          }
+      
+          &:first-child{
+            .line-nav-dot{
+              &:after{
+                content: none;
+              }
+            }
+          }
+          &:last-child{
+            .line-nav-dot{
+              &:before{
+                content: none;
+              }
+            }
+          }
       }
     }
     .line-nav-active{
@@ -30,7 +63,14 @@
         transform: scale(1.5);
         box-shadow: $shadow-4;
         background-color: $dark-1!important;
-        
+        &:before{
+          //transform: scale(.70);
+         // margin-top: 15px!important;
+        }
+        &:after{
+          //transform: scale(.70);
+          //margin-top: -15px!important;
+        }
       }
       small{
         font-weight: bold!important;
