@@ -2,7 +2,13 @@
 
 
 footer{
+  // position: absolute;
+  //   left: 0;
+  //   bottom: 0;
   background-color: $dark-1;
+  // height: 283px;
+  width: 100%;
+  // overflow: hidden;
   p{
     color: $dm-white!important;
   }
@@ -24,7 +30,10 @@ footer{
       @extend .footer-apps-logins;
     }
     .footer-social-media{
+      i{
         font-size: 1.5rem;
+      }
+        
       }
     }
   }

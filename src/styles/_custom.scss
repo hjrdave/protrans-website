@@ -5,16 +5,21 @@ only library css should be added to this.  App specific css shouldnt be written 
 @import './variables';
 
 /*Global Custom Styles*/
-body{
-  background-color: $bk-site-color;
-  a{
-    color: $black;
-    text-decoration: none!important;
-    &:hover{
-      color: inherit;
+html{
+    // position: relative;
+    // min-height: 100%;
+  body{
+    background-color: $bk-site-color;
+    a{
+      color: $black;
+      text-decoration: none!important;
+      &:hover{
+        color: inherit;
+      }
     }
   }
 }
+
 
 //Overwrite Global Bootstrap Classes
 .btn-primary{

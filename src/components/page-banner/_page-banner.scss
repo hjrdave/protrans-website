@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+.page-banner{
+  height: 350px;
+  background-color: white;
+  box-shadow: $shadow-inset;
+  background-image: url('./images/page-banner-bk.png');
+  background-size: cover;
+}

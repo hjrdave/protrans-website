@@ -8,7 +8,6 @@ import SEO from '../components/seo';
 import HomeForm from '../components/forms/home-form';
 import LineNav from '../components/line-nav';
 import Sticky from 'react-stickynode';
-import FloatingBtn from '../components/floating-btn';
 import './_index.scss';
 import './_index-dark.scss';
 
@@ -21,7 +20,6 @@ export default function Page({ location }) {
       <PageContainer activePath={location}>
 
         <HomeSlider />
-        <FloatingBtn icon={<i className="fas fa-user-headset"></i>} />
         <PageContent>
 
           <div className='row d-flex justify-content-center'>
@@ -48,7 +46,20 @@ export default function Page({ location }) {
           </div>
           <Sticky bottomBoundary=".break-sticky">
             <div className='d-none d-lg-flex'>
-              <LineNav />
+              <LineNav
+                navItems={[
+                  'Consolidation',
+                  'Optimization',
+                  'Solutions',
+                  'Logistics',
+                  '3PL Manager',
+                  'Warehousing',
+                  'Client Focused',
+                  'Sustainable',
+                  'Improver',
+                  'Global Logistics'
+                ]}
+              />
             </div>
           </Sticky>
           <h1 className="mt-4 pt-4 pb-3 text-center text-uppercase">Who is Protrans?</h1>

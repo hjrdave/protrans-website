@@ -6,18 +6,26 @@ only library css should be added to this.  App specific css shouldnt be written 
 @import './variables';
 
 /*Global Custom Styles*/
-.dark-mode{
-  background-color: $dm-color-1;
-  h1, h2, h3, h4, h5, h6, p, a{
-    color: $dm-white;
+html{
+  .dark-mode{
+    background-color: $dm-color-1;
+    h1, h2, h3, h4, h5, h6, p, a{
+      color: $dm-white;
+    }
+    hr{
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
   }
 }
+
 
 //Overwrite Global Bootstrap Classes
 .dark-mode{
   .btn-primary{
     background-color: $dm-color-3;
     border-color: $dm-color-3;
+    color: $dm-color-1;
+    font-weight: bold;
     &:hover{
       background-color: darken($dm-color-3, 10%)!important;
       border-color: darken($dm-color-3, 10%)!important;

@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+.dark-mode{
+  .info-card{
+    .card{
+      background-color: $dm-color-2;
+      i{
+        color: $dm-white;
+      }
+    }
+  }
+}
