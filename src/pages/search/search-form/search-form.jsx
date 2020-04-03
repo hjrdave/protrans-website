@@ -1,8 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
+import { Form, InputGroup, FormControl } from "react-bootstrap";
 import './_search-form.scss';
 
 function SearchResults({ query }) {

@@ -5,7 +5,6 @@
 
 import React, { useEffect } from "react";
 import { useTreble, updateStore } from 'treble-gsm';
-import './_page-container-dark.scss';
 
 export default function PageContainer({ children, id, activePath }) {
 
