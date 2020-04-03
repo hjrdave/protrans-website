@@ -3,7 +3,8 @@
   Main default layout for website
 */
 
-import React, { useEffect } from "react";
+import React from "react";
+import '../../styles';
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import FloatingBtn from '../../components/floating-btn';
