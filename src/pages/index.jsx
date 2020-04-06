@@ -63,7 +63,7 @@ export default function Page({ location }) {
             </div>
           </Sticky>
           <h1 className="mt-4 pt-4 pb-3 text-center text-uppercase">Who is Protrans?</h1>
-          <div className='homepage-caret-down text-center pb-4'><i className="fas fa-angle-down"></i></div>
+          <div className='page-caret-down text-center pb-4'><i className="fas fa-angle-down"></i></div>
 
           {/**Homepage Content row */}
           <div id={'section-1'} className='row d-flex justify-content-center pt-4 homepage-content-row '>

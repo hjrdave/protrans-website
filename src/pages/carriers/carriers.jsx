@@ -16,7 +16,7 @@ export default function Page({ location }) {
       <PageContainer activePath={location}>
         <PageBanner
           title={<>Want to Become a<br />Protrans Carrier Partner?</>}
-          cta={'Get an Analysis'}
+          cta={'Carrier Packet'}
         />
         <PageContent>
           <div className='col-12 carrier-page-info-row pb-4'>

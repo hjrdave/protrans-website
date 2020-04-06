@@ -38,6 +38,10 @@ function MainNav({ type }) {
             text: "Carriers",
           },
           {
+            path: "/our-story",
+            text: "Our Story",
+          },
+          {
             path: "/logistics-news",
             text: "Logistics News",
           },

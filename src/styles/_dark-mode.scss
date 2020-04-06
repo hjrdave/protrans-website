@@ -34,6 +34,12 @@ html{
         }
       }
     }
+    .page-caret-down{
+      i{
+        color: white;
+        opacity: $dm-font-opacity;
+      }
+    }
   }
 }
 

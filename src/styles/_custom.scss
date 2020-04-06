@@ -21,6 +21,12 @@ html{
       background-color: white;
       box-shadow: $shadow-5
     }
+    .page-caret-down{
+      i{
+        font-size: 6rem;
+        color: $black;
+      }
+    }
   }
 }
 
