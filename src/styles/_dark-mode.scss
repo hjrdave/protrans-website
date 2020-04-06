@@ -15,6 +15,25 @@ html{
     hr{
       border-top: 1px solid rgba(255, 255, 255, .1);
     }
+    .page-form-container{
+      background-color: $dm-color-3;
+      .btn-primary{
+        background-color: $dm-color-1;
+        border-color: $dm-color-1;
+        &:hover{
+          background-color: darken($dm-color-1, 10%)!important;
+          border-color: darken($dm-color-1, 10%)!important;
+        }
+        &:active{
+          background-color: $dm-color-1!important;
+          border-color: $dm-color-1!important;
+        }
+        &:focus{
+          background-color: $dm-color-1!important;
+          border-color: $dm-color-1!important;
+        }
+      }
+    }
   }
 }
 

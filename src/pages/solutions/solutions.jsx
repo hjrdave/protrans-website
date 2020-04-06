@@ -22,7 +22,7 @@ export default function Page({ location }) {
               <Link to={'/'}>
                 <InfoCard>
                   <div className='d-flex justify-content-center pt-3'>
-                    <i className="fas fa-boxes"></i>
+                    <i className="fad fa-boxes"></i>
                   </div>
                   <h4 className='text-center pt-3'>Capacity Optimization</h4>
                 </InfoCard>
@@ -32,7 +32,7 @@ export default function Page({ location }) {
               <Link to={'/'}>
                 <InfoCard>
                   <div className='d-flex justify-content-center pt-3'>
-                    <i className="fas fa-shipping-fast"></i>
+                    <i className="fad fa-shipping-fast"></i>
                   </div>
                   <h4 className='text-center pt-3'>North American Shipping</h4>
                 </InfoCard>
@@ -42,7 +42,7 @@ export default function Page({ location }) {
               <Link to={'/'}>
                 <InfoCard>
                   <div className='d-flex justify-content-center pt-3'>
-                    <i className="fas fa-globe-americas"></i>
+                    <i className="fad fa-globe-americas"></i>
                   </div>
                   <h4 className='text-center pt-3'>International Shipping</h4>
                 </InfoCard>
@@ -52,7 +52,7 @@ export default function Page({ location }) {
               <Link to={'/'}>
                 <InfoCard>
                   <div className='d-flex justify-content-center pt-3'>
-                    <i className="fas fa-warehouse-alt"></i>
+                    <i className="fad fa-warehouse-alt"></i>
                   </div>
                   <h4 className='text-center pt-3'>Warehousing and Distribution</h4>
                 </InfoCard>
@@ -62,7 +62,7 @@ export default function Page({ location }) {
               <Link to={'/'}>
                 <InfoCard>
                   <div className='d-flex justify-content-center pt-3'>
-                    <i className="fas fa-laptop"></i>
+                    <i className="fad fa-laptop"></i>
                   </div>
                   <h4 className='text-center pt-3'>Supply Chain Analysis/Design</h4>
                 </InfoCard>
@@ -72,7 +72,7 @@ export default function Page({ location }) {
               <Link to={'/'}>
                 <InfoCard>
                   <div className='d-flex justify-content-center pt-3'>
-                    <i className="fas fa-chart-network"></i>
+                    <i className="fad fa-chart-network"></i>
                   </div>
                   <h4 className='text-center pt-3'>Total 3PL Management</h4>
                 </InfoCard>

@@ -5,7 +5,7 @@ import PageContent from "../components/page-content";
 import HomeSlider from "../widgets/home-slider";
 import Card from 'react-bootstrap/Card';
 import SEO from '../components/seo';
-import HomeForm from '../components/forms/home-form';
+import PageForm from '../widgets/page-form';
 import LineNav from '../components/line-nav';
 import Sticky from 'react-stickynode';
 import './_index.scss';
@@ -200,15 +200,7 @@ export default function Page({ location }) {
           </div>
 
         </PageContent>
-        <PageContent type='banner' className='homepage-form-container'>
-          <div className='row d-flex justify-content-center'>
-            <div className='col-5 py-4'>
-              <p className='text-center text-capitalize mb-3 h4'>Want to get started saving on Logistics spend in your supply chain?</p>
-              <p className='text-center text-capitalize h1 mb-4'>Let's get to work!</p>
-              <HomeForm />
-            </div>
-          </div>
-        </PageContent>
+        <PageForm />
       </PageContainer>
     </>
   )

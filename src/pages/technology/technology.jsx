@@ -3,9 +3,10 @@ import { Link } from 'gatsby';
 import PageBanner from '../../components/page-banner';
 import Sticky from 'react-stickynode';
 import LineNav from '../../components/line-nav';
-import PageContainer from "../../components/page-container"
-import PageContent from "../../components/page-content"
-import "./_technology.scss"
+import PageContainer from "../../components/page-container";
+import PageContent from "../../components/page-content";
+import PageForm from '../../widgets/page-form';
+import "./_technology.scss";
 
 export default function Page({ location }) {
   return (
@@ -98,6 +99,7 @@ export default function Page({ location }) {
             </div>
           </div>
           <hr />
+          <div className='break-sticky'></div>
           {/**Page Content row */}
           <div id={'section-5'} className='row d-flex justify-content-center pt-4 homepage-content-row '>
             {/* <div className='col-8 d-flex justify-content-center'>
@@ -117,8 +119,9 @@ export default function Page({ location }) {
               {/* <Link to={'/'}><button className='btn-primary'>Learn More</button></Link> */}
             </div>
           </div>
-          {/* <div className='break-sticky'></div> */}
+
         </PageContent>
+        <PageForm />
       </PageContainer>
     </>
   )

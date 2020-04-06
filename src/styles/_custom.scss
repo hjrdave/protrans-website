@@ -17,8 +17,13 @@ html{
         color: inherit;
       }
     }
+    .page-form-container{
+      background-color: white;
+      box-shadow: $shadow-5
+    }
   }
 }
+
 
 
 //Overwrite Global Bootstrap Classes
