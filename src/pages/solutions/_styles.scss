@@ -1,14 +1,18 @@
 @import '../../styles/variables';
 
-.solutions-page-card-container{
-  .card{
-    transition: box-shadow .3s;
-    cursor: pointer;
-    i{
-      font-size: 9rem;
-    }
-    &:hover{
-      box-shadow: $shadow-4;
+#solutions-page{
+  .solutions-page-card-container{
+    .card{
+      transition: box-shadow .3s;
+      cursor: pointer;
+      i{
+        font-size: 9rem;
+      }
+      &:hover{
+        box-shadow: $shadow-4;
+      }
     }
   }
 }
+
+

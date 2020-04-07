@@ -12,7 +12,7 @@ export default function Page({ location }) {
 
   return (
     <>
-      <PageContainer activePath={location}>
+      <PageContainer id='carriers-page' activePath={location}>
         <PageBanner
           title={<>Want to Become a<br />Protrans Carrier Partner?</>}
           cta={'Carrier Packet'}

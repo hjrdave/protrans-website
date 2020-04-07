@@ -11,7 +11,7 @@ import "./_styles.scss";
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer activePath={location}>
+      <PageContainer id='technology-page' activePath={location}>
 
         <PageBanner
           title={<>Protrans Proprietary<br />Logistics Technology</>}
@@ -35,7 +35,7 @@ export default function Page({ location }) {
           <div className='page-caret-down text-center pb-4'><i className="fas fa-angle-down"></i></div>
 
           {/**Page Content row */}
-          <div id={'section-1'} className='row d-flex justify-content-center pt-4 homepage-content-row '>
+          <div id={'section-1'} className='row d-flex justify-content-center pt-4 page-content-row '>
             <div className='col-8 d-flex justify-content-center'>
               <i className="fas fa-laptop"></i>
             </div>
@@ -47,7 +47,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Page Content row */}
-          <div id={'section-2'} className='row d-flex justify-content-center pt-4 homepage-content-row '>
+          <div id={'section-2'} className='row d-flex justify-content-center pt-4 page-content-row '>
             <div className='col-8 d-flex justify-content-center'>
               <i className="fas fa-laptop"></i>
             </div>
@@ -65,7 +65,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Page Content row */}
-          <div id={'section-3'} className='row d-flex justify-content-center pt-4 homepage-content-row '>
+          <div id={'section-3'} className='row d-flex justify-content-center pt-4 page-content-row '>
             <div className='col-8 d-flex justify-content-center'>
               <i className="fas fa-laptop"></i>
             </div>
@@ -81,7 +81,7 @@ export default function Page({ location }) {
           </div>
           <hr />
           {/**Page Content row */}
-          <div id={'section-4'} className='row d-flex justify-content-center pt-4 homepage-content-row '>
+          <div id={'section-4'} className='row d-flex justify-content-center pt-4 page-content-row '>
             <div className='col-8 d-flex justify-content-center'>
               <i className="fas fa-laptop"></i>
             </div>
@@ -101,7 +101,7 @@ export default function Page({ location }) {
           <hr />
           <div className='break-sticky'></div>
           {/**Page Content row */}
-          <div id={'section-5'} className='row d-flex justify-content-center pt-4 homepage-content-row '>
+          <div id={'section-5'} className='row d-flex justify-content-center pt-4 page-content-row '>
             {/* <div className='col-8 d-flex justify-content-center'>
               <i className="fas fa-laptop"></i>
             </div> */}

@@ -5,9 +5,7 @@ only library css should be added to this.  App specific css shouldnt be written 
 @import './variables';
 
 /*Global Custom Styles*/
-html{
-    // position: relative;
-    // min-height: 100%;
+
   body{
     background-color: $bk-site-color;
     a{
@@ -27,8 +25,21 @@ html{
         color: $black;
       }
     }
+    .page-banner{
+      background-color: $protrans-blue;
+      background-image: none;
+      h1{
+        color: white;
+      }
+    }
+    .page-content-row{
+      i{
+        font-size: 12rem;
+        color: $protrans-red;
+      }
+    }
   }
-}
+  
 
 
 

@@ -1,8 +1,10 @@
 
 @import '../../styles/variables';
 
-.our-story-page-info-row{
-  p{
-    font-size: $font-size-base + .3rem;
+#our-story-page{
+  .our-story-page-info-row{
+    p{
+      font-size: $font-size-base + .3rem;
+    }
   }
 }

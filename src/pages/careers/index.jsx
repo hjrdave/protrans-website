@@ -14,7 +14,7 @@ export default function Page({ location }) {
       <SEO
         title={'Careers'}
       />
-      <PageContainer activePath={location}>
+      <PageContainer id='careers-page' activePath={location}>
         <PageBanner
           title={'Protrans Careers'}
         />

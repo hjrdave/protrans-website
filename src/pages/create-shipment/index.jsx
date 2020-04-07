@@ -7,7 +7,7 @@ import "./_styles.scss";
 export default function Page({ location }) {
   return (
     <>
-      <PageContainer activePath={location}>
+      <PageContainer id='create-shipment-page' activePath={location}>
         <PageContent>
           <h1>Hi from the Create Shipment page</h1>
           <p>Welcome to page</p>

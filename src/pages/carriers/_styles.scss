@@ -1,8 +1,9 @@
 @import '../../styles/variables';
 
-.carrier-page-info-row{
-  p{
-    font-size: $font-size-base + .4rem;
+#carriers-page{
+  .carrier-page-info-row{
+    p{
+      font-size: $font-size-base + .4rem;
+    }
   }
-  
 }

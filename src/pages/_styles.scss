@@ -3,53 +3,48 @@
 @import '~bootstrap/scss/_variables';
 @import '~bootstrap/scss/mixins/breakpoints';
 
-.homepage-floating-card{
-  margin-top: -150px;
-  .card{
-    box-shadow: $shadow-3;
-    height: 200px;
-    @include media-breakpoint-down(md) {
-      height: auto;
-    }
-    div{
+#home-page{
+  .homepage-floating-card{
+    margin-top: -150px;
+    .card{
+      box-shadow: $shadow-3;
+      height: 200px;
+      @include media-breakpoint-down(md) {
+        height: auto;
+      }
       div{
         div{
-          i{
-            font-size: 5rem;
-            color: $protrans-red;
-            @include media-breakpoint-down(md) {
-              font-size: 7rem;
+          div{
+            i{
+              font-size: 5rem;
+              color: $protrans-red;
+              @include media-breakpoint-down(md) {
+                font-size: 7rem;
+              }
             }
-          }
-          p{
-            font-size: $font-size-base + .3rem;
-            font-weight: bold;
+            p{
+              font-size: $font-size-base + .3rem;
+              font-weight: bold;
+            }
           }
         }
       }
     }
+    
   }
-  
-}
-.homepage-content-row{
-  //text-transform: uppercase;
-  padding: 2.5rem 0rem 2.5rem 0rem;
-  // &:nth-child(3n){
-  //   background-color: white;
-  //   box-shadow: $shadow-2;
-  // }
-  h3{
-    //font-size: $h3-font-size
-  }
-  .badge-primary{
-    font-size: $font-size-base + .1rem;
-  }
-  
-  i{
-    font-size: 12rem;
-    color: $protrans-red;
+  .homepage-content-row{
+    padding: 2.5rem 0rem 2.5rem 0rem;
+    .badge-primary{
+      font-size: $font-size-base + .1rem;
+    }
+    
+    i{
+      font-size: 12rem;
+      color: $protrans-red;
+    }
   }
 }
+
 
 
 

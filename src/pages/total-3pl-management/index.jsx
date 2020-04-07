@@ -1,4 +1,4 @@
-import React from "./node_modules/react";
+import React from "react";
 import PageBanner from '../../components/page-banner';
 import PageContainer from "../../components/page-container";
 import PageContent from "../../components/page-content";
@@ -9,7 +9,7 @@ export default function Page({ location }) {
 
   return (
     <>
-      <PageContainer activePath={location}>
+      <PageContainer id='total-3pl-management' activePath={location}>
         <PageBanner
           title={'Total 3PL Management'}
           cta={'Talk to a Pro'}

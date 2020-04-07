@@ -9,7 +9,7 @@ export default function Page({ location }) {
 
   return (
     <>
-      <PageContainer activePath={location}>
+      <PageContainer id='capacity-optimization-page' activePath={location}>
         <PageBanner
           title={'Capacity Optimization'}
           cta={'Talk to a Pro'}

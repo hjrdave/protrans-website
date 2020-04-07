@@ -15,7 +15,7 @@ export default function Page({ location }) {
 
   return (
     <>
-      <PageContainer activePath={location}>
+      <PageContainer id='our-story-page' activePath={location}>
         <PageBanner
           title={<>About Protrans</>}
           cta={'Im A Carrier'}

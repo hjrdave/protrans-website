@@ -9,7 +9,7 @@ export default function Page({ location }) {
   return (
     <>
       <SEO title="404: Not found" />
-      <PageContainer activePath={location}>
+      <PageContainer id='404-page' activePath={location}>
         <PageContent>
           <div className="row d-flex justify-content-center align-items-center py-4 my-4">
             <div className="col-8 d-flex justify-content-center">

@@ -9,7 +9,7 @@ export default function Page({ location }) {
 
   return (
     <>
-      <PageContainer activePath={location}>
+      <PageContainer id='warehousing-page' activePath={location}>
         <PageBanner
           title={'Warehousing'}
           cta={'Talk to a Pro'}
