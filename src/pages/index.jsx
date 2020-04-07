@@ -8,8 +8,8 @@ import SEO from '../components/seo';
 import PageForm from '../widgets/page-form';
 import LineNav from '../components/line-nav';
 import Sticky from 'react-stickynode';
-import './_index.scss';
-import './_index-dark.scss';
+import './_styles.scss';
+import './_styles-dark.scss';
 
 export default function Page({ location }) {
   return (

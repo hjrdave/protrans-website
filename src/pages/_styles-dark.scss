@@ -1,7 +1,7 @@
 /*
    dark mode for home page
 */
-@import '../styles//variables';
+@import '../styles/variables';
 
 .dark-mode{
   .homepage-floating-card{
@@ -24,9 +24,5 @@
       color: $dm-color-3;
     }
   }
-  
-
-
-  
 }
 

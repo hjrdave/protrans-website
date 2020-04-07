@@ -11,4 +11,4 @@ import './_fonts.scss';
 import './_custom.scss';
 
 //Dark Mode styles
-import './_dark-mode.scss';
+import './_custom-dark.scss';
