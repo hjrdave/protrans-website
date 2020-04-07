@@ -72,7 +72,7 @@ export default function Page({ location }) {
               <p className='mb-3 font-weight-bold'><span className='badge badge-primary'>30</span> North American <span className='text-primary'>Locations</span></p>
               <p className='mb-3 font-weight-bold'>Let our Network Work for You!</p>
               <p className='text-capitalize'>Consolidating freight shipments with consistent capacity.</p>
-              <Link to={'/'}><button className='btn-primary'>Learn More</button></Link>
+              <Link to={'/north-american-shipping'}><button className='btn-primary'>Learn More</button></Link>
             </div>
             <div className='col-4 d-flex align-items-center justify-content-end'>
               <i className="fas fa-chart-network"></i>
@@ -86,7 +86,7 @@ export default function Page({ location }) {
               <h4 className='mb-3'>Leader In Optimization</h4>
               <p className='mb-3 font-weight-bold'>Reduce Logistics with Full Optimizaiton!  </p>
               <p className='text-capitalize'>No more fighting for the best rates. We optimize your supply chain creating value adding benefits.</p>
-              <Link to={'/'}><button className='btn-primary'>Learn More</button></Link>
+              <Link to={'/capacity-optimization'}><button className='btn-primary'>Learn More</button></Link>
             </div>
             <div className='col-4 d-flex align-items-center justify-content-end'>
               <i className="fas fa-boxes"></i>
@@ -99,7 +99,7 @@ export default function Page({ location }) {
               <h4 className='mb-3'>Strategic Planner and Solution Designer</h4>
               <p className='mb-3 font-weight-bold'>The more that is planned the more that is saved.</p>
               <p className='text-capitalize'>Over 95% of our customer networks are planned movements! We analyze, design, and plan your unique solution.</p>
-              <Link to={'/'}><button className='btn-primary'>Learn More</button></Link>
+              <Link to={'/engineering-analysis-design'}><button className='btn-primary'>Learn More</button></Link>
             </div>
             <div className='col-4 d-flex align-items-center justify-content-end'>
               <i className="fas fa-clipboard-list-check"></i>
@@ -125,7 +125,7 @@ export default function Page({ location }) {
               <h4 className='mb-3'>Versatile 3PL Manager</h4>
               <p className='mb-3 font-weight-bold'>Large yet nimble as the admin and operation in your supply chain.</p>
               <p className='text-capitalize'>We focus on your every need while managing all aspects of your supply chain. Leave the difficult things to us while you focus on core competencies.</p>
-              <Link to={'/'}><button className='btn-primary'>Learn More</button></Link>
+              <Link to={'/total-3pl-management'}><button className='btn-primary'>Learn More</button></Link>
             </div>
             <div className='col-4 d-flex align-items-center justify-content-end'>
               <i className="fas fa-traffic-light"></i>
@@ -138,7 +138,7 @@ export default function Page({ location }) {
               <h4 className='mb-3'>High Velocity Warehouser</h4>
               <p className='mb-3 font-weight-bold'>Warehousing and cross-docking fit to your capacity</p>
               <p className='text-capitalize'>Our state of the art facilities surround your materials with cleaniness, organization, efficiency, and new sustainability standards.</p>
-              <Link to={'/'}><button className='btn-primary'>Learn More</button></Link>
+              <Link to={'/warehousing'}><button className='btn-primary'>Learn More</button></Link>
             </div>
             <div className='col-4 d-flex align-items-center justify-content-end'>
               <i className="fas fa-warehouse-alt"></i>
@@ -192,7 +192,7 @@ export default function Page({ location }) {
               <h4 className='mb-3'>Global Logistics Manager</h4>
               <p className='mb-3 font-weight-bold'>Our processes and savings are available globally.</p>
               <p className='text-capitalize'>International shipping is nothing new to us. We have an established global footprint that uses our NA consolidation model to create savings for international shippers.</p>
-              <Link to={'/'}><button className='btn-primary'>Learn More</button></Link>
+              <Link to={'/international-shipping'}><button className='btn-primary'>Learn More</button></Link>
             </div>
             <div className='col-4 d-flex align-items-center justify-content-end'>
               <i className="fas fa-globe-americas"></i>

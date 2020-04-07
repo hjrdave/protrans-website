@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from 'gatsby';
+import Sticky from 'react-stickynode';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import LineNav from '../../components/line-nav';
 import InfoCard from '../../components/info-card';
 import { Button } from 'react-bootstrap';
 import PageBanner from '../../components/page-banner';
@@ -18,8 +20,21 @@ export default function Page({ location }) {
           title={<>About Protrans</>}
           cta={'Im A Carrier'}
         />
+
         <PageContent>
-          <div className='col-12 our-story-page-info-row'>
+          <Sticky bottomBoundary=".break-sticky">
+            <div className='d-none d-lg-flex'>
+              <LineNav
+                navItems={[
+                  'Our Story',
+                  'Mission and Values',
+                  'Executive Leadership',
+                  'Partner with Us'
+                ]}
+              />
+            </div>
+          </Sticky>
+          <div id={'section-1'} className='col-12 our-story-page-info-row'>
             <div className='row d-flex justify-content-center'>
               <div className='col-8'>
                 <h1 className="mt-4 pt-4 pb-3 text-center text-uppercase">Our Growth Lead by<br />Our Customers</h1>
@@ -244,7 +259,7 @@ export default function Page({ location }) {
                   est.</p>
             </TimelineItem>
           </Timeline>
-          <div className='col-12 our-story-page-info-row mb-3'>
+          <div id={'section-2'} className='col-12 our-story-page-info-row mb-3'>
             <div className='row d-flex justify-content-center'>
               <div className='col-8'>
                 <h1 className="mt-4 pt-4 pb-3 text-center text-uppercase">Protrans Mission, Values, and Culture</h1>
@@ -256,7 +271,7 @@ export default function Page({ location }) {
           <div className='d-flex justify-content-center'>
             <i class="fas fa-question-circle" style={{ fontSize: '10rem' }}></i>
           </div>
-          <div className='col-12 our-story-page-info-row mb-3'>
+          <div id={'section-3'} className='col-12 our-story-page-info-row mb-3'>
             <div className='row d-flex justify-content-center'>
               <div className='col-8'>
                 <h1 className="mt-4 pt-4 pb-3 text-center text-uppercase">Executive Leadership</h1>
@@ -369,7 +384,8 @@ export default function Page({ location }) {
               </div>
             </InfoCard>
           </div>
-          <div className='col-12 our-story-page-info-row mb-4'>
+          <div className='break-sticky'></div>
+          <div id={'section-4'} className='col-12 our-story-page-info-row mb-4'>
             <div className='row d-flex justify-content-center'>
               <div className='col-8 text-center'>
                 <h4 className="mt-4 pt-4 pb-3 text-center text-uppercase">Interested in Partnering with Us?</h4>
