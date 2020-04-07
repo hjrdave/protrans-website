@@ -1,6 +1,7 @@
 @import '../../styles/variables';
 .info-card{
   box-shadow: $shadow-2;
+  border-radius: .25rem;
   .card{
     i{
       color: $protrans-red;
