@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'gatsby';
+import SEO from '../../components/seo';
 import { Button } from 'react-bootstrap';
 import PageBanner from '../../components/page-banner';
 import PageContainer from "../../components/page-container";
@@ -12,6 +13,7 @@ export default function Page({ location }) {
 
   return (
     <>
+      <SEO title="Carriers" />
       <PageContainer id='carriers-page' activePath={location}>
         <PageBanner
           title={<>Want to Become a<br />Protrans Carrier Partner?</>}
