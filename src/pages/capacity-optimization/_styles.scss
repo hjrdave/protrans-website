@@ -1,3 +1,11 @@
+@import '../../styles//variables';
+
 #capacity-optimization-page{
-  
+  p{
+    font-size: $font-size-base + .3rem;
+  }
+  i{
+    font-size: 15rem;
+    color: $protrans-red;
+  }
 }
