@@ -43,9 +43,11 @@
     "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
+    "@svgr/cli": "^5.3.1",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
     "babel-loader": "^8.0.6",
+    "del": "^5.1.0",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1",
     "webpack": "^4.41.6",
@@ -59,7 +61,8 @@
     "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop --open",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages && gatsby clean"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages && gatsby clean",
+    "convertSVG": "npx @svgr/cli -d src/assets --ignore-existing src/assets"
   },
   "repository": {
     "type": "git",

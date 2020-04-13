@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'gatsby';
+import SEO from '../../components/seo';
 import Sticky from 'react-stickynode';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import LineNav from '../../components/line-nav';
@@ -15,6 +16,7 @@ export default function Page({ location }) {
 
   return (
     <>
+      <SEO title="Our Story" />
       <PageContainer id='our-story-page' activePath={location}>
         <PageBanner
           title={<>About Protrans</>}

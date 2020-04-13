@@ -35,12 +35,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
   const posts = result.data.allMarkdownRemark.edges;
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
     createPage({
       path: node.frontmatter.path,
-      component: path.resolve(`src/templates/post-template.jsx`),
+      component: path.resolve(`src/templates/post-template/index.jsx`),
       context: {
-        posts: posts
+        posts: posts,
+        prev: index === 0 ? null : posts[index - 1].node,
+        next: index === (posts.length - 1) ? null : posts[index + 1].node
       }, // additional data can be passed via context
     })
   })

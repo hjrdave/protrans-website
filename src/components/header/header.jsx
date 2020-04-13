@@ -9,6 +9,7 @@ import "./_header.scss";
 import "./_header-dark-mode.scss";
 import { Form } from 'react-bootstrap';
 import Image from "../../images/register";
+import LogoProtrans from '../../assets/LogoProtrans';
 import MainNav from "../../widgets/main-nav";
 import Sticky from 'react-stickynode';
 import { updateStore, useTreble } from "treble-gsm";
@@ -57,11 +58,7 @@ function Header() {
           <header className="px-4 d-flex justify-content-between align-content-center">
             <div className="header-logo pl-4 pt-1">
               <Link to="/">
-                {
-                  (darkMode) ?
-                    <Image name={"logoProtransInverse"} /> :
-                    <Image name={"logoProtrans"} />
-                }
+                <LogoProtrans />
               </Link>
             </div>
             <div className='header-nav pr-4'>

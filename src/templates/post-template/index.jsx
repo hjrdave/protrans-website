@@ -1,19 +1,24 @@
+/*
+  Post Template
+  This template is used for blog posts.
+*/
+
 import React, { Fragment } from "react";
 import { graphql, Link } from "gatsby";
 import Sticky from 'react-stickynode';
-import { ListGroup, Card } from 'react-bootstrap';
-import PageContainer from "../components/page-container";
-import PageContent from "../components/page-content";
+import { ListGroup, Card, Button } from 'react-bootstrap';
+import PageContainer from "../../components/page-container";
+import PageContent from "../../components/page-content";
 import { useTreble } from 'treble-gsm';
-import SEO from '../components/seo';
+import SEO from '../../components/seo';
 import { DiscussionEmbed } from 'disqus-react';
-import PostBanner from '../components/post-banner';
+import PostBanner from '../../components/post-banner';
 import uniqid from 'uniqid';
-import './_post-template.scss';
-import './_post-template-dark.scss';
+import './_styles.scss';
+import './_styles-dark.scss';
 
-function PostTemplate({ data, location, pageContext }) {
-  const { posts } = pageContext;
+export default function Template({ data, location, pageContext }) {
+  const { posts, prev, next } = pageContext;
   const { markdownRemark, site } = data; // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark;
   const { siteMetadata } = site;
@@ -47,6 +52,18 @@ function PostTemplate({ data, location, pageContext }) {
                 className="blog-post-content"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
+              <div className='row py-4'>
+                <div className='d-flex justify-content-between col-12'>
+                  {prev &&
+                    <Link to={prev.frontmatter.path}><strong>&lt;&lt; Previous:</strong> {prev.frontmatter.title}</Link> || <div></div>
+                  }
+                  {next &&
+                    <Link to={next.frontmatter.path}>{next.frontmatter.title}<strong>: Next &gt;&gt;</strong></Link> || <div></div>
+                  }
+                </div>
+              </div>
+
+
               {/**Mobile Category */}
               <div className='col-12 d-block d-lg-none post-menu post-menu-mobile py-4'>
                 <Card body>
@@ -149,7 +166,7 @@ export const pageQuery = graphql`
               html
               excerpt
       frontmatter {
-              date(formatString: "MMMM DD, YYYY")
+            date
             path
             title
             tags
@@ -166,4 +183,3 @@ export const pageQuery = graphql`
     }
   `
 
-export default PostTemplate;

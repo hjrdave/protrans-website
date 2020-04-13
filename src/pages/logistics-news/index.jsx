@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { graphql, Link } from "gatsby";
+import SEO from '../../components/seo';
 import PageContainer from "../../components/page-container";
 import uniqid from 'uniqid';
 import PageContent from "../../components/page-content";
@@ -23,6 +24,7 @@ export default function Page({
 
   return (
     <>
+      <SEO title="Logistics News" />
       {/**Mobile Menu */}
       <div className='category-menu-mobile-button p-3 d-lg-none' onClick={() => setCatMobileMenuState(true)}>
         <i className="fas fa-ellipsis-v"></i>
@@ -130,7 +132,7 @@ export const pageQuery = graphql`
         id
         excerpt(pruneLength: 200)
         frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date
         path
         title
         category

@@ -1,0 +1,1 @@
+export { default as LogoProtrans } from './LogoProtrans'

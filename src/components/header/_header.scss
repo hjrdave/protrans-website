@@ -27,9 +27,9 @@
     height: 100%;
     .header-logo{
       width: 250px;
-      height: auto;
-      img{
-        margin-top: 10px;
+      //height: auto;
+      svg{
+        margin-top: 25px;
       }
     }
     
@@ -69,9 +69,7 @@
       height: 65px;
       .header-logo{
         width: 200px;
-        img{
-          margin-top: 0px;
-        }
+          margin-top: -12px;
       }
     }
   }

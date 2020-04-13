@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import SEO from '../../components/seo';
 import PageContainer from "../../components/page-container";
 import PageContent from "../../components/page-content";
 import SearchForm from './search-form';
@@ -20,6 +21,7 @@ export default function Page({ location }) {
 
   return (
     <>
+      <SEO title="Search" />
       <PageContainer id={"search-page"} activePath={location}>
         <PageContent>
           <h1>Search Site</h1>

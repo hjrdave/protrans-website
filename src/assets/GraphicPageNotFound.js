@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTreble } from 'treble-gsm';
 
-export default function GraphicPageNotFound(props) {
+export default function SvgGraphicPageNotFound(props) {
 
   const [{ darkMode }] = useTreble();
 

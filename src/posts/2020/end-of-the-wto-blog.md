@@ -1,6 +1,6 @@
 ---
 path: "/blog/test-post"
-date: "2019-05-04"
+date: "2020-04-2"
 title: "End of the WTO Blog Foo"
 category: "Global Trade"
 tags: ['Foo', 'FooBar']

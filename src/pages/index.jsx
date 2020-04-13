@@ -15,7 +15,8 @@ export default function Page({ location }) {
   return (
     <>
       <SEO
-        title={'Home'}
+        title={'ProTrans 3PL - A Perfect Fit Solution For Your Logistics Needs'}
+        homePage
       />
       <PageContainer id='home-page' activePath={location}>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'gatsby';
+import SEO from '../../components/seo';
 import PageBanner from '../../components/page-banner';
 import Sticky from 'react-stickynode';
 import LineNav from '../../components/line-nav';
@@ -11,6 +12,7 @@ import "./_styles.scss";
 export default function Page({ location }) {
   return (
     <>
+      <SEO title={'Technology'} />
       <PageContainer id='technology-page' activePath={location}>
 
         <PageBanner

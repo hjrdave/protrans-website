@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from '../../components/seo';
 import { Link } from 'gatsby';
 import PageBanner from '../../components/page-banner';
 import PageContainer from "../../components/page-container";
@@ -8,9 +9,9 @@ import "./_styles.scss";
 
 export default function Page({ location }) {
 
-
   return (
     <>
+      <SEO title="Solutions" />
       <PageContainer id='solutions-page' activePath={location}>
         <PageBanner
           title={<>Strategic Solutions<br />Unique to Your Needs</>}
