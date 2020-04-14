@@ -41,7 +41,7 @@ function Header() {
               <a href='/' target='_blank' className='px-1'>Apps</a>  |
             <a href='/' target='_blank' className='px-1'>Business Intel</a>  |
             <a href='/' target='_blank' className='px-1'>Optimiz</a> |
-            <a href='/' target='_blank' className='px-1'>Track Shipment</a>
+            <Link to={'./track-shipment'} className='px-1'>Track Shipment</Link>
             </small>
           </p>
           <Form className='dark-mode-toggle py-1 pl-3'>
