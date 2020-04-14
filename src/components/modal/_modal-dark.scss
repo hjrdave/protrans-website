@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+.dark-mode{
+        .modal-header{
+          background-color: $dm-color-2!important;
+          border-color: rgba(255, 255, 255, 0.5);;
+          button{
+
+            color: $dm-white;
+          }
+          .modal-title{
+            color: $dm-white!important;
+          }
+        }
+        .modal-body{
+          background-color: $dm-color-2!important;
+          p, a, h1, h2, h3, h4, h5, h6{
+            color: $dm-white!important;
+          }
+          
+        }
+      }
+    
+  

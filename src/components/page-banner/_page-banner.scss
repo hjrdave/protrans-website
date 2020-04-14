@@ -7,6 +7,14 @@
   height: 350px;
   background-color: white;
   box-shadow: $shadow-inset;
-  background-image: url('./images/page-banner-bk.png');
-  background-size: cover;
+  overflow: hidden;
+  .page-banner-graphic{
+    position: absolute;
+    opacity: .1;
+    svg{
+      width: 1150px;
+      margin-top: -260px;
+      margin-left: -300px;
+    }
+  }
 }

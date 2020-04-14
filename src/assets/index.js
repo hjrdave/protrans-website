@@ -1,1 +1,1 @@
-export { default as LogoProtrans } from './LogoProtrans'
+export { default as GraphicHexBk } from './GraphicHexBk'

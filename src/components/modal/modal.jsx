@@ -5,6 +5,8 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import uniqid from 'uniqid';
+import './_modal-dark.scss';
+import { useTreble } from 'treble-gsm';
 
 
 function ModalBasic({
@@ -16,16 +18,17 @@ function ModalBasic({
 }) {
 
   let modalID = `modal-id-${uniqid()}`;
+  const [{ darkMode }] = useTreble();
   return (
     <>
-      <div className={className}>
-        <Modal
-          show={show}
-          onHide={onHide}
-          size="lg"
-          aria-labelledby={modalID}
-          centered
-        >
+      <Modal
+        show={show}
+        onHide={onHide}
+        size="lg"
+        aria-labelledby={modalID}
+        centered
+      >
+        <div className={`${className} ${(darkMode) ? 'dark-mode' : ''}`}>
           <Modal.Header closeButton>
             <Modal.Title id={modalID}>
               {title}
@@ -34,8 +37,9 @@ function ModalBasic({
           <Modal.Body>
             {children}
           </Modal.Body>
-        </Modal>
-      </div>
+        </div>
+
+      </Modal>
     </>
   )
 }
