@@ -19,6 +19,21 @@
       .custom-control{
         cursor: pointer!important;
       }
+      i{
+        position: absolute;
+        font-size: $font-size-base - .5rem;
+        color: $dm-white;
+      }
+      .fa-moon{
+        margin-top: .5rem;
+        margin-left: .2rem;
+      }
+      .fa-sun{
+        margin-top: .5rem;
+        margin-left: 1rem;
+        color: $dark-2;
+        opacity: .5
+      }
     }
   }
   

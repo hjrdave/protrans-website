@@ -44,7 +44,7 @@ function Header() {
             <Link to={'./track-shipment'} className='px-1'>Track Shipment</Link>
             </small>
           </p>
-          <Form className='dark-mode-toggle py-1 pl-3'>
+          <Form className='dark-mode-toggle py-1 pl-3 d-flex'>
             <Form.Check
               checked={darkModeSwitchState}
               type="switch"
@@ -52,6 +52,13 @@ function Header() {
               label=""
               onChange={() => handleDarkMode()}
             />
+            {
+              (darkMode) ?
+                <i className='fas fa-moon'></i> :
+                <i className='fas fa-sun'></i>
+            }
+
+
           </Form>
         </div>
         <Sticky enabled={true} enableTransforms={true} activeClass={'header-sticky'}>
