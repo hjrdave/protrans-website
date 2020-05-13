@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+.data-grid{
+  overflow: scroll;
+  background-color: white!important;
+  .table{
+    font-size: $font-size-base - .35rem;
+  }
+}

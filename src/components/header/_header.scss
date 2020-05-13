@@ -19,6 +19,10 @@
       .custom-control{
         cursor: pointer!important;
       }
+      .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: $dm-color-3!important;
+        border-color: $dm-color-3!important;
+      }
       i{
         position: absolute;
         font-size: $font-size-base - .5rem;

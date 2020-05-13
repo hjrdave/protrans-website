@@ -33,6 +33,11 @@ const Store = createStore([
     features: {
       persist: false
     }
+  },
+
+  {
+    action: 'updateTestMain',
+    state: { mainTest: 'mainFoo' }
   }
 ]);
 

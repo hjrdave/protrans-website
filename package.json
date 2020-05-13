@@ -19,6 +19,7 @@
     "gatsby-plugin-smoothscroll": "^1.1.0",
     "gatsby-schema-field-absolute-path": "^1.1.1",
     "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-source-wordpress": "^3.2.5",
     "gatsby-transformer-remark": "^2.6.51",
     "gatsby-transformer-sharp": "^2.3.14",
     "holderjs": "^2.9.6",
@@ -32,8 +33,9 @@
     "react-scrollspy": "^3.4.2",
     "react-share": "^4.0.1",
     "react-stickynode": "^2.1.1",
-    "treble-gsm": "^1.1.4",
+    "treble-gsm": "^1.2.3",
     "uniqid": "^5.2.0",
+    "use-http": "^1.0.6",
     "vertical-timeline-component-for-react": "^1.0.6"
   },
   "devDependencies": {

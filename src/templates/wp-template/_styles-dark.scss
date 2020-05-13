@@ -1,0 +1,25 @@
+/*
+  Dark mode styles for post template
+*/
+
+@import '../../styles//variables';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+.dark-mode{
+  #post-template{
+    .post-menu{
+      border-left: $dm-border-menu;
+    }
+    .post-menu-mobile{
+      width: 100%;
+      border-left: none;
+      .card{
+        background-color: $dm-color-2;
+        color: $dm-white;
+      }
+    }
+  }
+  }
+  

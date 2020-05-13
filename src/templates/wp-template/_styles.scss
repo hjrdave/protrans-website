@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+#post-template{
+  .blog-post-content{
+    p{
+      font-size: $font-size-base + .3rem;
+    }
+    h3{
+      font-size: $h3-font-size + .5rem;
+    }
+  }
+  
+  .post-menu{
+    border-left: 1px solid $input-border-color;
+  
+    width: $post-menu-width;
+    min-width: $post-menu-width;
+    .list-group-item{
+      padding: 10px 0px 10px 0px;
+      border: none;
+      background-color: $transparent!important;
+      a{
+        text-decoration: none;
+        &:hover{
+          opacity: $font-opacity-hover;
+        }
+      }
+    }
+  }
+  .post-menu-mobile{
+    width: 100%;
+    border-left: none;
+    .card{
+      background-color: $dark-1;
+      box-shadow: $shadow-2;
+      color: white;
+      .card-body{
+        
+        .list-group{
+          
+          .list-group-item{
+            background-color: inherit;
+            
+          }
+        }
+      }
+    }
+  }
+}

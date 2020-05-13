@@ -12,6 +12,24 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-smoothscroll`,
     {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // your WordPress source
+        baseUrl: `play.mediafish.io/wordpress`,
+        protocol: `http`,
+        // is it hosted on wordpress.com, or self-hosted?
+        hostingWPCOM: false,
+        // does your site use the Advanced Custom Fields Plugin?
+        useACF: false,
+        // Specify which URL structures to fetch
+        includedRoutes: [
+          '**/posts',
+          '**/tags',
+          '**/categories'
+        ]
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,

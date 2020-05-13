@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from 'gatsby';
 import SEO from '../../components/seo';
-import { Form, Button, Col } from 'react-bootstrap';
-import PageBanner from '../../components/page-banner';
+import { Form, Button } from 'react-bootstrap';
+import DataGrid from '../../components/data-grid';
 import PageContainer from "../../components/page-container";
 import PageContent from "../../components/page-content";
 import "./_styles.scss";
@@ -31,6 +32,36 @@ export default function Page({ location }) {
               </Button>
             </div>
           </Form>
+          <DataGrid
+            columns={[
+              { name: 'Track', dataField: 'track' },
+              { name: 'Origin', dataField: 'origin' },
+              { name: 'Destination', dataField: 'destination' },
+              { name: 'Scheduled Pickup', dataField: 'scheduledPickup' },
+              { name: 'Estimated Delivery', dataField: 'estimatedDelivery' },
+              { name: 'Delivery Pro', dataField: 'deliveryPro' },
+              { name: 'Carrier Pro', dataField: 'carrierPro' },
+              { name: 'Qty', dataField: 'quanity' },
+              { name: 'Wt', dataFields: 'weight' },
+              { name: 'Status', dataFields: 'status' },
+              { name: 'Last Known Location', dataFields: 'lastKnownLocation' }
+            ]}
+            rowData={[
+              {
+                track: <Link to='/'>S8778331</Link>,
+                origin: 'Kiekert de Mexico SA de CV 19864010 Amozoc, PB 72990, MEX',
+                destination: 'BMW Manufacturing Co., LLC LC05 Warehouse 13216524 Greer, SC 29651, USA',
+                scheduledPickup: '03/17/2020 19:00 - 20:30 CST',
+                estimatedDelivery: '03/24/2020 00:01 - 23:59 EST',
+                deliveryPro: '',
+                carrierPro: '',
+                quanity: '27 Pallets',
+                weight: '15928 lbs',
+                status: 'Confirmed at Logistik',
+                lastKnownLocation: 'San Roberto, NL 67855, MEX'
+              }
+            ]}
+          />
         </PageContent>
       </PageContainer>
     </>
