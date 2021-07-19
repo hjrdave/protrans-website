@@ -19,7 +19,7 @@
     "gatsby-plugin-smoothscroll": "^1.1.0",
     "gatsby-schema-field-absolute-path": "^1.1.1",
     "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-source-wordpress": "^3.2.5",
+    "gatsby-source-wordpress": "^4.0.8",
     "gatsby-transformer-remark": "^2.6.51",
     "gatsby-transformer-sharp": "^2.3.14",
     "holderjs": "^2.9.6",
